@@ -68,7 +68,7 @@
         "miniatura": "img/2026-10/ayote/thumb-portada-v2.jpg",
         "archivo": "Ayote-en-miel-latte-1-portada.jpg",
         "n": 1,
-        "hd": null
+        "hd": "https://github.com/rustikkaffe-ai/panel/releases/download/material-2026-10/Ayote-en-miel-latte-1-portada.jpg"
        },
        {
         "etiqueta": "Video latte frío",
@@ -94,7 +94,7 @@
         "miniatura": "img/2026-10/ayote/thumb-4-textura.jpg",
         "archivo": "Ayote-en-miel-latte-4-textura.png",
         "n": 4,
-        "hd": null
+        "hd": "https://github.com/rustikkaffe-ai/panel/releases/download/material-2026-10/Ayote-en-miel-latte-4-textura.png"
        },
        {
         "etiqueta": "Cierre con ilustración RK",
@@ -102,7 +102,7 @@
         "miniatura": "img/2026-10/ayote/thumb-5-cierre.jpg",
         "archivo": "Ayote-en-miel-latte-5-cierre.png",
         "n": 5,
-        "hd": null
+        "hd": "https://github.com/rustikkaffe-ai/panel/releases/download/material-2026-10/Ayote-en-miel-latte-5-cierre.png"
        }
       ]
      },
@@ -115,7 +115,7 @@
         "medidas": "Imagen · 2700 × 4800",
         "miniatura": "img/2026-10/ayote/thumb-historia.jpg",
         "archivo": "Ayote-en-miel-latte-historia.jpg",
-        "hd": null
+        "hd": "https://github.com/rustikkaffe-ai/panel/releases/download/material-2026-10/Ayote-en-miel-latte-historia.jpg"
        }
       ]
      }
@@ -145,14 +145,14 @@
         "medidas": "Imagen · 1397 × 1126",
         "miniatura": "img/2026-10/oppero/thumb-caliente.jpg",
         "archivo": "Ayote-en-miel-latte-caliente-Oppero.png",
-        "hd": null
+        "hd": "https://github.com/rustikkaffe-ai/panel/releases/download/material-2026-10/Ayote-en-miel-latte-caliente-Oppero.png"
        },
        {
         "etiqueta": "Ayote en Miel Latte frío · $4.50",
         "medidas": "Imagen · 1086 × 1448",
         "miniatura": "img/2026-10/oppero/thumb-frio.jpg",
         "archivo": "Ayote-en-miel-latte-frio-Oppero.png",
-        "hd": null
+        "hd": "https://github.com/rustikkaffe-ai/panel/releases/download/material-2026-10/Ayote-en-miel-latte-frio-Oppero.png"
        }
       ]
      }
@@ -524,7 +524,7 @@
         "medidas": "Imagen HD · 3105 × 5520 (9:16) · 3 MB",
         "miniatura": "img/2026-10/caja2/thumb-historia.jpg",
         "archivo": "Caja-de-Donas-3x2-historia.jpg",
-        "hd": null
+        "hd": "https://github.com/rustikkaffe-ai/panel/releases/download/material-2026-10/Caja-de-Donas-3x2-historia.jpg"
        }
       ]
      }
@@ -574,7 +574,7 @@
         "miniatura": "img/2026-10/fiesta/thumb-1.jpg",
         "archivo": "Sustos-que-dan-gusto-1-portada.jpg",
         "n": 1,
-        "hd": null
+        "hd": "https://github.com/rustikkaffe-ai/panel/releases/download/material-2026-10/Sustos-que-dan-gusto-1-portada.jpg"
        },
        {
         "etiqueta": "Trivia de películas y series",
@@ -582,7 +582,7 @@
         "miniatura": "img/2026-10/fiesta/thumb-2.jpg",
         "archivo": "Sustos-que-dan-gusto-2-trivia.jpg",
         "n": 2,
-        "hd": null
+        "hd": "https://github.com/rustikkaffe-ai/panel/releases/download/material-2026-10/Sustos-que-dan-gusto-2-trivia.jpg"
        },
        {
         "etiqueta": "DJ en vivo",
@@ -590,7 +590,7 @@
         "miniatura": "img/2026-10/fiesta/thumb-3.jpg",
         "archivo": "Sustos-que-dan-gusto-3-dj.jpg",
         "n": 3,
-        "hd": null
+        "hd": "https://github.com/rustikkaffe-ai/panel/releases/download/material-2026-10/Sustos-que-dan-gusto-3-dj.jpg"
        },
        {
         "etiqueta": "Concurso de disfraces",
@@ -607,7 +607,7 @@
         "miniatura": "img/2026-10/fiesta/thumb-5.jpg",
         "archivo": "Sustos-que-dan-gusto-5-menu.jpg",
         "n": 5,
-        "hd": null
+        "hd": "https://github.com/rustikkaffe-ai/panel/releases/download/material-2026-10/Sustos-que-dan-gusto-5-menu.jpg"
        }
       ]
      }
@@ -825,7 +825,7 @@
         "miniatura": "img/2026-10/pan/thumb-1.jpg",
         "archivo": "Pan-de-muerto-1-portada.jpg",
         "n": 1,
-        "hd": null
+        "hd": "https://github.com/rustikkaffe-ai/panel/releases/download/material-2026-10/Pan-de-muerto-1-portada.jpg"
        },
        {
         "etiqueta": "Tradicional · $2.00",
@@ -833,7 +833,7 @@
         "miniatura": "img/2026-10/pan/thumb-2.jpg",
         "archivo": "Pan-de-muerto-2-tradicional.jpg",
         "n": 2,
-        "hd": null
+        "hd": "https://github.com/rustikkaffe-ai/panel/releases/download/material-2026-10/Pan-de-muerto-2-tradicional.jpg"
        },
        {
         "etiqueta": "Nutella · $2.75",
@@ -841,7 +841,7 @@
         "miniatura": "img/2026-10/pan/thumb-3.jpg",
         "archivo": "Pan-de-muerto-3-nutella.jpg",
         "n": 3,
-        "hd": null
+        "hd": "https://github.com/rustikkaffe-ai/panel/releases/download/material-2026-10/Pan-de-muerto-3-nutella.jpg"
        },
        {
         "etiqueta": "Guayaba & queso · $2.75",
@@ -849,7 +849,7 @@
         "miniatura": "img/2026-10/pan/thumb-4.jpg",
         "archivo": "Pan-de-muerto-4-guayaba-queso.jpg",
         "n": 4,
-        "hd": null
+        "hd": "https://github.com/rustikkaffe-ai/panel/releases/download/material-2026-10/Pan-de-muerto-4-guayaba-queso.jpg"
        }
       ]
      }
@@ -906,7 +906,7 @@
         "archivo": "Rustik-guion-fiesta-31.pdf",
         "texto": "Le ofreces el afiche a alguien del equipo, dice que no y caes de espaldas. En pantalla: «LA INVITÉ A LA FIESTA DEL 31».",
         "cuando": "Gancho (sin voz)",
-        "hd": null
+        "hd": "https://github.com/rustikkaffe-ai/panel/releases/download/material-2026-10/Rustik-guion-fiesta-31.pdf"
        }
       ]
      }
