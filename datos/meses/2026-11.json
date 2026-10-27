@@ -1,0 +1,558 @@
+{
+ "mes": "2026-11",
+ "titulo_mes": "Noviembre 2026",
+ "campana": "Dúo de",
+ "campana_em": "burgers",
+ "eyebrow": "Rustik Burgers & Kaffee · Campaña noviembre 2026",
+ "intro": "El mes del **Dúo de burgers**: una bandeja para compartir, todos los días. Toca cualquier pieza del calendario para ver su gancho, su copy listo para pegar y lo que falta. Las que dicen «ver» abren los detalles de cada fecha grande.",
+ "objetivo": "Ventas del mes, comparadas con septiembre 2026. La meta en número la define Sergio.",
+ "momentos": [
+  {
+   "fechas": "30 oct – 1 nov",
+   "titulo": "Llega el Dúo",
+   "color": "vino",
+   "texto": "Lanzamiento el viernes 30; se vende desde el domingo 1. Las donas, la Berlina y la Caja 3x2 salen el viernes 30, sin anuncio."
+  },
+  {
+   "fechas": "2 nov",
+   "titulo": "Difuntos",
+   "color": "ayote",
+   "texto": "Abrimos a las 7 am para el desayuno. Pan de muerto a precio normal, todo el mes."
+  },
+  {
+   "fechas": "3 – 15 nov",
+   "titulo": "Dúo de burgers",
+   "color": "ochre",
+   "texto": "Un formato distinto del Dúo cada semana, el delivery propio y el café de la tarde."
+  },
+  {
+   "fechas": "16 – 30 nov",
+   "titulo": "Arranca la Navidad",
+   "color": "verde",
+   "texto": "Postres de temporada, postres por encargo y eventos de grupo."
+  },
+  {
+   "fechas": "25 nov",
+   "titulo": "Orgullo apopense",
+   "color": "vino",
+   "texto": "Cierre de patronales: abiertos hasta las 11:30 pm, sin promoción."
+  },
+  {
+   "fechas": "27 nov",
+   "titulo": "Black Friday nocturno",
+   "color": "ochre",
+   "texto": "Cervezas y burgers de noche (mecánica pendiente)."
+  }
+ ],
+ "regla": "**La regla:** 2 videos por semana que **no venden** (martes 11:00 AM y jueves 4:00 PM), solo para ganar vistas. La venta va en posts, carruseles e historias. Los copys van en **tú**; lo que se dice en los videos, en **vos**.",
+ "nota": "Las piezas del 30 de octubre y del 1 de noviembre son el arranque del Dúo. Los videos de esa semana están en octubre.",
+ "etiquetas_dia": {
+  "2026-10-30": "Lanzamiento",
+  "2026-11-02": "Difuntos",
+  "2026-11-03": "Recap del 31",
+  "2026-11-16": "Postres de temporada",
+  "2026-11-25": "Patronales",
+  "2026-11-27": "Black Friday"
+ },
+ "precios_confirmados": [
+  "14.99"
+ ],
+ "promociones": [
+  {
+   "nombre": "Black Friday nocturno",
+   "incluye": "Cervezas y burgers de noche. Qué incluye, horario y precio: pendientes de Sergio.",
+   "inicio": "2026-11-27",
+   "fin": "2026-11-27"
+  }
+ ],
+ "piezas": [
+  {
+   "id": "n01",
+   "fecha": "2026-10-30",
+   "hora": "11:00 AM",
+   "tipo": "post",
+   "icono": "burger",
+   "abre": "duo",
+   "titulo": "Lanzamiento: Dúo de burgers (carrusel)",
+   "detalle": "Presentación del producto del mes. Se lanza el **viernes 30** (mejor alcance en Instagram) y está disponible **desde el domingo 1 de noviembre**.\n\nCarrusel: 1) la bandeja completa desde arriba · 2) las 4 burgers que se pueden elegir · 3) las papas tuneadas · 4) precio y «todos los días».",
+   "copy": "Dos burgers, una bandeja y alguien con quien compartirla 🍔🍔\nLlega el Dúo de burgers: 2 burgers sencillas a elegir (Clásica, Melcocha, Holy Alioli o RK-POP), 2 porciones de papas ya tuneadas y 2 Coca-Cola, todo en una sola bandeja por $14.99.\nDesde este domingo 1 de noviembre, todos los días, de lunes a domingo.\n📍 Barrio El Centro, Apopa · frente a Coplasa\n⏰ Domingo a jueves de 8 am a 8 pm · viernes y sábado hasta las 9 pm\n¿Con quién lo compartes? Etiquétalo 👇\n#RustikApopa #RustikBurgersKaffee #ApopaElSalvador #SmashBurger #HamburguesasArtesanales #NoviembreEnRustik #FoodieSV",
+   "notas": [
+    "Antes de publicar: el Dúo tiene que estar cargado en Oppero con su nombre y precio (hoy aparece la Smash Box a $17.99).",
+    "Ese mismo viernes salen las donas, la Berlina y la Caja 3x2, sin anuncio (decisión de Fátima)."
+   ],
+   "pendientes": [
+    "Arte y fotos del Dúo (Visual)",
+    "Precio del Dúo por delivery: hasta confirmarlo, el copy no menciona el domicilio"
+   ]
+  },
+  {
+   "id": "n02",
+   "fecha": "2026-11-01",
+   "hora": "4:00 PM",
+   "tipo": "post",
+   "icono": "pan",
+   "abre": "difuntos",
+   "titulo": "Post: el lunes 2 abrimos a las 7 am",
+   "detalle": "Aviso del día de Difuntos: abrimos una hora antes para el desayuno de después del cementerio. Pan de muerto a precio normal (no es promoción).",
+   "copy": "Mañana te esperamos desde las 7 am ☕\nEste lunes 2 abrimos una hora antes para que, después del cementerio, llegues a desayunar con calma. Y el pan de muerto sigue: tradicional $2.00, de Nutella o de guayaba con queso $2.75.\n📍 Barrio El Centro, Apopa · frente a Coplasa\n⏰ Lunes 2: desde las 7 am · domingo a jueves de 8 am a 8 pm · viernes y sábado hasta las 9 pm\n¿Con quién vienes a desayunar? 👇\n#RustikApopa #ApopaElSalvador #HechoEnApopa #CaféDeEspecialidad #NoviembreEnRustik #ElSalvador",
+   "notas": [
+    "Cae domingo (menos alcance): fijarlo en el perfil hasta el lunes y repostearlo en historias el lunes a las 7 am."
+   ]
+  },
+  {
+   "id": "n03",
+   "fecha": "2026-11-02",
+   "hora": "7:00 AM",
+   "tipo": "hist",
+   "icono": "taza",
+   "abre": "difuntos",
+   "titulo": "Historias: ya abrimos, desayuno y pan de muerto",
+   "detalle": "Historia a la hora de abrir: puerta abierta, café y pan de muerto. Repostear el post del domingo."
+  },
+  {
+   "id": "n04",
+   "fecha": "2026-11-03",
+   "hora": "11:00 AM",
+   "tipo": "video",
+   "icono": "fiesta",
+   "titulo": "Recap: así se vivió Sustos que dan gusto",
+   "gancho": "Si no viniste el 31, mirá lo que te perdiste.",
+   "detalle": "Video de atención (no vende) con el material grabado en la fiesta del 31: disfraces, DJ, trivia y la gente. Es uno de los videos con historia del mes.\n\nEl Día del Sándwich (también hoy) no se usa: decisión de Sergio.",
+   "copy": "Así se vivió Sustos que dan gusto 🎭\nGracias a todos los que llegaron disfrazados. ¿Te encontraste en el video? Etiquétate 👇\n#RustikApopa #RustikBurgersKaffee #ApopaElSalvador #OrgulloApopa #NoviembreEnRustik #FoodieSV",
+   "pendientes": [
+    "Quién edita el material del 31 (Sergio y Fátima)"
+   ]
+  },
+  {
+   "id": "n05",
+   "fecha": "2026-11-04",
+   "hora": "11:00 AM",
+   "tipo": "post",
+   "icono": "burger",
+   "titulo": "Carrusel: arma tu Dúo",
+   "detalle": "Segundo formato del Dúo: las combinaciones. Una lámina por burger (Clásica, Melcocha, Holy Alioli, RK-POP) y la última con la bandeja armada.",
+   "copy": "¿Clásica con Melcocha o Holy Alioli con RK-POP? 🤔\nEn el Dúo de burgers eliges las dos que quieras: Clásica, Melcocha, Holy Alioli o RK-POP. Con 2 porciones de papas tuneadas y 2 Coca-Cola, por $14.99.\nPara compartir en una sola bandeja, cualquier día de la semana.\n📍 Barrio El Centro, Apopa · frente a Coplasa\n⏰ Domingo a jueves de 8 am a 8 pm · viernes y sábado hasta las 9 pm\n¿Cuál es tu combinación? Cuéntanos 👇\n#RustikApopa #RustikBurgersKaffee #ApopaElSalvador #SmashBurger #HamburguesasArtesanales #NoviembreEnRustik #FoodieSV"
+  },
+  {
+   "id": "n06",
+   "fecha": "2026-11-05",
+   "hora": "4:00 PM",
+   "tipo": "video",
+   "icono": "micro",
+   "titulo": "Apopa Responde: ¿compartes tus papas?",
+   "gancho": "¿Compartís tus papas o sos de los que las esconden?",
+   "detalle": "Serie Apopa Responde: preguntas en la calle o en el local. Video de atención: el producto aparece de fondo, sin precio ni llamado a comprar.",
+   "copy": "Apopa Responde: ¿compartes tus papas o las defiendes con tu vida? 🍟\n¿Tú de qué lado estás? 👇\n#RustikApopa #ApopaElSalvador #OrgulloApopa #NoviembreEnRustik #FoodieSV #ElSalvador"
+  },
+  {
+   "id": "n07",
+   "fecha": "2026-11-06",
+   "hora": "11:00 AM",
+   "tipo": "post",
+   "icono": "sobre",
+   "titulo": "Post: delivery propio, pide directo",
+   "detalle": "Recordatorio del delivery propio (entra a la pauta este mes). Si para entonces Sergio y Fátima ya definieron la promo de delivery, este post la anuncia y se cambia el copy.",
+   "copy": "Tu antojo, de nuestra cocina a tu puerta 🛵\nPide por WhatsApp al 7558 4813 o en el link de la bio, con nuestro propio delivery. Envío gratis desde $15.\n📍 Barrio El Centro, Apopa · frente a Coplasa\n⏰ Domingo a jueves de 8 am a 8 pm · viernes y sábado hasta las 9 pm\n¿Qué pides hoy para la noche? 👇\n#RustikApopa #RustikBurgersKaffee #DeliveryPropio #PideDirecto #RustikDelivery #ApopaElSalvador",
+   "pendientes": [
+    "Mecánica y fechas de la promo de delivery propio (Sergio y Fátima)"
+   ]
+  },
+  {
+   "id": "n08",
+   "fecha": "2026-11-10",
+   "hora": "11:00 AM",
+   "tipo": "video",
+   "icono": "ranking",
+   "titulo": "Ranking: los 5 tipos de persona cuando toca compartir la comida",
+   "gancho": "Hay 5 tipos de persona cuando toca compartir la comida. ¿Cuál sos vos?",
+   "detalle": "Familia ranking o comparación, en tono de humor. Del 5 al 1: el que pide «solo una papa», el que se come la última, el que lo reparte todo exacto… El producto, de escenario.",
+   "copy": "Los 5 tipos de persona cuando toca compartir la comida 😅\n¿Cuál eres tú? Etiqueta al número 5 👇\n#RustikApopa #ApopaElSalvador #OrgulloApopa #NoviembreEnRustik #FoodieSV #ElSalvador"
+  },
+  {
+   "id": "n09",
+   "fecha": "2026-11-11",
+   "hora": "11:00 AM",
+   "tipo": "post",
+   "icono": "ayote",
+   "titulo": "Post: café de la tarde con Ayote en Miel y pan de muerto",
+   "detalle": "Hilo de fondo del mes (sin campaña propia): el Ayote en Miel Latte y el pan de muerto siguen todo noviembre.",
+   "copy": "La tarde pide café y algo de horno ☕\nAyote en Miel Latte: caliente $4.00 · frío $4.50. Y el pan de muerto sigue todo noviembre: tradicional $2.00, de Nutella o de guayaba con queso $2.75.\n📍 Barrio El Centro, Apopa · frente a Coplasa\n⏰ Domingo a jueves de 8 am a 8 pm · viernes y sábado hasta las 9 pm\n¿Latte caliente o frío? 👇\n#RustikApopa #CafeApopa #AyoteEnMiel #CaféDeEspecialidad #ApopaElSalvador #HechoEnApopa"
+  },
+  {
+   "id": "n10",
+   "fecha": "2026-11-12",
+   "hora": "4:00 PM",
+   "tipo": "video",
+   "icono": "lupa",
+   "titulo": "Problema + diagrama: qué es tunear las papas",
+   "gancho": "Tus papas pueden ser mucho más que papas. Te explico.",
+   "detalle": "Familia problema + diagrama: papa sola → + aderezo → + topping = papa tuneada. Explica qué es el tuneado sin decir precio ni vender el Dúo.",
+   "copy": "Tunear las papas: aderezo + topping = otra papa 🍟\n¿Con qué las tunearías tú? 👇\n#RustikApopa #ApopaElSalvador #OrgulloApopa #NoviembreEnRustik #FoodieSV #ElSalvador"
+  },
+  {
+   "id": "n11",
+   "fecha": "2026-11-13",
+   "hora": "11:00 AM",
+   "tipo": "post",
+   "icono": "burger",
+   "titulo": "Post: ¿Burger del Día o Dúo de burgers?",
+   "detalle": "Tercer formato del Dúo: la comparación. Deja claro que no compiten: la Burger del Día es individual, de lunes a viernes; el Dúo es para compartir, todos los días.",
+   "copy": "¿Burger del Día o Dúo de burgers? Depende de con quién vienes 😉\nSi vienes solo, de lunes a viernes: la Burger del Día desde $6.50.\nSi vienes acompañado, cualquier día: el Dúo de burgers por $14.99, con 2 burgers a elegir, 2 porciones de papas tuneadas y 2 Coca-Cola.\n📍 Barrio El Centro, Apopa · frente a Coplasa\n⏰ Domingo a jueves de 8 am a 8 pm · viernes y sábado hasta las 9 pm\n¿Hoy vienes solo o acompañado? 👇\n#RustikApopa #RustikBurgersKaffee #BurgerDelDía #SmashBurger #NoviembreEnRustik #ApopaElSalvador"
+  },
+  {
+   "id": "n12",
+   "fecha": "2026-11-16",
+   "tipo": "fecha",
+   "icono": "pan",
+   "abre": "navidad",
+   "titulo": "Arrancan los postres de temporada y los postres por encargo"
+  },
+  {
+   "id": "n13",
+   "fecha": "2026-11-17",
+   "hora": "11:00 AM",
+   "tipo": "video",
+   "icono": "micro",
+   "titulo": "Historia con postura: la mesa compartida",
+   "gancho": "La mejor comida es la que se come sin ver el celular.",
+   "detalle": "Video con postura (storytelling): en Rustik la comida es plan, no antojo rápido. Una mesa, gente que se ríe, celulares boca abajo. Sin precio.",
+   "copy": "Comer acompañado sabe distinto 🍽️\n¿Quién deja primero el celular en tu mesa? 👇\n#RustikApopa #ApopaElSalvador #OrgulloApopa #NoviembreEnRustik #FoodieSV #ElSalvador"
+  },
+  {
+   "id": "n14",
+   "fecha": "2026-11-18",
+   "hora": "11:00 AM",
+   "tipo": "post",
+   "icono": "fiesta",
+   "abre": "navidad",
+   "titulo": "Post: eventos de grupo en Rustik",
+   "detalle": "Arranca la pauta de eventos de grupo (graduaciones, bodas civiles, eventos de empresa).",
+   "copy": "¿Graduación, boda civil o la cena de fin de año de la empresa? 🎉\nCelébralo en Rustik. Escríbenos al WhatsApp 7558 4813 y armamos tu evento.\n📍 Barrio El Centro, Apopa · frente a Coplasa\n⏰ Domingo a jueves de 8 am a 8 pm · viernes y sábado hasta las 9 pm\n¿Qué celebras este diciembre? 👇\n#RustikApopa #RustikBurgersKaffee #ApopaElSalvador #HechoEnApopa #RestaurantesElSalvador #SanSalvador",
+   "pendientes": [
+    "Incentivo para grupos, mínimo de personas y capacidad (Sergio y Fátima): si se definen antes, se agregan al copy"
+   ]
+  },
+  {
+   "id": "n15",
+   "fecha": "2026-11-19",
+   "hora": "4:00 PM",
+   "tipo": "video",
+   "icono": "micro",
+   "titulo": "Apopa Responde: ¿qué postre te sabe a Navidad?",
+   "gancho": "¿Qué postre te sabe a Navidad? Decímelo sin pensarlo.",
+   "detalle": "Serie Apopa Responde. Abre la conversación de la temporada sin nombrar todavía los postres de Rustik (sus nombres y precios están pendientes).",
+   "copy": "Apopa Responde: ¿qué postre te sabe a Navidad? 🎄\nCuéntanos el tuyo 👇\n#RustikApopa #ApopaElSalvador #OrgulloApopa #NoviembreEnRustik #FoodieSV #ElSalvador"
+  },
+  {
+   "id": "n16",
+   "fecha": "2026-11-20",
+   "hora": "11:00 AM",
+   "tipo": "post",
+   "icono": "burger",
+   "titulo": "Post: plan de fin de semana con el Dúo",
+   "detalle": "Cuarto formato del Dúo: foto de la bandeja en una mesa con dos personas. Recuerda que hay también sábado y domingo (la Burger del Día no).",
+   "copy": "Plan de sábado: una bandeja, dos burgers y nadie pelea por las papas 🍟\nDúo de burgers por $14.99: elige 2 entre Clásica, Melcocha, Holy Alioli o RK-POP, con 2 porciones de papas tuneadas y 2 Coca-Cola. También sábado y domingo.\n📍 Barrio El Centro, Apopa · frente a Coplasa\n⏰ Domingo a jueves de 8 am a 8 pm · viernes y sábado hasta las 9 pm\n¿A quién traes este fin de semana? 👇\n#RustikApopa #RustikBurgersKaffee #ApopaElSalvador #SmashBurger #HamburguesasArtesanales #NoviembreEnRustik #FoodieSV"
+  },
+  {
+   "id": "n17",
+   "fecha": "2026-11-23",
+   "hora": "11:00 AM",
+   "tipo": "post",
+   "icono": "fiesta",
+   "abre": "patronales",
+   "titulo": "Arte: el miércoles 25 abrimos hasta las 11:30 pm",
+   "detalle": "El arte del horario extendido por el cierre de las fiestas patronales. Sale dos días antes, con historias el martes 24 y el miércoles 25. Ese día no hay promoción.",
+   "copy": "Este miércoles 25 cerramos las fiestas juntos 🎆\nPor el carnaval de cierre de las fiestas patronales de Apopa, abrimos hasta las 11:30 pm.\n📍 Barrio El Centro, Apopa · frente a Coplasa\n⏰ Miércoles 25: de 8 am a 11:30 pm\n¿Vas al carnaval? 👇\n#RustikApopa #OrgulloApopa #ApopaElSalvador #HechoEnApopa #RustikBurgersKaffee #ElSalvador",
+   "pendientes": [
+    "Si cierran calles o se afecta el parqueo, se agrega un mensaje de «cómo llegar» (Sergio)"
+   ]
+  },
+  {
+   "id": "n18",
+   "fecha": "2026-11-24",
+   "hora": "11:00 AM",
+   "tipo": "video",
+   "icono": "fiesta",
+   "abre": "patronales",
+   "titulo": "Orgullo apopense: las fiestas como las hemos vivido",
+   "gancho": "Si sos de Apopa, estas imágenes ya las viviste.",
+   "detalle": "El guiño de las patronales: video con historia hecho con los videos de patronales de años anteriores. Sin precio ni promo.",
+   "copy": "Orgullo apopense 💛\nLas fiestas patronales de Apopa, como las hemos vivido en Rustik. ¿Cuál es tu recuerdo de las fiestas? 👇\n#RustikApopa #OrgulloApopa #ApopaElSalvador #HechoEnApopa #NoviembreEnRustik #ElSalvador",
+   "pendientes": [
+    "Lo que falta decidir del guiño está en la fecha grande de patronales (Sergio y Fátima)"
+   ]
+  },
+  {
+   "id": "n19",
+   "fecha": "2026-11-25",
+   "tipo": "fecha",
+   "icono": "fiesta",
+   "grande": true,
+   "abre": "patronales",
+   "titulo": "Cierre de patronales: abiertos hasta las 11:30 pm"
+  },
+  {
+   "id": "n20",
+   "fecha": "2026-11-25",
+   "hora": "4:00 PM",
+   "tipo": "hist",
+   "icono": "fiesta",
+   "abre": "patronales",
+   "titulo": "Historias: hoy abiertos hasta las 11:30 pm",
+   "detalle": "Historias de la tarde con el arte del horario y ambiente del carnaval."
+  },
+  {
+   "id": "n21",
+   "fecha": "2026-11-26",
+   "hora": "4:00 PM",
+   "tipo": "video",
+   "icono": "ranking",
+   "titulo": "Comparación: viernes en la noche, el plan vs. la realidad",
+   "gancho": "Viernes: lo que planeás vs. lo que de verdad pasa.",
+   "detalle": "Familia comparación, en tono de humor. Prepara el viernes en la noche sin vender el Black Friday (la venta va en su post).",
+   "copy": "Viernes en la noche: el plan vs. la realidad 😂\n¿Cuál te pasa más? 👇\n#RustikApopa #ApopaElSalvador #OrgulloApopa #NoviembreEnRustik #FoodieSV #ElSalvador"
+  },
+  {
+   "id": "n22",
+   "fecha": "2026-11-27",
+   "tipo": "fecha",
+   "icono": "cerveza",
+   "grande": true,
+   "abre": "blackfriday",
+   "titulo": "Black Friday nocturno: cervezas y burgers"
+  }
+ ],
+ "fechas_grandes": [
+  {
+   "id": "duo",
+   "titulo": "Dúo de burgers",
+   "boton": "Dúo de burgers",
+   "resumen": "El producto del mes",
+   "meta": "Lanzamiento vie 30 oct · disponible desde el dom 1 nov · decidido",
+   "icono": "burger",
+   "color": "vino",
+   "decision": "El producto del mes es el **Dúo de burgers** ($14.99): una sola bandeja para compartir, con 2 burgers sencillas a elegir entre Clásica, Melcocha, Holy Alioli o RK-POP, 2 porciones de papas ya tuneadas (el tuneado va incluido) y 2 Coca-Cola. Disponible **todos los días, de lunes a domingo**.",
+   "secciones": [
+    {
+     "titulo": "Fechas",
+     "puntos": [
+      "Viernes 30 de octubre, 11:00 AM: post de lanzamiento.",
+      "Domingo 1 de noviembre: empieza a venderse.",
+      "Un post del Dúo por semana, cada vez con otro formato: lanzamiento, combinaciones, comparación con la Burger del Día y plan de fin de semana."
+     ]
+    },
+    {
+     "titulo": "No compite con la Burger del Día",
+     "puntos": [
+      "Burger del Día: individual, de lunes a viernes, con soda.",
+      "Dúo de burgers: para compartir, todos los días, con 2 Coca-Cola y papas tuneadas."
+     ]
+    },
+    {
+     "titulo": "El nombre",
+     "puntos": [
+      "Se llama **Dúo de burgers** (o «bandeja Dúo de burgers»).",
+      "El nombre **Smash Box** se guarda para una futura bandeja con burgers dobles (Oklahoma y Smash Rustik)."
+     ]
+    },
+    {
+     "titulo": "Copy sugerido",
+     "copy": "Dos burgers, una bandeja y alguien con quien compartirla 🍔🍔\nLlega el Dúo de burgers: 2 burgers sencillas a elegir (Clásica, Melcocha, Holy Alioli o RK-POP), 2 porciones de papas ya tuneadas y 2 Coca-Cola, todo en una sola bandeja por $14.99.",
+     "copy_cuando": "Viernes 30 de octubre · 11:00 AM"
+    }
+   ],
+   "listo": [
+    "Precio y contenido confirmados por Fátima (27 de octubre)."
+   ],
+   "pendientes": [
+    "Sergio confirma el cambio de la Smash Box al Dúo de burgers.",
+    "Cargar el Dúo en Oppero con su nombre y precio.",
+    "Precio del Dúo por delivery.",
+    "Stock de Coca-Cola.",
+    "Arte y fotos del Dúo."
+   ]
+  },
+  {
+   "id": "difuntos",
+   "titulo": "Día de los Difuntos",
+   "boton": "Lunes 2: Difuntos",
+   "resumen": "Desayuno desde las 7 am",
+   "meta": "Lunes 2 de noviembre · decidido",
+   "icono": "pan",
+   "color": "ayote",
+   "decision": "El lunes 2 (feriado) abrimos **a las 7:00 AM**, una hora antes, para el desayuno de después del cementerio. El pan de muerto va a **precio normal**: no es una promoción.",
+   "secciones": [
+    {
+     "titulo": "Fechas",
+     "puntos": [
+      "Domingo 1, 4:00 PM: post de aviso (fijarlo en el perfil).",
+      "Lunes 2, 7:00 AM: historias de «ya abrimos»."
+     ]
+    },
+    {
+     "titulo": "Precios del pan de muerto",
+     "puntos": [
+      "Tradicional $2.00 · Nutella $2.75 · guayaba con queso $2.75."
+     ]
+    }
+   ],
+   "listo": [
+    "Hora de apertura y precios confirmados por Fátima."
+   ],
+   "pendientes": []
+  },
+  {
+   "id": "navidad",
+   "titulo": "Arranca la temporada navideña",
+   "boton": "Desde el 16: Navidad",
+   "resumen": "Postres de temporada y eventos de grupo",
+   "meta": "Desde el lunes 16 de noviembre · nombres y precios pendientes",
+   "icono": "pan",
+   "color": "verde",
+   "decision": "Desde la segunda quincena se empieza a hablar de Navidad: **postres de temporada** (hasta diciembre), **catálogo de postres enteros por encargo** y **eventos de grupo** (graduaciones, bodas civiles, eventos de empresa), con su propia pauta.",
+   "secciones": [
+    {
+     "titulo": "Fechas",
+     "puntos": [
+      "Lunes 16: arrancan los postres de temporada y los postres por encargo (el post sale cuando estén los nombres y precios).",
+      "Miércoles 18, 11:00 AM: post de eventos de grupo.",
+      "Jueves 19, 4:00 PM: Apopa Responde sobre los postres de Navidad."
+     ]
+    }
+   ],
+   "listo": [
+    "Decidido el arranque y los tres frentes."
+   ],
+   "pendientes": [
+    "Nombres y precios de los postres de temporada y del catálogo por encargo (Sergio).",
+    "Incentivo para grupos, número mínimo de personas y capacidad (Sergio y Fátima)."
+   ]
+  },
+  {
+   "id": "patronales",
+   "titulo": "Cierre de las Fiestas Patronales",
+   "boton": "Miércoles 25: patronales",
+   "resumen": "Abiertos hasta las 11:30 pm",
+   "meta": "Miércoles 25 de noviembre · decidido",
+   "icono": "fiesta",
+   "color": "vino",
+   "decision": "Las patronales **no son el eje del mes**. Rustik se acopla solo al carnaval de cierre del miércoles 25: **abierto hasta las 11:30 pm**, con personal extendido y **sin promoción**. Además, un guiño de **Orgullo apopense** con videos de patronales de años anteriores.",
+   "secciones": [
+    {
+     "titulo": "Fechas",
+     "puntos": [
+      "Lunes 23, 11:00 AM: arte del horario extendido.",
+      "Martes 24, 11:00 AM: video Orgullo apopense; historias del horario.",
+      "Miércoles 25: historias a las 4:00 PM; abiertos hasta las 11:30 pm."
+     ]
+    },
+    {
+     "titulo": "Copy sugerido",
+     "copy": "Este miércoles 25 cerramos las fiestas juntos 🎆\nPor el carnaval de cierre de las fiestas patronales de Apopa, abrimos hasta las 11:30 pm.",
+     "copy_cuando": "Lunes 23 · 11:00 AM"
+    }
+   ],
+   "listo": [
+    "Horario y personal extendido decididos. Hay videos de años anteriores para el guiño."
+   ],
+   "pendientes": [
+    "Cierre de calles o efecto en el parqueo (Sergio).",
+    "Mención de la Niña Julia en el guiño: sí o no (Sergio y Fátima)."
+   ]
+  },
+  {
+   "id": "blackfriday",
+   "titulo": "Black Friday nocturno",
+   "boton": "Viernes 27: Black Friday",
+   "resumen": "Cervezas y burgers de noche",
+   "meta": "Viernes 27 de noviembre · mecánica pendiente",
+   "icono": "cerveza",
+   "color": "ochre",
+   "decision": "El Black Friday se trabaja como **promoción nocturna de cervezas y burgers**, no como pieza crítica. La opción en estudio es Regia 2x$6 con burgers (sin confirmar).",
+   "secciones": [
+    {
+     "titulo": "Fechas",
+     "puntos": [
+      "Jueves 26, 4:00 PM: video de comparación que prepara el viernes en la noche (no vende).",
+      "El post de venta sale en cuanto Sergio defina la mecánica: idealmente el jueves 26 a las 11:00 AM, con historias el viernes 27."
+     ]
+    }
+   ],
+   "listo": [],
+   "pendientes": [
+    "Qué incluye, horario, precio y margen de la Regia (Sergio)."
+   ]
+  }
+ ],
+ "pendientes": [
+  {
+   "que": "Confirmar el cambio de la Smash Box al Dúo de burgers ($14.99, 4 burgers sencillas)",
+   "quien": "Sergio"
+  },
+  {
+   "que": "Cargar el Dúo de burgers en Oppero con su nombre y precio (hoy aparece la Smash Box)",
+   "quien": "Sergio / Ventas"
+  },
+  {
+   "que": "Precio del Dúo por delivery",
+   "quien": "Sergio"
+  },
+  {
+   "que": "Stock de Coca-Cola para el Dúo",
+   "quien": "Sergio"
+  },
+  {
+   "que": "Arte y fotos del Dúo para el viernes 30",
+   "quien": "Visual"
+  },
+  {
+   "que": "Actualizar los banners de delivery que muestran la Smash Box",
+   "quien": "Visual"
+  },
+  {
+   "que": "Quitar las donas de la pauta activa (salen el viernes 30)",
+   "quien": "Fátima"
+  },
+  {
+   "que": "Meta de ventas del mes en número",
+   "quien": "Sergio"
+  },
+  {
+   "que": "Cierre de octubre (para comparar, y resultados del 31 y del Oktobeerfest)",
+   "quien": "Sergio"
+  },
+  {
+   "que": "Quién edita el recap del 31 para el martes 3",
+   "quien": "Sergio y Fátima"
+  },
+  {
+   "que": "Mecánica y fechas de la promo de delivery propio",
+   "quien": "Sergio y Fátima"
+  },
+  {
+   "que": "Black Friday: qué incluye, horario, precio y margen",
+   "quien": "Sergio"
+  },
+  {
+   "que": "Postres de temporada y catálogo por encargo: nombres y precios",
+   "quien": "Sergio"
+  },
+  {
+   "que": "Eventos de grupo: incentivo, mínimo de personas y capacidad",
+   "quien": "Sergio y Fátima"
+  },
+  {
+   "que": "Montos de pauta del mes (always-on, Dúo, delivery y eventos)",
+   "quien": "Sergio y Fátima"
+  },
+  {
+   "que": "Miércoles 25: cierre de calles o efecto en el parqueo",
+   "quien": "Sergio"
+  },
+  {
+   "que": "Niña Julia en el guiño de Orgullo apopense: sí o no",
+   "quien": "Sergio y Fátima"
+  }
+ ],
+ "pie": "Armado el 27 de octubre de 2026 con las respuestas de Sergio al brief y las decisiones de Fátima del mismo día."
+}
