@@ -1,0 +1,63 @@
+/* Presencia digital: mismo diseño que la sección de la página de Claude «Octubre en Rustik»,
+   todo dentro de .presencia para no chocar con las clases del calendario. */
+.presencia{margin-block:40px 30px;padding:20px;background:var(--paper);border:1.5px solid var(--ink);scroll-margin-top:90px}
+.presencia .pres-head{display:flex;flex-wrap:wrap;justify-content:space-between;align-items:baseline;gap:8px 20px}
+.presencia .pres-head h2{font-size:clamp(26px,3.6vw,36px)}
+.presencia .pres-upd{font-size:12.5px;color:var(--muted)}
+.presencia .pres-note{font-size:12px;color:var(--muted);margin-top:12px}
+.presencia .kpis{display:grid;grid-template-columns:repeat(4,minmax(0,1fr));gap:12px}
+.presencia .kpi{padding:12px 14px;background:var(--bg)}
+.presencia .kpi small{display:block;font-size:11.5px;letter-spacing:.1em;text-transform:uppercase;font-weight:700;color:var(--muted)}
+.presencia .kpi b{display:block;font-family:var(--display);font-weight:400;font-size:28px;line-height:1.1;margin-top:4px;font-variant-numeric:tabular-nums}
+.presencia .kpi span{font-size:12.5px;color:var(--muted)}
+.presencia .pill{display:inline-block;font-size:11px;font-weight:700;letter-spacing:.06em;text-transform:uppercase;padding:2px 8px;border-radius:999px;align-self:flex-start}
+.presencia .pill.soon{background:var(--ochre-soft);color:var(--ochre)}
+.presencia .pill.off{background:var(--grey-cell);color:var(--muted)}
+.presencia .analisis{margin-top:16px;display:grid;gap:8px}
+.presencia .analisis h4{margin:0;font-size:12px;letter-spacing:.12em;text-transform:uppercase;color:var(--vino)}
+.presencia .analisis p{margin:0;max-width:75ch}
+.presencia .analisis ul{margin:0;padding-left:18px;display:grid;gap:4px;max-width:75ch}
+.presencia .nets{display:grid;grid-template-columns:repeat(5,minmax(0,1fr));gap:10px;margin-top:16px}
+.presencia .net{all:unset;box-sizing:border-box;cursor:pointer;display:flex;flex-direction:column;gap:2px;padding:12px 14px;background:var(--bg);border:1.5px solid transparent;transition:transform .12s ease}
+.presencia .net:hover{transform:translateY(-1px)}
+.presencia .net:focus-visible{outline:2px solid var(--vino);outline-offset:2px}
+.presencia .net[aria-selected="true"]{border-color:var(--ink);background:var(--paper);box-shadow:3px 3px 0 var(--ink)}
+.presencia .net .nn{font-size:12px;letter-spacing:.1em;text-transform:uppercase;font-weight:700;color:var(--muted)}
+.presencia .net b{font-family:var(--display);font-weight:400;font-size:26px;line-height:1.1;font-variant-numeric:tabular-nums}
+.presencia .net span{font-size:12.5px;color:var(--muted);font-variant-numeric:tabular-nums}
+.presencia .net .up{color:var(--verde);font-weight:700}
+.presencia .net.off b{font-family:var(--body);font-size:14px;font-weight:700;color:var(--ochre);margin-top:6px}
+.presencia .netbody{margin-top:16px;display:grid;gap:18px}
+.presencia .nb-head{display:flex;flex-wrap:wrap;gap:4px 14px;align-items:baseline}
+.presencia .nb-head h3{font-size:26px}
+.presencia .nb-head span{font-size:13px;color:var(--muted)}
+.presencia .ptitle{font-size:12px;letter-spacing:.12em;text-transform:uppercase;font-weight:700;color:var(--vino);margin:0 0 8px}
+.presencia .chart{position:relative;background:var(--bg);padding:12px 12px 6px}
+.presencia .chart svg{display:block;width:100%;height:190px;overflow:visible}
+.presencia .chart .ax{font-size:11px;fill:var(--muted);font-family:var(--body);font-variant-numeric:tabular-nums}
+.presencia .chart .grid{stroke:var(--line);stroke-width:1}
+.presencia .chart .bar{fill:var(--vino)}
+.presencia .chart .hit{fill:transparent;cursor:default}
+.presencia .chart g.on .bar{fill:var(--ink)}
+.presencia .tip{position:absolute;pointer-events:none;background:var(--ink);color:var(--paper);font-size:12.5px;padding:5px 8px;white-space:nowrap;transform:translate(-50%,-100%);font-variant-numeric:tabular-nums}
+.presencia .weeks{display:grid;grid-template-columns:repeat(auto-fit,minmax(120px,1fr));gap:8px;margin-top:8px}
+.presencia .weeks div{padding:8px 10px;background:var(--bg);font-size:12.5px;color:var(--muted)}
+.presencia .weeks b{display:block;font-size:17px;color:var(--ink);font-variant-numeric:tabular-nums}
+.presencia .two{display:grid;grid-template-columns:repeat(2,minmax(0,1fr));gap:16px}
+.presencia .hlist{list-style:none;margin:0;padding:0;display:grid;gap:7px}
+.presencia .hlist li{display:grid;grid-template-columns:minmax(80px,130px) minmax(0,1fr) auto;gap:10px;align-items:center;font-size:13.5px}
+.presencia .hlist .tr{height:10px;background:var(--grey-cell)}
+.presencia .hlist .tr i{display:block;height:100%;background:var(--verde);border-radius:0 3px 3px 0}
+.presencia .hlist em{font-style:normal;font-variant-numeric:tabular-nums;color:var(--muted);font-size:12.5px;min-width:88px;text-align:right}
+.presencia .tops{display:grid;grid-template-columns:repeat(3,minmax(0,1fr));gap:12px}
+.presencia .topc{padding:12px 14px;background:var(--bg);border:1px solid var(--line);display:flex;flex-direction:column;gap:8px}
+.presencia .topc .rk{font-family:var(--display);font-size:22px;line-height:1;color:var(--vino)}
+.presencia .topc h4{margin:0;font-size:15px;line-height:1.25}
+.presencia .topc small{font-size:12px;color:var(--muted)}
+.presencia .topc .pn{font-size:12px;color:var(--muted)}
+.presencia .topc dl{display:grid;grid-template-columns:1fr 1fr;gap:6px 10px;margin:0}
+.presencia .topc dt{font-size:10.5px;letter-spacing:.08em;text-transform:uppercase;font-weight:700;color:var(--muted)}
+.presencia .topc dd{margin:0;font-size:15px;font-weight:600;font-variant-numeric:tabular-nums}
+.presencia .topc a{font-size:12.5px;font-weight:700;color:var(--vino)}
+@media (max-width:900px){.presencia .nets{grid-template-columns:repeat(3,minmax(0,1fr))}.presencia .tops{grid-template-columns:1fr}}
+@media (max-width:760px){.presencia .kpis{grid-template-columns:repeat(2,minmax(0,1fr))}.presencia .nets{grid-template-columns:repeat(2,minmax(0,1fr))}.presencia .two{grid-template-columns:1fr}}
