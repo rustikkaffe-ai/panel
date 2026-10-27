@@ -1,0 +1,998 @@
+{
+ "mes": "2026-10",
+ "titulo_mes": "Octubre 2026",
+ "campana": "Sustos que",
+ "campana_em": "dan gusto",
+ "eyebrow": "Rustik Burgers & Kaffee · Campaña octubre 2026 y fiesta del 31",
+ "intro": "Todo lo que publicamos e hicimos en octubre, día por día. Toca cualquier pieza del calendario para ver de qué trata. Las que dicen «ver» abren los detalles de la fecha, y las que dicen HD traen el material final para descargar con su copy.",
+ "momentos": [
+  {
+   "fechas": "25 sep – 10 oct",
+   "titulo": "Antojos",
+   "color": "ayote",
+   "texto": "Ayote en Miel Latte (vie 25 sep), Loncherita Rustik (jue 1), Berlina de Zanahoria y Dona de Caramelo y Pecanas (sáb 3), y Caja de Donas 3x2 (sáb 10)."
+  },
+  {
+   "fechas": "2 oct",
+   "titulo": "Café",
+   "color": "ochre",
+   "texto": "Día del Café: cualquier café en tamaño grande al precio del chico."
+  },
+  {
+   "fechas": "21 – 25 oct",
+   "titulo": "Oktobeerfest Rustik 🍻",
+   "color": "ochre",
+   "texto": "Del viernes 23 al domingo 25: cualquier burger + una cora y te llevas una Regia en lata, o 2 Regia Chola por $6."
+  },
+  {
+   "fechas": "17 – 31 oct",
+   "titulo": "Sustos que dan gusto",
+   "color": "vino",
+   "texto": "Dos invitaciones y la fiesta del sábado 31: DJ en vivo, trivia de películas, concurso de trajes y zona de fotos."
+  }
+ ],
+ "regla": "**La regla nueva:** 2 videos por semana que **no venden**, solo para ganar vistas (método de Víctor Eras). La venta va solo en posts y carruseles.",
+ "nota": "Miércoles de Lotería terminó con septiembre. El recap de la fiesta sale el martes 3 de noviembre (el lunes 2 es feriado de Difuntos). Aquí solo aparecen videos, posts y carruseles.",
+ "etiquetas_dia": {
+  "2026-09-25": "Lanzamiento",
+  "2026-09-30": "Loncherita",
+  "2026-10-01": "Día del Niño",
+  "2026-10-02": "Día del Café",
+  "2026-10-03": "Lanzamiento",
+  "2026-10-23": "Oktobeerfest",
+  "2026-10-24": "Oktobeerfest",
+  "2026-10-25": "Oktobeerfest",
+  "2026-10-31": "Fiesta"
+ },
+ "piezas": [
+  {
+   "id": "o01",
+   "fecha": "2026-09-25",
+   "tipo": "post",
+   "titulo": "Carrusel: lanzamiento del Ayote en Miel Latte",
+   "icono": "ayote",
+   "hora": "11:00 AM",
+   "material": {
+    "titulo": "Ayote en Miel Latte",
+    "meta": "Viernes 25 de septiembre · 11:00 AM · carrusel de 5 + historia",
+    "intro": "Material final, en el orden en que va el carrusel. Cada archivo se descarga en su calidad original.",
+    "grupos": [
+     {
+      "titulo": "Carrusel (en este orden)",
+      "tipo": "grid",
+      "columnas": 2,
+      "items": [
+       {
+        "etiqueta": "Portada con precios",
+        "medidas": "Imagen · 2430 × 3038",
+        "miniatura": "img/2026-10/ayote/thumb-portada-v2.jpg",
+        "archivo": "Ayote-en-miel-latte-1-portada.jpg",
+        "n": 1,
+        "hd": null
+       },
+       {
+        "etiqueta": "Video latte frío",
+        "medidas": "Video 4K · 2160 × 3840 · 6 s",
+        "miniatura": "img/2026-10/ayote/thumb-2-video-frio.jpg",
+        "archivo": "Ayote-en-miel-latte-2-video-frio.mp4",
+        "n": 2,
+        "video": true,
+        "hd": "https://github.com/rustikkaffe-ai/panel/releases/download/material-2026-10/Ayote-en-miel-latte-2-video-frio.mp4"
+       },
+       {
+        "etiqueta": "Video latte caliente",
+        "medidas": "Video 4K · 2160 × 3840 · 7.5 s",
+        "miniatura": "img/2026-10/ayote/thumb-3-video-caliente.jpg",
+        "archivo": "Ayote-en-miel-latte-3-video-caliente.mp4",
+        "n": 3,
+        "video": true,
+        "hd": "https://github.com/rustikkaffe-ai/panel/releases/download/material-2026-10/Ayote-en-miel-latte-3-video-caliente.mp4"
+       },
+       {
+        "etiqueta": "Textura del ayote en miel",
+        "medidas": "Imagen · 1080 × 1350",
+        "miniatura": "img/2026-10/ayote/thumb-4-textura.jpg",
+        "archivo": "Ayote-en-miel-latte-4-textura.png",
+        "n": 4,
+        "hd": null
+       },
+       {
+        "etiqueta": "Cierre con ilustración RK",
+        "medidas": "Imagen · 1080 × 1350",
+        "miniatura": "img/2026-10/ayote/thumb-5-cierre.jpg",
+        "archivo": "Ayote-en-miel-latte-5-cierre.png",
+        "n": 5,
+        "hd": null
+       }
+      ]
+     },
+     {
+      "titulo": "Historia",
+      "tipo": "historia",
+      "items": [
+       {
+        "etiqueta": "Versión historia",
+        "medidas": "Imagen · 2700 × 4800",
+        "miniatura": "img/2026-10/ayote/thumb-historia.jpg",
+        "archivo": "Ayote-en-miel-latte-historia.jpg",
+        "hd": null
+       }
+      ]
+     }
+    ]
+   },
+   "copy": "Menos pumpkin spice, más ayote. 🧡☕\nLlegó el Ayote en Miel Latte: caliente $4.00 · frío $4.50\nEn El Salvador no tenemos pumpkin spice… tenemos algo mejor: el ayote en miel de las moliendas. Ayote, dulce de atado y especias, convertidos en latte con nuestro café de especialidad.\nSabe a octubre, a casa de la abuela y a 2 de noviembre. 🍂\nSolo por temporada.\n📍 Barrio El Centro, Apopa · frente a Coplasa\n⏰ Todos los días desde las 8 am\n¿Lo pides caliente o frío? 👇\n#AyoteEnMiel #RustikApopa #CafeApopa",
+   "notas_html": "<div class=\"box pend\"><b>Antes de publicar:</b> como los videos son verticales (9:16) y la portada es 4:5, Instagram los recorta a 4:5 dentro del carrusel: revisar que el vaso quede centrado.</div>"
+  },
+  {
+   "id": "o02",
+   "fecha": "2026-09-25",
+   "tipo": "fecha",
+   "titulo": "Oppero: fotos para delivery",
+   "icono": "ayote",
+   "material": {
+    "titulo": "Fotos para Oppero",
+    "meta": "Viernes 25 de septiembre · subir hoy al menú de delivery",
+    "intro": "Fotos del Ayote en Miel Latte para el menú de delivery en Oppero, para que el producto esté disponible desde hoy. Se descargan en su calidad original.",
+    "grupos": [
+     {
+      "titulo": "Fotos del producto",
+      "tipo": "grid",
+      "columnas": 2,
+      "items": [
+       {
+        "etiqueta": "Ayote en Miel Latte caliente · $4.00",
+        "medidas": "Imagen · 1397 × 1126",
+        "miniatura": "img/2026-10/oppero/thumb-caliente.jpg",
+        "archivo": "Ayote-en-miel-latte-caliente-Oppero.png",
+        "hd": null
+       },
+       {
+        "etiqueta": "Ayote en Miel Latte frío · $4.50",
+        "medidas": "Imagen · 1086 × 1448",
+        "miniatura": "img/2026-10/oppero/thumb-frio.jpg",
+        "archivo": "Ayote-en-miel-latte-frio-Oppero.png",
+        "hd": null
+       }
+      ]
+     }
+    ]
+   },
+   "notas_html": "<div class=\"box pend\"><b>Al subirlas:</b> las dos fotos tienen formatos distintos (la caliente es horizontal y la fría vertical). Si Oppero recorta las fotos a un formato fijo, revisar que el vaso quede completo en la vista previa.</div>"
+  },
+  {
+   "id": "o03",
+   "fecha": "2026-09-30",
+   "tipo": "post",
+   "titulo": "Carrusel: Loncherita Rustik (Día del Niño)",
+   "icono": "lonchera",
+   "hora": "4:00 PM",
+   "material": {
+    "titulo": "Loncherita Rustik",
+    "meta": "Miércoles 30 de septiembre · 4:00 PM · carrusel de 3 videos + 3 historias",
+    "intro": "Material final, en el orden en que va el carrusel. Cada archivo se descarga en su calidad original.",
+    "grupos": [
+     {
+      "titulo": "Carrusel (en este orden)",
+      "tipo": "grid",
+      "columnas": 3,
+      "items": [
+       {
+        "etiqueta": "Loncherita Rustik · $6.50 + sticker",
+        "medidas": "Video · 2574 × 3218 · 11 s",
+        "miniatura": "img/2026-10/nino/thumb-post-1.jpg",
+        "archivo": "Loncherita-Rustik-1.mp4",
+        "n": 1,
+        "video": true,
+        "hd": null
+       },
+       {
+        "etiqueta": "Feliz Día del Niño",
+        "medidas": "Video · 2574 × 3218 · 3 s",
+        "miniatura": "img/2026-10/nino/thumb-post-2.jpg",
+        "archivo": "Loncherita-Rustik-2-feliz-dia.mp4",
+        "n": 2,
+        "video": true,
+        "hd": null
+       },
+       {
+        "etiqueta": "La Holy Alioli de cerca",
+        "medidas": "Video · 2574 × 3218 · 4 s · sin audio",
+        "miniatura": "img/2026-10/nino/thumb-post-3.jpg",
+        "archivo": "Loncherita-Rustik-3-holy-alioli.mp4",
+        "n": 3,
+        "video": true,
+        "hd": null
+       }
+      ]
+     },
+     {
+      "titulo": "Historias (con texto sugerido)",
+      "tipo": "historias",
+      "items": [
+       {
+        "etiqueta": "Historia 1 · Loncherita",
+        "medidas": "Video 4K · 2160 × 3840 · 11 s",
+        "miniatura": "img/2026-10/nino/thumb-historia-1.jpg",
+        "archivo": "Loncherita-Rustik-historia-1.mp4",
+        "n": 1,
+        "video": true,
+        "texto": "Mañana la Holy Alioli viene en loncherita 🎒 + sticker de cuenta regresiva «Día del Niño en Rustik»",
+        "cuando": "Miércoles 30, con el post",
+        "hd": null
+       },
+       {
+        "etiqueta": "Historia 2 · Feliz día",
+        "medidas": "Video 4K · 2160 × 3840 · 3 s",
+        "miniatura": "img/2026-10/nino/thumb-historia-2.jpg",
+        "archivo": "Loncherita-Rustik-historia-2.mp4",
+        "n": 2,
+        "video": true,
+        "texto": "Feliz día a todos los niños… incluido el que llevas dentro 🧡",
+        "cuando": "Jueves 1, 8:00 AM",
+        "hd": null
+       },
+       {
+        "etiqueta": "Historia 3 · La Holy Alioli",
+        "medidas": "Video 4K · 2160 × 3840 · 4 s",
+        "miniatura": "img/2026-10/nino/thumb-historia-3.jpg",
+        "archivo": "Loncherita-Rustik-historia-3.mp4",
+        "n": 3,
+        "video": true,
+        "texto": "$6.50 con sticker gratis. Pídela directo por WhatsApp 🛵 + sticker de enlace a WhatsApp",
+        "cuando": "Jueves 1, 11:30 AM",
+        "hd": null
+       }
+      ]
+     }
+    ]
+   },
+   "copy": "Crecimos… pero la lonchera nunca se nos olvidó. 🎒\nEste jueves 1 de octubre, Día del Niño, la burger del día viene en Loncherita Rustik:\n🍔 Holy Alioli smash: carne de res, queso americano, alioli de ajo, pepinillos y cebolla frita\n🎁 + un sticker de Rustik gratis\nTodo por $6.50.\nPorque el niño que llevas dentro también tiene hambre. 🧡\n📍 Barrio El Centro, Apopa · frente a Coplasa\n⏰ Jueves de 8 am a 8 pm\n🛵 También a domicilio: pídela directo por WhatsApp\n¿A quién le vas a invitar su loncherita? Etiquétalo 👇\n#DiaDelNiño #LoncheritaRustik #RustikApopa #BurgerDelDia",
+   "notas_html": "<div class=\"box pend\"><b>Antes de publicar:</b> confirmar que la loncherita también sale a domicilio; si no, borrar la línea del 🛵 del copy y cambiar el texto de la historia 3 por \"Solo hoy en Rustik\". El copy dice \"este jueves 1 de octubre\", así que sirve igual si el post sale el miércoles o el mismo jueves.</div>"
+  },
+  {
+   "id": "o04",
+   "fecha": "2026-10-01",
+   "tipo": "fecha",
+   "titulo": "Día del Niño",
+   "icono": "lonchera",
+   "grande": true,
+   "abre": "nino"
+  },
+  {
+   "id": "o05",
+   "fecha": "2026-10-01",
+   "tipo": "video",
+   "titulo": "Apopa Responde #1: antojo de niño",
+   "icono": "micro",
+   "hora": "11:00 AM",
+   "detalle_html": "<p class=\"hook\">\"Le preguntamos a Apopa qué antojo de niño todavía no se le quita.\"</p><p>Piloto de la serie <b>Apopa Responde</b>: misma tarjeta y micrófono, pregunta en pantalla. Charamuscas, dulce de leche, leche con chocolate... La respuesta más inesperada abre el video.</p><p><b>Cierre:</b> \"Crecimos, pero el antojo no se enteró.\" Pide que comenten el suyo. No menciona la promo.</p><div class=\"box pend\"><b>Grabar el 28 o 29 de septiembre</b> por el catering del día 1.</div>"
+  },
+  {
+   "id": "o06",
+   "fecha": "2026-10-02",
+   "tipo": "fecha",
+   "titulo": "Día Internacional del Café",
+   "icono": "taza",
+   "grande": true,
+   "abre": "cafe"
+  },
+  {
+   "id": "o07",
+   "fecha": "2026-10-02",
+   "tipo": "post",
+   "titulo": "Post: agranda tu café gratis",
+   "icono": "taza",
+   "hora": "11:00 AM",
+   "material": {
+    "titulo": "Día del Café: agranda tu café gratis",
+    "meta": "Viernes 2 de octubre · 11:00 AM · post de venta (video corto)",
+    "intro": "Post de venta del Día del Café. Se descarga en su calidad original.",
+    "grupos": [
+     {
+      "titulo": "Video del post",
+      "tipo": "grid",
+      "columnas": 3,
+      "items": [
+       {
+        "etiqueta": "Día del Café · agranda tu café gratis",
+        "medidas": "Video · 1080 × 1440 · 5 s · sin audio · 8 MB",
+        "miniatura": "img/2026-10/diacafe/thumb-dia-del-cafe.jpg",
+        "archivo": "Rustik-Dia-del-Cafe-agranda-tu-cafe.mp4",
+        "video": true,
+        "texto": "Viernes 2 a las 11:00 AM, en Instagram y Facebook (y TikTok con música)",
+        "cuando": "Hora recomendada",
+        "hd": "https://github.com/rustikkaffe-ai/panel/releases/download/material-2026-10/Rustik-Dia-del-Cafe-agranda-tu-cafe.mp4"
+       }
+      ]
+     }
+    ]
+   },
+   "copy": "Hoy tu café crece. Tu cuenta no. ☕\n\nFeliz Día Internacional del Café 🤎 Solo hoy, viernes 2 de octubre, agranda tu café GRATIS: pide cualquier café en tamaño chico y te lo damos en grande.\n\nCappuccino, latte (vainilla, caramelo, chocolate o menta), americano, flat white, frappé… el que quieras.\n\nTú pide el chico. Del resto nos encargamos nosotros. 😉\n\n📍 Barrio El Centro, Apopa · frente a Coplasa\n⏰ Hoy de 8 am a 9 pm\n\n¿Cuál vas a agrandar? Te leemos 👇\n\n#DiaInternacionalDelCafe #CafeApopa #RustikApopa",
+   "notas_html": "<div class=\"box\"><b>Por qué a las 11:00 AM:</b> es una promo de un solo día, así que tiene que salir temprano para que la gente alcance a venir. El video de \"lo que sí cambia tu café\" va a las 4:00 PM para no quitarse alcance.</div>\n      <div class=\"box pend\"><b>Antes de publicar:</b> el video no trae audio; ponle una canción tranquila desde la app al subirlo. El copy dice \"cualquier café\": confirma con el equipo que aplica a todo el bar de café (incluidos frappés y flat white) y si también va para pedidos a domicilio.</div>"
+  },
+  {
+   "id": "o08",
+   "fecha": "2026-10-02",
+   "tipo": "video",
+   "titulo": "Video: lo que sí cambia tu café",
+   "icono": "taza",
+   "hora": "4:00 PM",
+   "material": {
+    "titulo": "Lo que sí cambia tu café",
+    "meta": "Viernes 2 de octubre · Día del Café · 4:00 PM · video vertical (Reel y TikTok)",
+    "intro": "Video final del Día del Café. Se descarga en HD (1080 × 1920, 60 cuadros por segundo, 34 MB), lista para Instagram, TikTok y Facebook: tarda un poco más que los demás.",
+    "grupos": [
+     {
+      "titulo": "Video",
+      "tipo": "grid",
+      "columnas": 3,
+      "items": [
+       {
+        "etiqueta": "No cambia · cambia poco · cambia totalmente",
+        "medidas": "Video HD · 1080 × 1920 · 60 fps · 1 min 27 s · 34 MB",
+        "miniatura": "img/2026-10/cafe/thumb-video-cafe.jpg",
+        "archivo": "Rustik-Dia-del-Cafe-lo-que-cambia-tu-cafe.mp4",
+        "video": true,
+        "texto": "Viernes 2 a las 4:00 PM, en Instagram, TikTok y Facebook a la vez",
+        "cuando": "Hora recomendada",
+        "hd": null
+       }
+      ]
+     }
+    ]
+   },
+   "copy": "✍️ Escribe \"CAFÉ\" en comentarios y te contamos de dónde viene nuestro grano.\n\n¿Sabes por qué tu café de casa no sabe igual que el de tu cafetería favorita? ☕\n\nMucha gente cree que el secreto está en la máquina cara o en el vaso bonito, pero la realidad es que eso no cambia el sabor. Lo que de verdad se siente en la taza es el grano, qué tan fresco está el tostado y la mano de quien lo prepara.\n\nAprende a diferenciar entre:\n\n❌ No cambia nada: el vaso bonito, el nombre en italiano y la máquina cara.\n🟡 Cambia un poco: el molino, el agua y la leche.\n✅ Cambia totalmente: el grano y de dónde viene, el tostado reciente y la mano del barista.\n\nSi el café está mal, la leche solo lo esconde. La próxima vez que pidas uno, pregunta cuándo se tostó el grano: esa respuesta dice más que cualquier menú. 🔥\n\n✍️ Escribe \"CAFÉ\" en comentarios y te contamos de dónde viene nuestro grano.\n\n#DiaInternacionalDelCafe #CafeApopa #RustikApopa",
+   "notas_html": "<div class=\"box\"><b>Por qué a las 4:00 PM:</b> el post de venta del Día del Café (grande al precio del chico) sale a las 11:00 AM; si el video sale a la misma hora, se quitan alcance entre los dos. A las 4:00 PM es la hora del cafecito de la tarde y uno de los dos picos de Rustik. El copy pide comentar \"CAFÉ\": alguien tiene que responder cada comentario esa tarde y noche, porque eso es lo que empuja el video.</div>\n      <div class=\"box pend\"><b>Antes de publicar:</b> la tarjeta final del video dice <b>\"Venite a juzgar el nuestro\"</b>, que es voseo. Por la regla de marca debería decir <b>\"Ven a juzgar el nuestro\"</b>. Conviene corregirlo en la edición antes de subirlo.</div>\n      <div class=\"box pend\"><b>Para responder los comentarios:</b> tener lista la respuesta corta de \"CAFÉ\" (de dónde viene el grano y cada cuánto se tuesta). Este video toma el lugar de \"Así pide café tu mamá vs. tú\", que queda en reserva.</div>"
+  },
+  {
+   "id": "o09",
+   "fecha": "2026-10-03",
+   "tipo": "post",
+   "titulo": "Carrusel: donas de temporada",
+   "icono": "berlina",
+   "hora": "11:00 AM",
+   "material": {
+    "titulo": "Donas de temporada",
+    "meta": "Sábado 3 de octubre · 11:00 AM · carrusel de 3 + historia",
+    "intro": "Material final, en el orden en que va el carrusel. Cada archivo se descarga en su calidad original.",
+    "grupos": [
+     {
+      "titulo": "Carrusel (en este orden)",
+      "tipo": "grid",
+      "columnas": 3,
+      "items": [
+       {
+        "etiqueta": "Portada: donas de temporada con precios",
+        "medidas": "Imagen · 1080 × 1350",
+        "miniatura": "img/2026-10/donas/thumb-1.jpg",
+        "archivo": "Donas-de-temporada-1-portada.png",
+        "n": 1,
+        "hd": "https://github.com/rustikkaffe-ai/panel/releases/download/material-2026-10/Donas-de-temporada-1-portada.png"
+       },
+       {
+        "etiqueta": "Dona de caramelo y pecanas",
+        "medidas": "Imagen · 1080 × 1350",
+        "miniatura": "img/2026-10/donas/thumb-2-v2.jpg",
+        "archivo": "Donas-de-temporada-2-caramelo-pecanas.png",
+        "n": 2,
+        "hd": "https://github.com/rustikkaffe-ai/panel/releases/download/material-2026-10/Donas-de-temporada-2-caramelo-pecanas.png"
+       },
+       {
+        "etiqueta": "Berlina de zanahoria",
+        "medidas": "Imagen · 1080 × 1350",
+        "miniatura": "img/2026-10/donas/thumb-3.jpg",
+        "archivo": "Donas-de-temporada-3-berlina-zanahoria.png",
+        "n": 3,
+        "hd": "https://github.com/rustikkaffe-ai/panel/releases/download/material-2026-10/Donas-de-temporada-3-berlina-zanahoria.png"
+       }
+      ]
+     },
+     {
+      "titulo": "Historia",
+      "tipo": "historia",
+      "items": [
+       {
+        "etiqueta": "Historia: ¡Septiembre se fue, las donas no!",
+        "medidas": "Imagen · 1080 × 1920",
+        "miniatura": "img/2026-10/donas/thumb-historia.jpg",
+        "archivo": "Donas-de-temporada-historia.png",
+        "hd": "https://github.com/rustikkaffe-ai/panel/releases/download/material-2026-10/Donas-de-temporada-historia.png"
+       }
+      ]
+     }
+    ]
+   },
+   "copy": "El pastel se volvió berlina. 🥕🍩\n\nLlegaron las donas de temporada de octubre:\n\n🥕 Berlina de zanahoria · $3.25\nRellena de crema pastelera de zanahoria, con miga de carrot cake y buttercream.\n\n🍯 Dona de caramelo y pecanas · $2.50\nGlaseada con caramelo y crocante de pecanas.\n\nPídelas con tu Ayote en Miel Latte y ya tienes el combo de octubre. ☕\nSolo por temporada.\n\n📍 Barrio El Centro, Apopa · frente a Coplasa\n⏰ Domingo a jueves de 8 am a 8 pm · viernes y sábado hasta las 9 pm\n\n¿Team berlina o team dona? 👇\n\n#RustikApopa #CafeApopa",
+   "notas_html": "<div class=\"box pend\"><b>Ojo:</b> el sábado tiene menos alcance. Si no se le pone pauta, conviene repostearlo en historias el lunes.</div>"
+  },
+  {
+   "id": "o10",
+   "fecha": "2026-10-03",
+   "tipo": "fecha",
+   "titulo": "Oppero: fotos de las donas",
+   "icono": "dona",
+   "material": {
+    "titulo": "Fotos de las donas para Oppero",
+    "meta": "Sábado 3 de octubre · subir al menú de delivery",
+    "intro": "Fotos de producto de las donas de temporada para el menú de delivery en Oppero. Se descargan tal cual, en su calidad original.",
+    "grupos": [
+     {
+      "titulo": "Fotos del producto",
+      "tipo": "grid",
+      "columnas": 2,
+      "items": [
+       {
+        "etiqueta": "Dona de caramelo y pecanas · $2.50",
+        "medidas": "Imagen · 1080 × 1350",
+        "miniatura": "img/2026-10/oppero/thumb-dona-caramelo-pecanas.jpg",
+        "archivo": "Dona-caramelo-y-pecanas-Oppero.png",
+        "hd": "https://github.com/rustikkaffe-ai/panel/releases/download/material-2026-10/Dona-caramelo-y-pecanas-Oppero.png"
+       },
+       {
+        "etiqueta": "Berlina de zanahoria · $3.25",
+        "medidas": "Imagen · 1080 × 1350",
+        "miniatura": "img/2026-10/oppero/thumb-berlina-zanahoria.jpg",
+        "archivo": "Berlina-de-zanahoria-Oppero.png",
+        "hd": "https://github.com/rustikkaffe-ai/panel/releases/download/material-2026-10/Berlina-de-zanahoria-Oppero.png"
+       }
+      ]
+     }
+    ]
+   },
+   "notas_html": "<div class=\"box pend\"><b>Al subirlas:</b> en la descripción de Oppero usar la misma de los posts. Dona: \"Glaseada con caramelo y crocante de pecanas\". Berlina: \"Rellena con crema pastelera de zanahoria, miga de carrot cake y buttercream\".</div>"
+  },
+  {
+   "id": "o11",
+   "fecha": "2026-10-06",
+   "tipo": "video",
+   "titulo": "Por qué tu café de casa sabe amargo",
+   "icono": "lupa",
+   "hora": "11:00 AM",
+   "detalle_html": "<p class=\"hook\">\"Si el café de tu casa sabe amargo, casi seguro es por esto.\"</p><p>Problema + diagrama: agua hirviendo, molienda, café viejo, horas en el termo. Lo explica el barista.</p><p><b>Cierre:</b> \"El café no es amargo. Lo quemamos nosotros.\" Pide que lo guarden.</p>"
+  },
+  {
+   "id": "o12",
+   "fecha": "2026-10-08",
+   "tipo": "video",
+   "titulo": "Apopa Responde #2: ¿cuánto pagarías por una hamburguesa?",
+   "icono": "burger",
+   "hora": "4:00 PM",
+   "detalle_html": "<p class=\"hook\">\"Le preguntamos a Apopa cuánto es lo máximo que pagaría por una hamburguesa.\"</p><p>El precio es de lo que más se discute en los comentarios. Aquí no se defiende: se deja que la calle debata. No se mencionan precios de Rustik ni otros negocios.</p>"
+  },
+  {
+   "id": "o13",
+   "fecha": "2026-10-10",
+   "tipo": "post",
+   "titulo": "Carrusel: Caja de Donas 3x2",
+   "icono": "caja",
+   "hora": "11:00 AM",
+   "material": {
+    "titulo": "Caja de Donas 3x2",
+    "meta": "Sábado 10 de octubre · 11:00 AM · carrusel de 4 videos + historia",
+    "intro": "Material final, en el orden en que va el carrusel: 4 videos cortos sin audio, más la historia en HD. Cada archivo se descarga en su calidad original.",
+    "grupos": [
+     {
+      "titulo": "Carrusel (en este orden)",
+      "tipo": "grid",
+      "columnas": 2,
+      "items": [
+       {
+        "etiqueta": "Portada: Caja de Donas 3x2 · $10.99",
+        "medidas": "Video · 2574 × 3218 · 5 s · sin audio",
+        "miniatura": "img/2026-10/caja2/thumb-1.jpg",
+        "archivo": "Caja-de-Donas-3x2-1-portada.mp4",
+        "n": 1,
+        "video": true,
+        "hd": null
+       },
+       {
+        "etiqueta": "Caramelo y pecanas",
+        "medidas": "Video · 2574 × 3218 · 5.6 s · sin audio",
+        "miniatura": "img/2026-10/caja2/thumb-2.jpg",
+        "archivo": "Caja-de-Donas-3x2-2-caramelo-pecanas.mp4",
+        "n": 2,
+        "video": true,
+        "hd": null
+       },
+       {
+        "etiqueta": "Berlina de zanahoria",
+        "medidas": "Video · 2574 × 3218 · 6 s · sin audio",
+        "miniatura": "img/2026-10/caja2/thumb-3.jpg",
+        "archivo": "Caja-de-Donas-3x2-3-berlina-zanahoria.mp4",
+        "n": 3,
+        "video": true,
+        "hd": null
+       },
+       {
+        "etiqueta": "Cheesecake & arándanos",
+        "medidas": "Video · 2574 × 3218 · 5.8 s · sin audio",
+        "miniatura": "img/2026-10/caja2/thumb-4.jpg",
+        "archivo": "Caja-de-Donas-3x2-4-cheesecake-arandanos.mp4",
+        "n": 4,
+        "video": true,
+        "hd": null
+       }
+      ]
+     },
+     {
+      "titulo": "Historia",
+      "tipo": "historia",
+      "items": [
+       {
+        "etiqueta": "Historia: Caja de Donas 3x2 · $10.99",
+        "medidas": "Imagen HD · 3105 × 5520 (9:16) · 3 MB",
+        "miniatura": "img/2026-10/caja2/thumb-historia.jpg",
+        "archivo": "Caja-de-Donas-3x2-historia.jpg",
+        "hd": null
+       }
+      ]
+     }
+    ]
+   },
+   "copy": "No se fueron. Se renovaron. 🍩\n\nLa Caja de Donas 3x2 se queda, ahora con las nuevas donas de temporada:\n\n🍯 Caramelo y pecanas\nGlaseada con caramelo y crocante de pecanas.\n\n🥕 Berlina de zanahoria\nRellena con crema pastelera de zanahoria, miga de carrot cake y buttercream.\n\n🫐 Cheesecake & arándanos\nGlaseada con cream cheese y compota de arándanos.\n\nCaja de Donas 3x2 por $10.99. Para compartir… o no. 😉\n\n🛵 También a domicilio: pídela directo por WhatsApp\n📍 Barrio El Centro, Apopa · frente a Coplasa\n⏰ Domingo a jueves de 8 am a 8 pm · viernes y sábado hasta las 9 pm\n\n¿Cuál te comes primero? 👇\n\n#RustikApopa #CafeApopa",
+   "notas_html": "<div class=\"box pend\"><b>Antes de publicar:</b> el video 2 sigue diciendo <b>\"GLASEADA CON CON CARAMELO\"</b> (el \"con\" va repetido). Debe decir \"Glaseada con caramelo y crocante de pecanas\".</div>\n      <div class=\"box pend\"><b>Al subirlo:</b> los videos no traen audio; ponle una canción desde la app. Son 2574 × 3218 (4:5), así que entran completos en el carrusel sin recorte.</div>\n      <div class=\"box\"><b>Por qué sábado a las 11:00 AM:</b> el sábado tiene menos alcance, pero la caja es para compartir el fin de semana. Conviene promocionarla desde la app de Instagram de sábado a lunes: el 3x2 de donas fue lo que más seguidores trajo en septiembre (512 con $59.93).</div>\n      <div class=\"box pend\"><b>Confirmar:</b> cuántas donas trae la caja de $10.99, si se pueden mezclar sabores y que el 3x2 aplique a domicilio.</div>"
+  },
+  {
+   "id": "o14",
+   "fecha": "2026-10-13",
+   "tipo": "video",
+   "titulo": "Ranking del pan dulce salvadoreño",
+   "icono": "ranking",
+   "hora": "11:00 AM",
+   "detalle_html": "<p class=\"hook\">\"Este ranking de pan dulce va a hacer enojar a tu abuela.\"</p><p>Salpores, semita, quesadilla, marquesote, torta de yema... con la lista en pantalla. Los productos de Rustik no entran. Pide que digan cuál pondrían en el número uno.</p>"
+  },
+  {
+   "id": "o15",
+   "fecha": "2026-10-15",
+   "tipo": "video",
+   "titulo": "Pan recién horneado a los vecinos",
+   "icono": "pan",
+   "hora": "4:00 PM",
+   "detalle_html": "<p class=\"hook\">\"Salimos a las 3 de la tarde con pan recién horneado a ver qué pasaba.\"</p><p>El equipo regala pan de banano a trabajadores de negocios vecinos (con permiso). Reacciones reales. \"El pan recién hecho arregla cualquier tarde.\"</p>"
+  },
+  {
+   "id": "o16",
+   "fecha": "2026-10-17",
+   "tipo": "post",
+   "titulo": "Carrusel: primera invitación a la fiesta",
+   "icono": "sobre",
+   "hora": "11:00 AM",
+   "material": {
+    "titulo": "Sustos que dan gusto: primera invitación",
+    "meta": "Sábado 17 de octubre · 11:00 AM · carrusel de 4 imágenes + 1 video",
+    "intro": "Material final, en el orden en que va el carrusel. Las imágenes van en 1080 × 1350 y el video en 1080 × 1350 con audio, listos para Instagram y Facebook.",
+    "grupos": [
+     {
+      "titulo": "Carrusel (en este orden)",
+      "tipo": "grid",
+      "columnas": 3,
+      "items": [
+       {
+        "etiqueta": "Portada: Sustos que dan gusto",
+        "medidas": "Imagen · 1080 × 1350",
+        "miniatura": "img/2026-10/fiesta/thumb-1.jpg",
+        "archivo": "Sustos-que-dan-gusto-1-portada.jpg",
+        "n": 1,
+        "hd": null
+       },
+       {
+        "etiqueta": "Trivia de películas y series",
+        "medidas": "Imagen · 1080 × 1350",
+        "miniatura": "img/2026-10/fiesta/thumb-2.jpg",
+        "archivo": "Sustos-que-dan-gusto-2-trivia.jpg",
+        "n": 2,
+        "hd": null
+       },
+       {
+        "etiqueta": "DJ en vivo",
+        "medidas": "Imagen · 1080 × 1350",
+        "miniatura": "img/2026-10/fiesta/thumb-3.jpg",
+        "archivo": "Sustos-que-dan-gusto-3-dj.jpg",
+        "n": 3,
+        "hd": null
+       },
+       {
+        "etiqueta": "Concurso de disfraces",
+        "medidas": "Video · 1080 × 1350 · 17 s · con audio",
+        "miniatura": "img/2026-10/fiesta/thumb-4.jpg",
+        "archivo": "Sustos-que-dan-gusto-4-concurso.mp4",
+        "n": 4,
+        "video": true,
+        "hd": null
+       },
+       {
+        "etiqueta": "Menú especial",
+        "medidas": "Imagen · 1080 × 1350",
+        "miniatura": "img/2026-10/fiesta/thumb-5.jpg",
+        "archivo": "Sustos-que-dan-gusto-5-menu.jpg",
+        "n": 5,
+        "hd": null
+       }
+      ]
+     }
+    ]
+   },
+   "copy": "Sustos que dan gusto 🦇\nEste 31 no vengas a pasar miedo. Ven a pasar sabroso.\n\n🎧 DJ en vivo toda la noche\n🎭 Concurso de disfraces: premios para el mejor traje individual y en pareja, hasta $35 en consumo. Gana el que más aplausos se lleve con su performance.\n🎬 Trivia de películas y series desde tu celular, con ranking en pantalla grande\n🍔 Menú especial: hamburguesas riquísimas y sorpresas que solo vas a encontrar esa noche\n\n📅 Sábado 31 de octubre · desde las 7 pm\n🎟️ Entrada gratis\n📍 Barrio El Centro, Apopa · frente a Coplasa\n\n¿Te sabes la respuesta de la trivia? Déjala en los comentarios 👇 y el 31 ven a demostrarlo.\n\n#RustikApopa",
+   "notas_html": "<div class=\"box pend\"><b>Antes de publicar, el texto de dos láminas va en vos y la marca habla de tú:</b> en la 2 dice \"¿Te creés fan…? Probalo\" y \"Traé a tus amigos\" (debería ser \"¿Te crees fan…? Pruébalo\" y \"Trae a tus amigos\"); en la 3 dice \"Vos solo traé las ganas de bailar\" (debería ser \"Tú solo trae las ganas de bailar\"). En la portada, \"Dj\" va como \"DJ\".</div>\n      <div class=\"box\"><b>Para que comenten:</b> la pregunta de Bob Esponja de la lámina 2 es el gancho. Responde los primeros comentarios con un \"¿seguro? 👀\" sin dar la respuesta, para que la conversación siga.</div>\n      <div class=\"box pend\"><b>Ojo:</b> la invitación no se pauta y el sábado tiene menos alcance. Conviene fijarla en el perfil y compartirla en historias el mismo día.</div>"
+  },
+  {
+   "id": "o17",
+   "fecha": "2026-10-18",
+   "tipo": "hist",
+   "titulo": "Historias: recordar la fiesta (del 18 al 31)",
+   "icono": "lapida",
+   "material": {
+    "titulo": "Historias para recordar la fiesta",
+    "meta": "Del domingo 18 al sábado 31 · 3 imágenes + 1 video · 9:16",
+    "intro": "Historias para ir recordando la fiesta del 31 hasta ese día. Se descargan en HD. Abajo de cada una va el día sugerido y qué sticker ponerle; se pueden repetir.",
+    "grupos": [
+     {
+      "titulo": "Historias (con día y sticker sugerido)",
+      "tipo": "historias",
+      "items": [
+       {
+        "etiqueta": "Afiche de la fiesta",
+        "medidas": "Imagen HD · 3105 × 5520",
+        "miniatura": "img/2026-10/fhist/thumb-1.jpg",
+        "archivo": "Sustos-que-dan-gusto-historia-1-afiche.jpg",
+        "n": 1,
+        "texto": "Sticker de cuenta regresiva «Sustos que dan gusto · 31 oct» (la gente puede activar el recordatorio)",
+        "cuando": "Domingo 18 y viernes 30",
+        "hd": "https://github.com/rustikkaffe-ai/panel/releases/download/material-2026-10/Sustos-que-dan-gusto-historia-1-afiche.jpg"
+       },
+       {
+        "etiqueta": "Trivia de películas y series",
+        "medidas": "Imagen HD · 3105 × 5520",
+        "miniatura": "img/2026-10/fhist/thumb-2.jpg",
+        "archivo": "Sustos-que-dan-gusto-historia-2-trivia.jpg",
+        "n": 2,
+        "texto": "Sticker de encuesta con la pregunta de Bob Esponja: A, B, C o D. La respuesta se da el 31 en la trivia",
+        "cuando": "Martes 20 y jueves 29",
+        "hd": "https://github.com/rustikkaffe-ai/panel/releases/download/material-2026-10/Sustos-que-dan-gusto-historia-2-trivia.jpg"
+       },
+       {
+        "etiqueta": "DJ en vivo",
+        "medidas": "Imagen HD · 3105 × 5520",
+        "miniatura": "img/2026-10/fhist/thumb-3.jpg",
+        "archivo": "Sustos-que-dan-gusto-historia-3-dj.jpg",
+        "n": 3,
+        "texto": "Sticker de pregunta: «¿Qué canción no puede faltar el 31?» y pasarle las respuestas al DJ",
+        "cuando": "Jueves 22 y sábado 31 al mediodía",
+        "hd": "https://github.com/rustikkaffe-ai/panel/releases/download/material-2026-10/Sustos-que-dan-gusto-historia-3-dj.jpg"
+       },
+       {
+        "etiqueta": "Concurso de disfraces (video)",
+        "medidas": "Video · 1080 × 1920 · 17 s · con audio",
+        "miniatura": "img/2026-10/fhist/thumb-4.jpg",
+        "archivo": "Sustos-que-dan-gusto-historia-4-concurso.mp4",
+        "n": 4,
+        "video": true,
+        "texto": "«¿Ya tienes tu disfraz? Hasta $35 en consumo para los mejores» + sticker de cuenta regresiva",
+        "cuando": "Lunes 26 y miércoles 28",
+        "hd": null
+       }
+      ]
+     }
+    ]
+   },
+   "notas_html": "<div class=\"box pend\"><b>Antes de publicar:</b> la historia 2 dice \"¿Te creés fan…? Probalo\" y \"Traé a tus amigos\", y la 3 dice \"Vos solo traé las ganas de bailar\": van en vos y la marca habla de tú (\"¿Te crees fan…? Pruébalo\", \"Trae a tus amigos\", \"Tú solo trae las ganas de bailar\"). En la 1, \"Dj\" va como \"DJ\".</div>\n      <div class=\"box\"><b>Para no saturar:</b> del viernes 23 al domingo 25 las historias son del Oktobeerfest; esos días mejor no subir de la fiesta. Una historia de la fiesta por día es suficiente, y el 31 se puede subir todo.</div>"
+  },
+  {
+   "id": "o18",
+   "fecha": "2026-10-20",
+   "tipo": "video",
+   "titulo": "Refuerzo: repetir lo que mejor funcionó",
+   "icono": "rebote",
+   "hora": "11:00 AM",
+   "detalle_html": "<p>Cuando algo funciona, se repite el formato. El 16 y 17 se revisan los primeros 6 videos y se repite el ganador:</p><ul class=\"bullets\"><li>Apopa Responde: \"¿Cuál es la comida más sobrevalorada?\"</li><li>Ranking: \"Lo que vendían en la tienda de la escuela\"</li><li>Problema + diagrama: \"Por qué tus papas quedan aguadas\"</li><li>Comparación: \"Cómo come una smash tu papá vs. tú\"</li></ul>"
+  },
+  {
+   "id": "o19",
+   "fecha": "2026-10-21",
+   "tipo": "post",
+   "titulo": "Afiche: Oktobeerfest Rustik 🍻",
+   "icono": "cerveza",
+   "hora": "4:00 PM",
+   "material": {
+    "titulo": "Oktobeerfest Rustik: afiche",
+    "meta": "Miércoles 21 de octubre · 4:00 PM · post de venta (imagen 4:5)",
+    "intro": "Afiche final del Oktobeerfest. Se descarga en HD, listo para Instagram, Facebook y TikTok (en TikTok como foto con música).",
+    "grupos": [
+     {
+      "titulo": "Afiche",
+      "tipo": "grid",
+      "columnas": 2,
+      "items": [
+       {
+        "etiqueta": "Regia a cora · 2 Regia Chola por $6",
+        "medidas": "Imagen HD · 3375 × 4219 (4:5) · 4 MB",
+        "miniatura": "img/2026-10/okt/thumb-afiche.jpg",
+        "archivo": "Oktobeerfest-Rustik-afiche.jpg",
+        "texto": "Miércoles 21 a las 4:00 PM, en Instagram, Facebook y TikTok a la vez; fijarlo en el perfil hasta el domingo 25",
+        "cuando": "Hora recomendada",
+        "hd": null
+       }
+      ]
+     }
+    ]
+   },
+   "copy": "Oktobeerfest Rustik 🍻\nCerveza. Burgers. Buena vibra.\n\nAllá lo celebran con cerveza alemana. Aquí, con Regia.\n\n🍔 Regia a cora: pide cualquier burger smash, agrega una cora ($0.25) y te llevas una Regia en lata.\n🍺 ¿Todavía tienes sed? Llévate 2 Regia Chola por $6.\n\n📅 Viernes 23, sábado 24 y domingo 25 de octubre\n📍 Barrio El Centro, Apopa · frente a Coplasa\n⏰ Viernes y sábado hasta las 9 pm · domingo hasta las 8 pm\n\n¿Con quién te las tomas? Etiquétalo 👇\n\nSolo para mayores de 18 años. Disfruta con responsabilidad.\n\n#RustikApopa",
+   "notas_html": "<div class=\"box pend\"><b>Antes de publicar, corregir en el arte:</b> \"PEDÍ CUALQUIER BURGER\" y \"¿TENES SED TODAVÍA?\" van en vos; la marca habla de tú: \"PIDE CUALQUIER BURGER\" y \"¿TODAVÍA TIENES SED?\". Arriba a la derecha dice solo \"Sábado 24 · Domingo 25\", pero la promo arranca el viernes 23 (abajo sí lo dice): agregar el viernes o quitar esas fechas de arriba. Arriba a la izquierda se ve texto fantasma muy tenue: borrarlo.</div>\n      <div class=\"box\"><b>Durante el fin de semana:</b> una historia cada día del 23 al 25 con el afiche o las Regias en la mesa: \"Hoy sigue el Oktobeerfest\". Esos días no se suben historias de la fiesta.</div>\n      <div class=\"box pend\"><b>Pendiente:</b> si aplica a domicilio, si la cora va con cualquier burger (incluida la burger del día) y si hay límite por persona. Si se pauta, el anuncio de cerveza debe ir solo a mayores de 18 años.</div>"
+  },
+  {
+   "id": "o20",
+   "fecha": "2026-10-22",
+   "tipo": "post",
+   "titulo": "Video: Oktobeerfest, una Regia por una cora (guion)",
+   "icono": "cerveza",
+   "material": {
+    "titulo": "Oktobeerfest: guion del video",
+    "meta": "Jueves 22 de octubre · grabar y publicar · video vertical (Reel y TikTok) · ~33 s",
+    "intro": "Guion del video de invitación al Oktobeerfest, en PDF para tenerlo en el celular mientras se graba: el cuadro completo (lo que se dice, lo que se ve y el texto en pantalla), la canción con 3 que están subiendo, 2 ganchos de repuesto, la lista de tomas por lugar y el prompt para el kit editor de video (al final).",
+    "grupos": [
+     {
+      "titulo": "Guion en PDF",
+      "tipo": "grid",
+      "columnas": 3,
+      "items": [
+       {
+        "etiqueta": "Guion: una Regia por una cora",
+        "medidas": "PDF · 6 páginas · 258 KB",
+        "miniatura": "img/2026-10/okt/thumb-guion.jpg",
+        "archivo": "Rustik-guion-Oktobeerfest.pdf",
+        "texto": "«¿Una Regia por una cora en Apopa? Sí, en 2026.» Con la cora frente a la cámara y la Regia detrás.",
+        "cuando": "Gancho",
+        "hd": "https://github.com/rustikkaffe-ai/panel/releases/download/material-2026-10/Rustik-guion-Oktobeerfest.pdf"
+       }
+      ]
+     }
+    ]
+   },
+   "copy": "¿Una Regia por una cora? 🍺🍔 Este viernes 23, sábado 24 y domingo 25 de octubre celebramos el Oktoberfest a lo salvadoreño en Rustik, Apopa. Pedí cualquier burger y por $0.25 más te llevás una Regia en lata (una por burger). ¿Todavía con sed? 2 Regia Chola por $6. Todo el día, con nuestro horario de siempre. 📍 Frente a Coplasa, Apopa, con parqueo anexo. Promo de cerveza solo para mayores de 18 años. Mandáselo a quien te debe una cerveza. #hamburguesasenapopa #apopa #oktoberfest #elsalvador",
+   "notas_html": "<div class=\"box\"><b>El viral que copiamos:</b> <a href=\"https://www.tiktok.com/@burgerco.ok/video/7573033779619433749\" target=\"_blank\" rel=\"noopener\" style=\"color:var(--vino);font-weight:700;text-decoration:underline;word-break:break-all\">@burgerco.ok ↗</a>, 1.300.000 vistas, 485 veces lo normal de su cuenta. Se copia la mecánica (el precio que nadie se cree, con la moneda en la mano), no sus frases.</div>\n      <div class=\"box\"><b>Datos confirmados por Fátima (21 de octubre):</b> la cora va con cualquier burger, una Regia en lata a $0.25 por cada burger; las 2 Regia Chola por $6 las puede pedir cualquiera; las dos promos valen todo el día los tres días, con el horario normal.</div>\n      <div class=\"box pend\"><b>Ojo con el tono:</b> el guion y su copy van en vos (\"pedí\", \"te llevás\"), como los virales de Rustik, por decisión de Fátima del 21 de octubre. El resto de los copies del calendario va de tú.</div>\n      <div class=\"box pend\"><b>Hora:</b> ese día a las 4:00 PM ya sale Apopa Responde; mejor no publicar los dos a la misma hora.</div>\n      <div class=\"box\"><b>Canción (se pone en la app al subir):</b> <a href=\"https://www.tiktok.com/music/energetic-funk01-7377872797429516327\" target=\"_blank\" rel=\"noopener\" style=\"color:var(--vino);font-weight:700;text-decoration:underline\">Energetic Funk01 · Neon Light ↗</a>, al 15-20 %: la usan las promos virales con precio de @kim_zuniga. Tres que están subiendo (top semanal de sonidos de TikTok en EE. UU., 9-15 oct): <a href=\"https://www.tiktok.com/music/bby-wow-7671025696630409233\" target=\"_blank\" rel=\"noopener\" style=\"color:var(--vino);font-weight:700;text-decoration:underline\">BbY WOW · Karol G ↗</a> (puesto 7), <a href=\"https://www.tiktok.com/music/bow-bow-bow-7683550930130257937\" target=\"_blank\" rel=\"noopener\" style=\"color:var(--vino);font-weight:700;text-decoration:underline\">Bow Bow Bow · Zeddy Will ↗</a> (puesto 10) y <a href=\"https://www.tiktok.com/music/coming-up-roses-7613798254214187009\" target=\"_blank\" rel=\"noopener\" style=\"color:var(--vino);font-weight:700;text-decoration:underline\">Coming Up Roses · Harry Styles ↗</a> (puesto 1).</div>\n      <div class=\"box\"><b>Para editarlo:</b> el prompt para el kit editor de video está al final del PDF (subtítulos de tamaño 90 con la palabra activa en amarillo, rótulos con el precio y las fechas, 3 zooms y efectos). Se copia y se pega con el video grabado.</div>"
+  },
+  {
+   "id": "o21",
+   "fecha": "2026-10-22",
+   "tipo": "video",
+   "titulo": "Apopa Responde: la leyenda que te contaban",
+   "icono": "micro",
+   "hora": "4:00 PM",
+   "detalle_html": "<p class=\"hook\">\"Le preguntamos a Apopa qué leyenda le contaban para que se portara bien.\"</p><p>Siguanaba, Cipitío, Cadejo, Llorona, el viejo del costal. Calienta la fiesta sin venderla. \"Nos criaron a punta de sustos... y salimos bien (más o menos).\"</p>"
+  },
+  {
+   "id": "o22",
+   "fecha": "2026-10-23",
+   "tipo": "fecha",
+   "titulo": "Oktobeerfest: burger + una cora = Regia · 2 Chola por $6",
+   "icono": "cerveza",
+   "grande": true,
+   "abre": "oktober"
+  },
+  {
+   "id": "o23",
+   "fecha": "2026-10-23",
+   "tipo": "post",
+   "titulo": "Video final: una Regia por una cora",
+   "icono": "cerveza",
+   "material": {
+    "titulo": "Oktobeerfest: video final",
+    "meta": "Viernes 23 de octubre · publicar hoy · video vertical (Reel y TikTok) · 26 s",
+    "intro": "Video final del Oktobeerfest («una Regia por una cora»), en su calidad original: 1080 × 1920, 60 cuadros por segundo, con audio, 34 MB. Se descarga en un solo archivo; tarda un poco más que los demás.",
+    "grupos": [
+     {
+      "titulo": "Video",
+      "tipo": "grid",
+      "columnas": 3,
+      "items": [
+       {
+        "etiqueta": "Una Regia por una cora",
+        "medidas": "Video HD · 1080 × 1920 · 60 fps · 26 s · con audio · 34 MB",
+        "miniatura": "img/2026-10/oktv/thumb.jpg",
+        "archivo": "Rustik-Oktobeerfest-una-Regia-por-una-cora.mp4",
+        "video": true,
+        "texto": "Hoy viernes 23, en Instagram (Reel), TikTok y Facebook a la vez; compartirlo en historias el sábado y el domingo",
+        "cuando": "Cuándo",
+        "hd": "https://github.com/rustikkaffe-ai/panel/releases/download/material-2026-10/Rustik-Oktobeerfest-una-Regia-por-una-cora.mp4"
+       }
+      ]
+     }
+    ]
+   },
+   "copy": "¿Una Regia por una cora? 🍺🍔 Este viernes 23, sábado 24 y domingo 25 de octubre celebramos el Oktoberfest a lo salvadoreño en Rustik, Apopa. Pedí cualquier burger y por $0.25 más te llevás una Regia en lata (una por burger). ¿Todavía con sed? 2 Regia Chola por $6. Todo el día, con nuestro horario de siempre. 📍 Frente a Coplasa, Apopa, con parqueo anexo. Promo de cerveza solo para mayores de 18 años. Mandáselo a quien te debe una cerveza. #hamburguesasenapopa #apopa #oktoberfest #elsalvador",
+   "notas_html": "<div class=\"box\"><b>Copy:</b> es el mismo del guion, en vos por decisión de Fátima del 21 de octubre, como los virales de Rustik.</div>\n      <div class=\"box pend\"><b>Antes de subirlo:</b> esta versión no trae texto en pantalla. Si no se le pusieron subtítulos en la edición, agrégale desde la app un rótulo con «$0.25 + cualquier burger = Regia en lata» y «Vie 23, sáb 24 y dom 25», para que se entienda sin audio.</div>\n      <div class=\"box pend\"><b>Si se promociona:</b> solo para mayores de 18 años (es anuncio de cerveza) y se arma hoy mismo, porque Meta revisa más lento estos anuncios.</div>"
+  },
+  {
+   "id": "o24",
+   "fecha": "2026-10-23",
+   "tipo": "post",
+   "titulo": "Carrusel: pan de muerto",
+   "icono": "pan",
+   "material": {
+    "titulo": "Pan de muerto",
+    "meta": "Viernes 23 de octubre · post de venta · carrusel de 4 imágenes (4:5)",
+    "intro": "Material final, en el orden en que va el carrusel. Imágenes en 1620 × 2025 (4:5), listas para Instagram y Facebook.",
+    "grupos": [
+     {
+      "titulo": "Carrusel (en este orden)",
+      "tipo": "grid",
+      "columnas": 3,
+      "items": [
+       {
+        "etiqueta": "Portada: Pan de Muerto",
+        "medidas": "Imagen · 1620 × 2025",
+        "miniatura": "img/2026-10/pan/thumb-1.jpg",
+        "archivo": "Pan-de-muerto-1-portada.jpg",
+        "n": 1,
+        "hd": null
+       },
+       {
+        "etiqueta": "Tradicional · $2.00",
+        "medidas": "Imagen · 1620 × 2025",
+        "miniatura": "img/2026-10/pan/thumb-2.jpg",
+        "archivo": "Pan-de-muerto-2-tradicional.jpg",
+        "n": 2,
+        "hd": null
+       },
+       {
+        "etiqueta": "Nutella · $2.75",
+        "medidas": "Imagen · 1620 × 2025",
+        "miniatura": "img/2026-10/pan/thumb-3.jpg",
+        "archivo": "Pan-de-muerto-3-nutella.jpg",
+        "n": 3,
+        "hd": null
+       },
+       {
+        "etiqueta": "Guayaba & queso · $2.75",
+        "medidas": "Imagen · 1620 × 2025",
+        "miniatura": "img/2026-10/pan/thumb-4.jpg",
+        "archivo": "Pan-de-muerto-4-guayaba-queso.jpg",
+        "n": 4,
+        "hd": null
+       }
+      ]
+     }
+    ]
+   },
+   "copy": "Llegó el pan de muerto a Rustik 🕯️🍞\n\nPara recordar con cariño a los que ya no están… y compartirlo con los que sí.\n\n🍞 Tradicional · $2.00\n🍫 Nutella · $2.75\n🧀 Guayaba & queso · $2.75\n\nPídelo con tu café o con tu Ayote en Miel Latte y ya tienes la tarde resuelta. ☕\nSolo por temporada.\n\n📍 Barrio El Centro, Apopa · frente a Coplasa\n⏰ Domingo a jueves de 8 am a 8 pm · viernes y sábado hasta las 9 pm\n\n¿Cuál te llevas: tradicional, Nutella o guayaba con queso? 👇\n\n#RustikApopa #CafeApopa",
+   "notas_html": "<div class=\"box\"><b>Para no taparse:</b> hoy también sale el video del Oktobeerfest. Mejor separarlos: el pan en la mañana (con el café) y el video en la tarde, o al revés, pero no a la misma hora.</div>\n      <div class=\"box pend\"><b>Confirmar:</b> hasta qué día hay pan de muerto y si sale a domicilio. Si va a domicilio, agrega al copy \"🛵 También a domicilio: pídelo directo por WhatsApp\".</div>"
+  },
+  {
+   "id": "o25",
+   "fecha": "2026-10-24",
+   "tipo": "fecha",
+   "titulo": "Oktobeerfest: burger + una cora = Regia · 2 Chola por $6",
+   "icono": "cerveza",
+   "abre": "oktober"
+  },
+  {
+   "id": "o26",
+   "fecha": "2026-10-25",
+   "tipo": "fecha",
+   "titulo": "Oktobeerfest: último día de las promos",
+   "icono": "cerveza",
+   "abre": "oktober"
+  },
+  {
+   "id": "o27",
+   "fecha": "2026-10-25",
+   "tipo": "post",
+   "titulo": "Post: segunda invitación a la fiesta",
+   "icono": "sobre",
+   "hora": "11:00 AM",
+   "detalle_html": "<p class=\"hook\">Sustos que dan gusto: \"Falta una semana.\"</p><p>Distinta a la primera invitación: presenta lo que va a haber. DJ en vivo, la trivia de películas (se juega desde el celular) y el concurso de trajes individual y en pareja, con sus premios. La logística (horario, reglas del concurso y menú) queda para el post del miércoles 28.</p><div class=\"box pend\"><b>Ojo:</b> es domingo, el día de menos alcance, y la invitación no se pauta: conviene fijarla en el perfil. Ese día también cierra el Oktobeerfest.</div>"
+  },
+  {
+   "id": "o28",
+   "fecha": "2026-10-26",
+   "tipo": "post",
+   "titulo": "Video: Sustos que dan gusto, me dijo que no (guion)",
+   "icono": "lapida",
+   "material": {
+    "titulo": "Sustos que dan gusto: guion del video",
+    "meta": "Lunes 26 de octubre (día sugerido) · grabar y publicar · video vertical (Reel y TikTok) · ~28 s",
+    "intro": "Guion del video de invitación a la fiesta del 31, en PDF para tenerlo en el celular mientras se graba: el cuadro completo, la canción con 3 que están subiendo, 2 ganchos de repuesto, la lista de tomas y el prompt para el kit editor de video (al final).",
+    "grupos": [
+     {
+      "titulo": "Guion en PDF",
+      "tipo": "grid",
+      "columnas": 3,
+      "items": [
+       {
+        "etiqueta": "Guion: me dijo que no",
+        "medidas": "PDF · 6 páginas · 283 KB",
+        "miniatura": "img/2026-10/fiesta/thumb-guion-fiesta.jpg",
+        "archivo": "Rustik-guion-fiesta-31.pdf",
+        "texto": "Le ofreces el afiche a alguien del equipo, dice que no y caes de espaldas. En pantalla: «LA INVITÉ A LA FIESTA DEL 31».",
+        "cuando": "Gancho (sin voz)",
+        "hd": null
+       }
+      ]
+     }
+    ]
+   },
+   "copy": "¿Te dijeron que no? 💔 Nosotros sí te invitamos: Sustos que dan gusto, fiesta de disfraces el sábado 31 de octubre en Rustik, Apopa. 🎧 DJ en vivo · 🎬 trivia de películas y series · 🎭 concurso de disfraces con premios de hasta $35 en consumo · 🍔 menú especial. Entrada gratis desde las 7 PM. 📍 Frente a Coplasa, Apopa, con parqueo anexo. Etiquetá a quien sí te va a decir que sí. #fiestadedisfraces #apopa #planesenapopa #rustikapopa",
+   "notas_html": "<div class=\"box\"><b>El viral que copiamos:</b> <a href=\"https://www.tiktok.com/@gnesis.grupo.juvenil/video/7489688617896447237\" target=\"_blank\" rel=\"noopener\" style=\"color:var(--vino);font-weight:700;text-decoration:underline;word-break:break-all\">@gnesis.grupo.juvenil ↗</a>, 350.100 vistas y 48.500 me gusta (13,9 %): una invitación que empieza con un rechazo y una caída. Se copia la mecánica, no sus frases.</div>\n      <div class=\"box\"><b>Canción (se pone en la app al subir):</b> <a href=\"https://www.tiktok.com/music/mi-mayor-anhelo-6800458912781830146\" target=\"_blank\" rel=\"noopener\" style=\"color:var(--vino);font-weight:700;text-decoration:underline\">Mi Mayor Anhelo · Banda Sinaloense MS ↗</a>, al 30-40 %: es la del molde y hace el chiste. Tres que están subiendo: <a href=\"https://www.tiktok.com/music/we-fell-in-love-in-october-6711980022204205826\" target=\"_blank\" rel=\"noopener\" style=\"color:var(--vino);font-weight:700;text-decoration:underline\">we fell in love in october · girl in red ↗</a> (puesto 9 del top semanal de EE. UU.), <a href=\"https://www.tiktok.com/music/bby-wow-7671025696630409233\" target=\"_blank\" rel=\"noopener\" style=\"color:var(--vino);font-weight:700;text-decoration:underline\">BbY WOW · Karol G ↗</a> (puesto 7) y <a href=\"https://www.tiktok.com/music/halloween-cute-horror-song-191109-6830461770998482945\" target=\"_blank\" rel=\"noopener\" style=\"color:var(--vino);font-weight:700;text-decoration:underline\">Halloween ・ cute horror song · PeriTune ↗</a> (4 virales de este mes).</div>\n      <div class=\"box\"><b>Para editarlo:</b> el prompt para el kit editor de video está al final del PDF (subtítulos de tamaño 88 con la palabra activa en el naranja del arte, rótulos, 3 zooms y efectos de rechazo y caída).</div>\n      <div class=\"box pend\"><b>Para grabarlo:</b> hace falta una persona del equipo que diga que no (3 segundos, sin hablar). Pon un cojín fuera de cuadro para la caída. No se dice la palabra en inglés de la fecha, como en el resto de la fiesta.</div>\n      <div class=\"box pend\"><b>Ojo con el tono:</b> el guion y su copy van en vos (\"etiquetá\"), como los virales de Rustik, por decisión de Fátima del 21 de octubre. El resto de los copies del calendario va de tú.</div>\n      <div class=\"box pend\"><b>Día:</b> lunes 26 es una sugerencia: del 23 al 25 las historias son del Oktobeerfest y el domingo 25 sale la segunda invitación. Los premios (\"hasta $35 en consumo\") salen de lo decidido el 8 de octubre.</div>"
+  },
+  {
+   "id": "o29",
+   "fecha": "2026-10-27",
+   "tipo": "video",
+   "titulo": "Ranking: lo que adoptamos de afuera sin preguntar",
+   "icono": "ranking",
+   "hora": "11:00 AM",
+   "detalle_html": "<p class=\"hook\">\"Cosas que adoptamos de afuera sin que nadie nos preguntara.\"</p><p>Decirle \"spooky season\" a octubre, el pumpkin spice cuando existe el ayote en miel...</p><p>\"No está mal adoptar. Está mal olvidarse de lo propio.\"</p>"
+  },
+  {
+   "id": "o30",
+   "fecha": "2026-10-28",
+   "tipo": "post",
+   "titulo": "Post: todo lo que pasa el sábado",
+   "icono": "fiesta",
+   "hora": "11:00 AM",
+   "abre": "fiesta"
+  },
+  {
+   "id": "o31",
+   "fecha": "2026-10-29",
+   "tipo": "video",
+   "titulo": "Apopa Responde: ¿Siguanaba, Cadejo o Cipitío?",
+   "icono": "cadejo",
+   "hora": "4:00 PM",
+   "detalle_html": "<p class=\"hook\">\"Siguanaba, Cadejo o Cipitío. Le preguntamos a Apopa a cuál le tiene más miedo.\"</p><p>Las mejores anécdotas abren.</p>"
+  },
+  {
+   "id": "o32",
+   "fecha": "2026-10-31",
+   "tipo": "fecha",
+   "titulo": "Fiesta: Sustos que dan gusto",
+   "icono": "lapida",
+   "grande": true,
+   "abre": "fiesta"
+  }
+ ],
+ "fechas_grandes": [
+  {
+   "id": "nino",
+   "titulo": "Loncherita Rustik",
+   "boton": "Día del Niño",
+   "resumen": "Loncherita Rustik con sticker gratis",
+   "meta": "Día del Niño · jueves 1 de octubre · decidido",
+   "icono": "lonchera",
+   "color": "ayote",
+   "html": "<p><b>Decisión:</b> ese día la burger del día, <b>Holy Alioli</b>, sale empacada como <b>\"Loncherita Rustik\"</b> y trae un <b>sticker gratis</b> de Rustik. No hay otra promo ni dinámica.</p>\n      <h4>Post del miércoles 30 de septiembre</h4>\n      <p class=\"hook\">\"Mañana la Holy Alioli viene en loncherita. Y trae sticker.\"</p>\n      <h4>Ideas de foto</h4>\n      <ul class=\"bullets\">\n        <li>La loncherita cerrada sobre un pupitre, con cuaderno de rayas y lápices de colores.</li>\n        <li>La loncherita abierta desde arriba: la Holy Alioli, las papas, la soda y el sticker encima.</li>\n        <li>Una mano pegando el sticker en una laptop o en un termo, como hacíamos con los álbumes.</li>\n      </ul>\n      <div class=\"box\"><b>Listo:</b> el material final (carrusel de 3 videos y 3 historias) y el copy están en el miércoles 30 del calendario, para descargar en HD. Precio: $6.50 con sticker gratis.</div><div class=\"box pend\"><b>Pendiente:</b> confirmar si la loncherita aplica a domicilio. En el copy no se menciona a ninguna cadena: la loncherita habla sola.</div>"
+  },
+  {
+   "id": "cafe",
+   "titulo": "Sube de tamaño sin costo",
+   "boton": "Día del Café",
+   "resumen": "Sube de tamaño sin costo",
+   "meta": "Día del Café · viernes 2 de octubre · decidido",
+   "icono": "taza",
+   "color": "ochre",
+   "html": "<p><b>Decisión:</b> cualquier café (cappuccino, latte, americano, flat white, frappé…) en tamaño grande al precio del chico, solo el viernes 2.</p><div class=\"box\"><b>Listo:</b> el video y el copy del post están en el viernes 2 del calendario, para descargar en HD.</div>\n      <h4>Post del viernes 2</h4>\n      <p class=\"hook\">\"Hoy tu café crece. Tu cuenta no.\"</p>\n      <p>Alternativa: \"Hoy el grande sale al precio del chico.\"</p>\n      <h4>Ideas de foto</h4>\n      <ul class=\"bullets\">\n        <li>El vaso chico y el grande lado a lado, con una flecha dibujada a mano del chico al grande.</li>\n        <li>Latte art cenital en la taza grande.</li>\n        <li>Carrusel de 2: lámina 1 el chico, lámina 2 el grande con \"mismo precio\".</li>\n      </ul>\n      <div class=\"box pend\"><b>Pendiente:</b> ¿aplica también a domicilio?</div>"
+  },
+  {
+   "id": "oktober",
+   "titulo": "Oktobeerfest Rustik 🍻",
+   "boton": "Oktobeerfest Rustik 🍻",
+   "resumen": "Burger + una cora = Regia · 2 Chola por $6 · vie 23 al dom 25",
+   "meta": "Minicampaña · dos promos · viernes 23 al domingo 25 de octubre",
+   "icono": "cerveza",
+   "color": "ochre",
+   "html": "<p><b>Decisión:</b> del viernes 23 al domingo 25 de octubre, dos promos:</p>\n      <ul class=\"bullets\">\n        <li><b>Promo 1:</b> por la compra de cualquier burger + una cora ($0.25), te llevas una <b>Regia en lata</b>.</li>\n        <li><b>Promo 2:</b> <b>2 Regia Chola por $6</b>.</li>\n      </ul>\n      <p>El afiche se publica el <b>miércoles 21 a las 4:00 PM</b>, dos días antes, y se refuerza con historias diarias hasta el domingo. El arte final y el copy están en el miércoles 21 del calendario.</p>\n      <h4>Fechas</h4>\n      <ul class=\"bullets\">\n        <li><b>Miércoles 21, 4:00 PM:</b> post con el afiche en Instagram, Facebook y TikTok, fijado en el perfil.</li>\n        <li><b>Viernes 23 y sábado 24:</b> las dos promos hasta las 9 PM.</li>\n        <li><b>Domingo 25:</b> las dos promos hasta las 8 PM. Ese día también sale la segunda invitación a la fiesta.</li>\n      </ul>\n      <h4>El ángulo: Oktobeerfest, pero con cerveza de aquí</h4>\n      <p>Allá lo celebran con cerveza alemana; aquí, con Regia. Así la minicampaña no choca con lo que Rustik dice de las modas de afuera (el video del martes 27 habla justo de eso).</p>\n      <h4>Copy sugerido para el afiche</h4>\n      <div class=\"invite\"><small>Miércoles 21 · 4:00 PM</small>Oktobeerfest Rustik 🍻<br><br>Allá lo celebran con cerveza alemana.<br>Aquí, con Regia.<br><br>Pide cualquier burger, agrega una cora y te llevas una Regia en lata.<br>O llévate 2 Regia Chola por $6.<br><br>Viernes 23, sábado 24 y domingo 25 de octubre.<br><br>📍 Barrio El Centro, Apopa · frente a Coplasa<br>⏰ Viernes y sábado hasta las 9 pm · domingo hasta las 8 pm<br><br>¿Con quién te las tomas? 👇<br>#RustikApopa</div>\n      <h4>Durante el fin de semana</h4>\n      <ul class=\"bullets\">\n        <li>Una historia cada día con las dos Regias en la mesa: \"Hoy sigue el Oktobeerfest: burger + una cora y la Regia va por nosotros\".</li>\n        <li>Recordatorio en el WhatsApp de clientes frecuentes el jueves 22 o el viernes 23 en la mañana.</li>\n      </ul>\n      <div class=\"box pend\"><b>Pendiente:</b> corregir el voseo y las fechas del afiche (ver el miércoles 21); si aplica solo en el local o también a domicilio; si la cora aplica con cualquier burger del menú, incluida la burger del día; si hay límite por persona o por mesa; si se pauta o no.</div>"
+  },
+  {
+   "id": "fiesta",
+   "titulo": "Sustos que dan gusto",
+   "boton": "Sustos que dan gusto",
+   "resumen": "La fiesta del 31: concurso de trajes, trivia y premios",
+   "meta": "Fiesta del sábado 31 · entrada libre · nunca decir \"Halloween\"",
+   "icono": "lapida",
+   "color": "vino",
+   "html": "<div class=\"box\"><b>Dato:</b> este año el 31 cae en sábado. No vuelve a pasar hasta 2037. El sábado se cierra a las 9 PM, así que hay que decidir si esa noche se extiende.</div>\n      <h4>La temática</h4>\n      <p><b>Sustos que dan gusto.</b> El susto es la excusa; el gusto es lo que importa: música en vivo, la trivia, el concurso de trajes y los antojos de octubre (Ayote en Miel Latte, Berlina de Zanahoria, Dona de Caramelo y Pecanas). Sin leyendas este año.</p>\n      <h4>Lo que va a haber (decidido el 8 de octubre)</h4>\n      <ol class=\"olist\">\n        <li class=\"rec\"><div><b>Entrada libre y DJ en vivo (confirmado)</b><span>Toda la noche. Es lo que hace que la gente se quede de pie, bailando y consumiendo.</span></div></li>\n        <li class=\"rec\"><div><b>Concurso de trajes</b><span>Dos categorías: mejor traje individual y mejor traje en pareja. Incluye performance (cada uno hace una pequeña presentación). Gana quien reciba más aplausos del público. Solo 2 ganadores por categoría.</span></div></li>\n        <li class=\"rec\"><div><b>Trivia de películas con app propia</b><span>Estilo Kahoot: la gente escanea un QR en la mesa, se registra con nombre y teléfono y responde desde su celular. Individual, 2 rondas de 7 preguntas. Fátima la conduce y controla cuándo pasa cada pregunta. Gana quien sume más puntos (contestar bien y rápido).</span></div></li>\n        <li class=\"rec\"><div><b>Zona de fotos</b><span>Un solo fondo con la frase \"Aquí se asusta con gusto\".</span></div></li>\n      </ol>\n      <p>La ruleta se quitó.</p>\n      <h4>Premios del concurso de trajes</h4>\n      <ul class=\"bullets\">\n        <li><b>Individual:</b> 1.er lugar $25 en consumo · 2.º lugar 1 burger del día.</li>\n        <li><b>Pareja:</b> 1.er lugar $35 en consumo · 2.º lugar Bandeja Rustik para Dos.</li>\n      </ul>\n      <h4>Así se comunica</h4>\n      <ul class=\"bullets\">\n        <li>La invitación <b>no se pauta</b>.</li>\n        <li>Primera invitación (carrusel de 5, ya listo en el calendario): <b>sábado 17</b>. Segunda: domingo 25. Logística: miércoles 28.</li>\n        <li>Afiche en el baño del local.</li>\n        <li>Live decorando el local unos 5 días antes (alrededor del lunes 26), anunciado antes en historias.</li>\n      </ul>\n      <h4>Así serían las invitaciones (título: \"Sustos que dan gusto\")</h4>\n      <div class=\"invite\"><small>Primera invitación · sábado 17</small>Sustos que dan gusto<br><br>Este 31 no vengas a pasar miedo.<br>Ven a pasar sabroso.<br><br>Sábado 31 de octubre · Rustik · Entrada libre</div>\n      <div class=\"invite\"><small>Segunda invitación · domingo 25</small>Sustos que dan gusto<br><br>Falta una semana.<br>DJ en vivo, trivia de películas y concurso de trajes.</div>\n      <h4>Decoración</h4>\n      <p><b>A cargo de Fátima</b>, ya pedida en Temu. Llega alrededor del 18 de octubre.</p>\n      <h4>Menú de la noche</h4>\n      <p>Sin hamburguesas, todo fácil de comer de pie: Ayote en Miel Latte, Berlina de Zanahoria, Dona de Caramelo y Pecanas, Caja Rustik en mini, café de la casa, cervezas y micheladas.</p>\n      <div class=\"box\"><b>Listo:</b> la app de la trivia. Link de la trivia: <a href=\"https://tinyurl.com/trivia31\" target=\"_blank\" rel=\"noopener\" style=\"color:var(--vino);font-weight:700;text-decoration:underline;word-break:break-all\">tinyurl.com/trivia31 ↗</a>. Abrirla unos minutos antes porque el servidor gratuito tarda cerca de un minuto en despertar, y respaldar los registros esa misma noche.</div>\n      <div class=\"box pend\"><b>Pendiente:</b> imprimir los QR de la trivia para las mesas (con el link de los jugadores, no el de /host); hora de cierre (empieza a las 7 PM); precios del menú especial; premio de la trivia; hora del concurso y de cada ronda; reglas del concurso; personal de esa noche.</div>"
+  }
+ ],
+ "pie": "Mes pasado a este panel desde la página «Octubre en Rustik» el 27 de octubre de 2026, sin cambiar los textos."
+}

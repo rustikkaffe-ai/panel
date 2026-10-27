@@ -1,0 +1,32 @@
+/* Panel Rustik: piezas propias del panel. La base visual (colores, calendario,
+   tarjetas, panel lateral) viene de octubre-base.css, sacada de la página de octubre. */
+
+.barra{position:sticky;top:0;z-index:10;background:var(--bg);border-bottom:1.5px solid var(--ink)}
+.barra-in{max-width:1180px;margin:0 auto;padding:12px 20px;display:flex;flex-wrap:wrap;gap:10px 24px;align-items:center;justify-content:space-between}
+.brand b{display:block;font-family:var(--display);font-weight:400;font-size:24px;line-height:1.05}
+.secciones{display:flex;flex-wrap:wrap;gap:8px}
+.secciones a{font-size:13.5px;font-weight:700;text-decoration:none;color:var(--ink);padding:7px 12px;border:1.5px solid var(--ink);background:var(--paper)}
+.secciones a[aria-current="page"]{background:var(--ink);color:var(--paper)}
+.secciones a:focus-visible{outline:2px solid var(--vino);outline-offset:2px}
+
+.indice{display:flex;flex-wrap:wrap;gap:8px;align-items:center;margin:22px 0 4px}
+.indice span{font-size:12px;letter-spacing:.14em;text-transform:uppercase;font-weight:700;color:var(--muted);margin-right:4px}
+.indice a{font-size:13.5px;font-weight:600;text-decoration:none;color:var(--ink);padding:5px 12px;border-radius:999px;background:var(--paper);border:1px solid var(--line)}
+.indice a.actual{background:var(--vino);color:#FFF8F0;border-color:var(--vino)}
+
+.mes{margin-top:34px;padding-top:24px;border-top:6px solid var(--ink);scroll-margin-top:90px}
+.mes-tag{display:inline-block;font-size:11.5px;font-weight:700;letter-spacing:.12em;text-transform:uppercase;padding:3px 10px;border-radius:999px;background:var(--grey-cell);color:var(--muted);margin-bottom:6px}
+.mes-tag.actual{background:var(--vino);color:#FFF8F0}
+.mes .hero{grid-template-columns:1fr}
+.item .hd{margin-left:auto}
+
+.pend-list{display:grid;gap:8px;margin:0;padding:0;list-style:none}
+.pend-list li{display:grid;grid-template-columns:1fr auto;gap:12px;align-items:start;padding:10px 12px;background:var(--ochre-soft);font-size:14px}
+.pend-list li b{font-size:12px;letter-spacing:.06em;text-transform:uppercase;color:var(--ochre);white-space:nowrap}
+.bloque{margin-top:30px;display:grid;gap:12px}
+.bloque h2{font-size:clamp(24px,3.4vw,34px)}
+
+.cargando,.aviso{padding:16px;background:var(--paper);border:1px solid var(--line);margin-top:20px;font-size:14px}
+.aviso{background:var(--vino-soft)}
+a.dl{display:block}
+.vacio{font-size:13px;color:var(--muted)}
