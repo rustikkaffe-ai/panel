@@ -7,7 +7,7 @@
 (function(){
   "use strict";
   const b64 = s => Uint8Array.from(atob(s), c => c.charCodeAt(0));
-  const a64 = u => btoa(String.fromCharCode(...new Uint8Array(u)));
+  const a64 = u => { const b = new Uint8Array(u); let s = ""; for(let i = 0; i < b.length; i += 8192) s += String.fromCharCode(...b.subarray(i, i + 8192)); return btoa(s); };
   const RSA = {name:"RSA-OAEP", hash:"SHA-256"};
   const esc = s => String(s==null?"":s).replace(/&/g,"&amp;").replace(/</g,"&lt;").replace(/>/g,"&gt;").replace(/"/g,"&quot;");
   let llaveP = null, privada = null, indices = {}, fotos = {};
@@ -46,13 +46,24 @@
       catch(e){ localStorage.removeItem(recuerdo(L)); return false; }
     },
     async cerrar(){ const L = await llave(); if(L) localStorage.removeItem(recuerdo(L)); privada = null; fotos = {}; oyentes.forEach(f => f()); },
+    /* abre cualquier archivo cerrado con el candado (necesita la contraseña) */
+    async descifrar(F){
+      const aes = await crypto.subtle.importKey("raw", await crypto.subtle.decrypt({name:"RSA-OAEP"}, privada, b64(F.clave)), "AES-GCM", false, ["decrypt"]);
+      return JSON.parse(new TextDecoder().decode(await crypto.subtle.decrypt({name:"AES-GCM", iv:b64(F.iv)}, aes, b64(F.data))));
+    },
+    /* cierra un objeto con el candado (solo hace falta la llave pública) */
+    async cifrar(obj){
+      const L = await llave();
+      const pub = await crypto.subtle.importKey("spki", b64(L.publica), RSA, false, ["encrypt"]);
+      const k = await crypto.subtle.generateKey({name:"AES-GCM", length:256}, true, ["encrypt"]);
+      const iv = crypto.getRandomValues(new Uint8Array(12));
+      const data = await crypto.subtle.encrypt({name:"AES-GCM", iv}, k, new TextEncoder().encode(JSON.stringify(obj)));
+      const clave = await crypto.subtle.encrypt({name:"RSA-OAEP"}, pub, await crypto.subtle.exportKey("raw", k));
+      return {v:2, alg:"RSA-OAEP-SHA256 + AES-256-GCM", actualizado: obj.actualizado || null, clave:a64(clave), iv:a64(iv), data:a64(data)};
+    },
     async foto(tipo, mes){
       const k = tipo + "/" + mes;
-      if(!fotos[k]) fotos[k] = (async () => {
-        const F = await (await fetch(`datos/${tipo}/${mes}.cifrada.json`, {cache:"no-store"})).json();
-        const aes = await crypto.subtle.importKey("raw", await crypto.subtle.decrypt({name:"RSA-OAEP"}, privada, b64(F.clave)), "AES-GCM", false, ["decrypt"]);
-        return JSON.parse(new TextDecoder().decode(await crypto.subtle.decrypt({name:"AES-GCM", iv:b64(F.iv)}, aes, b64(F.data))));
-      })();
+      if(!fotos[k]) fotos[k] = fetch(`datos/${tipo}/${mes}.cifrada.json`, {cache:"no-store"}).then(r => r.json()).then(F => C.descifrar(F));
       return fotos[k];
     },
     async todas(tipo){

@@ -109,7 +109,7 @@
       k("Videos", n("video"), "de atención (no venden)") + k("Posts y carruseles", n("post"), "de venta") +
       k("Historias y fechas", n("hist") + n("fecha"), `${(m.fechas_grandes||[]).length} fechas grandes`) +
       k("Material HD", conHD, `de ${P.length} piezas ya tienen original`) +
-      `</div>${(m.pendientes||[]).length?`<p class="pres-note">${(m.pendientes||[]).length} pendientes por cerrar (al final del mes).</p>`:""}</section>`;
+      `</div><p class="pres-note">Los pendientes del mes se ven y se editan en <a href="#pendientes/${esc(m.mes)}">Pendientes</a>.</p></section>`;
   }
 
   function dibujarMes(m){
@@ -127,7 +127,7 @@
     h += `<div class="cal-head" aria-hidden="true"><div>Lun</div><div>Mar</div><div>Mié</div><div>Jue</div><div>Vie</div><div>Sáb</div><div>Dom</div></div><div class="cal"></div>`;
     if(m.nota) h += `<p class="note">${neg(m.nota)}</p>`;
     if((m.fechas_grandes||[]).length) h += `<section class="opts"><div class="eyebrow">Para Sergio</div><h2>Lo que haremos en cada fecha grande</h2><div class="opt-buttons">${m.fechas_grandes.map(f => `<button class="big-btn" type="button" data-fg="${esc(f.id)}" style="--c:${COLOR[f.color]||COLOR.ayote}"><svg><use href="#i-${esc(f.icono||"fiesta")}"/></svg><span><b>${esc(f.boton||f.titulo)}</b><small>${esc(f.resumen||"")}</small></span></button>`).join("")}</div></section>`;
-    if((m.pendientes||[]).length) h += `<section class="bloque"><div class="eyebrow">Por cerrar</div><h2>Pendientes del mes</h2><ul class="pend-list">${m.pendientes.map(x => `<li><span>${neg(x.que)}</span><b>${esc(x.quien||"Sin responsable")}</b></li>`).join("")}</ul></section>`;
+    h += `<section class="bloque"><div class="eyebrow">Por cerrar</div><h2>Pendientes del mes</h2><p>Lo que falta decidir o hacer, y lo que vaya surgiendo, está en <b>Pendientes</b>: ahí Fátima y Sergio lo agregan, lo editan, lo marcan como decidido o lo borran.</p><p><a class="dl alt" href="#pendientes/${esc(m.mes)}">Ver y editar los pendientes de ${esc(MES[mm-1])}</a></p></section>`;
     if(m.pie) h += `<p class="note">${neg(m.pie)}</p>`;
     sec.innerHTML = h;
 

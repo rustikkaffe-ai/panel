@@ -1,4 +1,5 @@
-/* Panel Rustik · la barra de arriba: Calendario de contenido · Pauta · Presencia digital, y las
+/* Panel Rustik · la barra de arriba: Calendario de contenido · Pauta · Presencia digital ·
+   Pendientes, y las
    flechas para ir de mes en mes. Cada vista dibuja un solo mes (panel.js, pauta.js,
    presencia.js). La dirección guarda lo que se está viendo: #calendario/2026-11,
    #pauta/2026-10, #presencia/2026-10.
@@ -9,7 +10,8 @@
   const MESL = ["enero","febrero","marzo","abril","mayo","junio","julio","agosto","septiembre","octubre","noviembre","diciembre"];
   const VISTAS = {calendario: {nombre: "Calendario de contenido", mod: () => window.RK_calendario},
                   pauta: {nombre: "Pauta", mod: () => window.RK_pauta},
-                  presencia: {nombre: "Presencia digital", mod: () => window.RK_presencia}};
+                  presencia: {nombre: "Presencia digital", mod: () => window.RK_presencia},
+                  pendientes: {nombre: "Pendientes", mod: () => window.RK_pendientes}};
   const clave = d => d.getFullYear() + "-" + String(d.getMonth()+1).padStart(2,"0");
   const nombreMes = k => { const n = MESL[+k.slice(5)-1]; return n[0].toUpperCase() + n.slice(1) + " " + k.slice(0,4); };
   const vista = document.getElementById("vista"), tabs = document.getElementById("vistas");
