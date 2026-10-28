@@ -3,7 +3,8 @@
    Para GUARDAR, la página usa un permiso de GitHub que solo puede tocar el repositorio del panel;
    ese permiso también va cerrado con el candado (datos/pendientes/acceso.cifrado.json), así que
    solo funciona después de escribir la contraseña. Cada cambio es un commit en GitHub (queda el
-   historial de quién cambió qué). Lo pide assets/app.js con window.RK_pendientes. */
+   historial de quién cambió qué). Va abajo del calendario de cada mes: lo pide assets/panel.js
+   con window.RK_pendientes. */
 (function(){
   "use strict";
   const K = window.RK_candado;
@@ -92,7 +93,7 @@
 
   async function dibujar(cont, mes){
     cont.innerHTML = `<section class="pendientes" id="pendientes" aria-label="Pendientes"></section>`;
-    const sec = cont.firstChild, titulo = `<div class="pauta-head"><h2>Pendientes · ${esc(nombreMes(mes))}</h2></div>`;
+    const sec = cont.firstChild, titulo = `<div class="pauta-head"><h2>Pendientes del mes</h2><span class="pauta-upd">${esc(nombreMes(mes))}</span></div>`;
     redibujar = () => dibujar(cont, mes);
     const L = await K.llave();
     if(!L){ sec.innerHTML = titulo + `<div class="vacio-mes"><b>Los pendientes todavía no están activados.</b></div>`; return; }

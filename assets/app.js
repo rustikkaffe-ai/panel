@@ -1,5 +1,4 @@
-/* Panel Rustik · la barra de arriba: Calendario de contenido · Pauta · Presencia digital ·
-   Pendientes, y las
+/* Panel Rustik · la barra de arriba: Calendario de contenido · Pauta · Presencia digital, y las
    flechas para ir de mes en mes. Cada vista dibuja un solo mes (panel.js, pauta.js,
    presencia.js). La dirección guarda lo que se está viendo: #calendario/2026-11,
    #pauta/2026-10, #presencia/2026-10.
@@ -10,14 +9,13 @@
   const MESL = ["enero","febrero","marzo","abril","mayo","junio","julio","agosto","septiembre","octubre","noviembre","diciembre"];
   const VISTAS = {calendario: {nombre: "Calendario de contenido", mod: () => window.RK_calendario},
                   pauta: {nombre: "Pauta", mod: () => window.RK_pauta},
-                  presencia: {nombre: "Presencia digital", mod: () => window.RK_presencia},
-                  pendientes: {nombre: "Pendientes", mod: () => window.RK_pendientes}};
+                  presencia: {nombre: "Presencia digital", mod: () => window.RK_presencia}};
   const clave = d => d.getFullYear() + "-" + String(d.getMonth()+1).padStart(2,"0");
   const nombreMes = k => { const n = MESL[+k.slice(5)-1]; return n[0].toUpperCase() + n.slice(1) + " " + k.slice(0,4); };
   const vista = document.getElementById("vista"), tabs = document.getElementById("vistas");
   const ant = document.getElementById("mes-ant"), sig = document.getElementById("mes-sig"), rotulo = document.getElementById("mes-nombre");
 
-  let meses = [], estado = {vista: "calendario", mes: null}, porDefecto = null;
+  let meses = [], estado = {vista: "calendario", mes: null}, porDefecto = null, irPend = false;
 
   function mesInicial(calendario){
     const hoy = new Date(), actual = clave(hoy), siguiente = clave(new Date(hoy.getFullYear(), hoy.getMonth()+1, 1));
@@ -28,6 +26,7 @@
 
   function leerHash(){
     const [v, m] = location.hash.slice(1).split("/");
+    if(v === "pendientes") irPend = true;   /* enlaces viejos: los pendientes ahora van abajo del calendario */
     return {vista: VISTAS[v] ? v : "calendario", mes: /^\d{4}-\d{2}$/.test(m||"") ? m : porDefecto};
   }
 
@@ -46,6 +45,7 @@
     catch(e){ cont.innerHTML = `<div class="aviso"><b>No se pudo cargar esta parte del panel.</b> Recarga la página. Si sigue igual, avísale a Fátima (${String(e.message||e).replace(/</g,"&lt;")}).</div>`; }
     if(t !== turno) return;
     vista.innerHTML = ""; vista.appendChild(cont);
+    if(irPend){ irPend = false; const s = cont.querySelector(".pend-slot"); if(s) s.scrollIntoView(); }
   }
   function ir(v, m, reemplazar){
     estado = {vista: v, mes: m};
