@@ -31,21 +31,32 @@
 a.dl{display:block}
 .vacio{font-size:13px;color:var(--muted)}
 
-/* Meses plegados: el más nuevo va abierto; los demás se abren con la flecha */
-.mes.plegado{margin-top:22px;padding-top:0;border-top:0}
-.mes-toggle{all:unset;box-sizing:border-box;cursor:pointer;display:flex;flex-wrap:wrap;align-items:center;gap:6px 14px;width:100%;padding:14px 18px;background:var(--paper);border:1.5px solid var(--ink)}
-.mes-toggle:hover{box-shadow:3px 3px 0 var(--ink)}
-.mes-toggle:focus-visible{outline:2px solid var(--vino);outline-offset:2px}
-.mes-toggle .flecha{display:inline-grid;place-items:center;width:32px;height:32px;border-radius:50%;background:var(--ink);color:var(--paper);font-size:15px;transition:transform .2s ease}
-.mes-toggle[aria-expanded="true"] .flecha{transform:rotate(90deg)}
-.mes-toggle b{font-family:var(--display);font-weight:400;font-size:24px;line-height:1.1}
-.mes-toggle .sub{color:var(--muted);font-size:14px}
-.mes-toggle small{margin-left:auto;font-size:12px;letter-spacing:.1em;text-transform:uppercase;font-weight:700;color:var(--muted)}
-.mes.plegado .mes-cuerpo{margin-top:18px}
+/* Barra: qué ver (Calendario · Pauta · Presencia) y flechas de mes */
+.vistas{display:flex;flex-wrap:wrap;gap:6px}
+.vistas button{font:inherit;font-size:13.5px;font-weight:700;cursor:pointer;color:var(--ink);padding:7px 12px;border:1.5px solid var(--ink);background:var(--paper)}
+.vistas button[aria-selected="true"]{background:var(--ink);color:var(--paper)}
+.vistas button:focus-visible,.mesnav .fl:focus-visible{outline:2px solid var(--vino);outline-offset:2px}
+.mesnav{display:flex;align-items:center;gap:10px}
+.mesnav b{font-family:var(--display);font-weight:400;font-size:22px;min-width:9.5ch;text-align:center;white-space:nowrap}
+.mesnav .fl{display:inline-grid;place-items:center;width:36px;height:36px;border-radius:50%;border:1.5px solid var(--ink);background:var(--ink);color:var(--paper);font-size:16px;cursor:pointer}
+.mesnav .fl:disabled{background:transparent;color:var(--muted);border-color:var(--line);cursor:default}
+#vista{min-height:60vh}
+#vista > div > .mes{margin-top:24px;padding-top:0;border-top:0}
+.vacio-mes{display:grid;gap:6px;padding:22px;margin-top:16px;background:var(--paper);border:1px dashed var(--line);max-width:70ch}
+.vacio-mes b{font-size:16px}
+.vacio-mes span{color:var(--muted)}
+.vacio-mes a{color:var(--vino);font-weight:700}
+.resumen-mes{margin-block:18px 4px}
+.resumen-mes .kpis{display:grid;grid-template-columns:repeat(4,minmax(0,1fr));gap:12px}
+.resumen-mes .kpi{padding:12px 14px;background:var(--paper);border:1px solid var(--line)}
+.resumen-mes .kpi small{display:block;font-size:11.5px;letter-spacing:.1em;text-transform:uppercase;font-weight:700;color:var(--muted)}
+.resumen-mes .kpi b{display:block;font-family:var(--display);font-weight:400;font-size:30px;line-height:1.1;margin-top:4px}
+.resumen-mes .kpi span{font-size:12.5px;color:var(--muted)}
+.resumen-mes .pres-note{font-size:12px;color:var(--muted);margin:8px 0 0}
+@media (max-width:760px){.resumen-mes .kpis{grid-template-columns:repeat(2,minmax(0,1fr))}.mesnav b{font-size:19px}}
 
 /* Tema rojo (noviembre 2026) */
 .tema-rojo{--rojo:#B3201C;--crema:#FFF4E6}
-.mes.tema-rojo{border-top-color:var(--rojo)}
 .tema-rojo .mes-tag,.tema-rojo .mes-tag.actual{background:var(--rojo);color:var(--crema)}
 .tema-rojo .hero{background:var(--rojo);color:var(--crema);padding:28px 30px;border-bottom:0;margin-top:6px}
 .tema-rojo .hero .eyebrow{color:#FFD9A8}

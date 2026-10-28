@@ -1,7 +1,7 @@
 /* Panel Rustik · calendario de contenido.
-   Lee datos/meses/indice.json y un archivo por mes (datos/meses/AAAA-MM.json) y los
-   dibuja todos en la misma página. El mes más nuevo va arriba y abierto; los demás quedan
-   plegados y se abren con su flecha. Un mes puede traer "tema": "rojo" (encabezado rojo) e
+   Lee datos/meses/indice.json y un archivo por mes (datos/meses/AAAA-MM.json). Dibuja UN mes
+   a la vez: lo pide assets/app.js (la barra de Calendario · Pauta · Presencia y las flechas
+   de mes) con window.RK_calendario. Un mes puede traer "tema": "rojo" (encabezado rojo) e
    "ilustracion": "nombre" (assets/ilustraciones/nombre.svg). */
 (function(){
   "use strict";
@@ -20,8 +20,6 @@
   const hoy = new Date();
   const mesActual = hoy.getFullYear()+"-"+String(hoy.getMonth()+1).padStart(2,"0");
 
-  const raiz = document.getElementById("calendario");
-  const indice = document.getElementById("indice");
 
   /* ---------- Panel lateral ---------- */
   const panel = document.getElementById("panel"), scrim = document.getElementById("scrim");
@@ -103,14 +101,27 @@
   }
 
   /* ---------- Un mes ---------- */
-  function dibujarMes(m, abierto){
+  function resumen(m){
+    const P = m.piezas || [], n = t => P.filter(p => p.tipo === t).length;
+    const conHD = P.filter(p => p.material && (p.material.grupos||[]).some(g => (g.items||[]).some(x => x.hd))).length;
+    const k = (t, v, s) => `<div class="kpi"><small>${t}</small><b>${v}</b><span>${s}</span></div>`;
+    return `<section class="resumen-mes" aria-label="El mes en números"><div class="kpis">`+
+      k("Videos", n("video"), "de atención (no venden)") + k("Posts y carruseles", n("post"), "de venta") +
+      k("Historias y fechas", n("hist") + n("fecha"), `${(m.fechas_grandes||[]).length} fechas grandes`) +
+      k("Material HD", conHD, `de ${P.length} piezas ya tienen original`) +
+      `</div>${(m.pendientes||[]).length?`<p class="pres-note">${(m.pendientes||[]).length} pendientes por cerrar (al final del mes).</p>`:""}</section>`;
+  }
+
+  function dibujarMes(m){
     const [y, mm] = m.mes.split("-").map(Number);
+    const abierto = true;
     const sec = document.createElement("section");
-    sec.className = "mes" + (abierto ? " principal" : " plegado") + (m.tema ? " tema-" + m.tema : ""); sec.id = "mes-" + m.mes;
+    sec.className = "mes principal" + (m.tema ? " tema-" + m.tema : ""); sec.id = "mes-" + m.mes;
     const estado = m.mes === mesActual ? "Este mes" : (m.mes > mesActual ? "Próximo" : "Anterior");
     const titulo = m.campana_em ? `${esc(m.campana)} <em>${esc(m.campana_em)}</em>` : esc(m.campana);
     let h = `<span class="mes-tag${abierto?" actual":""}">${estado} · ${esc(m.titulo_mes)}</span>
       <header class="hero${m.ilustracion?" con-ilus":""}"><div><div class="eyebrow">${esc(m.eyebrow||"")}</div><h1>${titulo}</h1>${m.intro?`<p>${neg(m.intro)}</p>`:""}</div>${m.ilustracion?`<div class="hero-ilus"><img src="assets/ilustraciones/${esc(m.ilustracion)}.svg" alt="" width="580" height="400"></div>`:""}</header>`;
+    h += resumen(m);
     if((m.momentos||[]).length) h += `<section class="moments" aria-label="Las partes del mes">${m.momentos.map(x => `<div class="moment" style="--c:${COLOR[x.color]||COLOR.vino}"><span>${esc(x.fechas)}</span><b>${esc(x.titulo)}</b><p>${neg(x.texto)}</p></div>`).join("")}</section>`;
     h += `<div class="rule"><p>${neg(m.regla||"")}</p><div class="legend" aria-label="Leyenda"><span class="chip-key k-video"><i></i>Video · atención</span><span class="chip-key k-post"><i></i>Post · venta</span><span class="chip-key k-hist"><i></i>Historia</span><span class="chip-key k-fecha"><i></i>Fecha / evento</span></div></div>`;
     h += `<div class="cal-head" aria-hidden="true"><div>Lun</div><div>Mar</div><div>Mié</div><div>Jue</div><div>Vie</div><div>Sáb</div><div>Dom</div></div><div class="cal"></div>`;
@@ -118,10 +129,7 @@
     if((m.fechas_grandes||[]).length) h += `<section class="opts"><div class="eyebrow">Para Sergio</div><h2>Lo que haremos en cada fecha grande</h2><div class="opt-buttons">${m.fechas_grandes.map(f => `<button class="big-btn" type="button" data-fg="${esc(f.id)}" style="--c:${COLOR[f.color]||COLOR.ayote}"><svg><use href="#i-${esc(f.icono||"fiesta")}"/></svg><span><b>${esc(f.boton||f.titulo)}</b><small>${esc(f.resumen||"")}</small></span></button>`).join("")}</div></section>`;
     if((m.pendientes||[]).length) h += `<section class="bloque"><div class="eyebrow">Por cerrar</div><h2>Pendientes del mes</h2><ul class="pend-list">${m.pendientes.map(x => `<li><span>${neg(x.que)}</span><b>${esc(x.quien||"Sin responsable")}</b></li>`).join("")}</ul></section>`;
     if(m.pie) h += `<p class="note">${neg(m.pie)}</p>`;
-    const flecha = abierto ? "" : `<button class="mes-toggle" type="button" aria-expanded="false" aria-controls="cuerpo-${esc(m.mes)}"><span class="flecha" aria-hidden="true">▸</span><b>${esc(m.titulo_mes)}</b><span class="sub">${esc([m.campana, m.campana_em].filter(Boolean).join(" "))}</span><small>Ver mes</small></button>`;
-    sec.innerHTML = flecha + `<div class="mes-cuerpo" id="cuerpo-${esc(m.mes)}"${abierto?"":" hidden"}>${h}</div>`;
-    const tg = sec.querySelector(".mes-toggle");
-    if(tg) tg.addEventListener("click", () => abrirMes(sec, tg.getAttribute("aria-expanded") !== "true"));
+    sec.innerHTML = h;
 
     /* calendario: del lunes de la semana del día 1 al domingo de la semana del último día */
     const cal = sec.querySelector(".cal");
@@ -154,29 +162,20 @@
     return sec;
   }
 
-  /* ---------- Abrir o plegar un mes ---------- */
-  function abrirMes(sec, abrir){
-    const tg = sec.querySelector(".mes-toggle"), cuerpo = sec.querySelector(".mes-cuerpo");
-    if(!tg) return;
-    tg.setAttribute("aria-expanded", abrir ? "true" : "false");
-    tg.querySelector("small").textContent = abrir ? "Ocultar" : "Ver mes";
-    cuerpo.hidden = !abrir;
-  }
-
-  /* ---------- Carga ---------- */
-  /* el mes más nuevo primero; después los anteriores, del más reciente al más viejo */
-  const orden = (a, b) => a.mes > b.mes ? -1 : 1;
-  fetch("datos/meses/indice.json", {cache:"no-store"}).then(r => r.json()).then(lista => Promise.all(
-    lista.meses.map(mm => fetch(`datos/meses/${mm}.json`, {cache:"no-store"}).then(r => { if(!r.ok) throw new Error(mm); return r.json(); }))
-  )).then(meses => {
-    raiz.innerHTML = "";
-    meses.sort(orden);
-    indice.innerHTML = `<span>Meses</span>` + meses.map((m, i) => `<a href="#mes-${m.mes}" data-mes="${m.mes}" class="${i===0?"actual":""}${m.tema?" tema-"+esc(m.tema):""}">${esc(m.titulo_mes)}</a>`).join("");
-    meses.forEach((m, i) => raiz.appendChild(dibujarMes(m, i === 0)));
-    const ir = id => { const el = document.getElementById(id); if(el){ abrirMes(el, true); el.scrollIntoView(); } };
-    indice.querySelectorAll("a[data-mes]").forEach(a => a.addEventListener("click", e => { e.preventDefault(); history.replaceState(null, "", a.getAttribute("href")); ir("mes-" + a.dataset.mes); }));
-    if(location.hash) ir(location.hash.slice(1));
-  }).catch(e => {
-    raiz.innerHTML = `<div class="aviso"><b>No se pudo cargar el calendario.</b> Recarga la página. Si sigue igual, avísale a Fátima (${esc(e.message||e)}).</div>`;
-  });
+  /* ---------- Para app.js ---------- */
+  let cache = null;
+  window.RK_calendario = {
+    cargar(){
+      if(!cache) cache = fetch("datos/meses/indice.json", {cache:"no-store"}).then(r => r.json()).then(lista => Promise.all(
+        lista.meses.map(mm => fetch(`datos/meses/${mm}.json`, {cache:"no-store"}).then(r => { if(!r.ok) throw new Error(mm); return r.json(); }))));
+      return cache;
+    },
+    async meses(){ return (await this.cargar()).map(m => m.mes); },
+    async dibujar(cont, mes){
+      const m = (await this.cargar()).find(x => x.mes === mes);
+      if(!m){ cont.innerHTML = `<div class="vacio-mes"><b>No hay calendario de ${esc(nombreMes(mes))}.</b><span>Se arma con el brief y la reunión con Sergio: dile a Claude «armemos ${esc(MES[+mes.slice(5)-1])}».</span></div>`; return; }
+      cont.innerHTML = ""; cont.appendChild(dibujarMes(m));
+    }
+  };
+  const nombreMes = k => MES[+k.slice(5)-1] + " " + k.slice(0,4);
 })();
