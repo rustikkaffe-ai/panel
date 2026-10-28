@@ -1,10 +1,7 @@
 /* Panel Rustik · pauta en Meta, mes por mes y con contraseña.
    datos/pauta/indice.json lista las «fotos» guardadas (una por mes: la última de ese mes) y
-   datos/pauta/AAAA-MM.cifrada.json es cada foto CIFRADA: una clave AES-256-GCM nueva por foto,
-   envuelta con la llave pública RSA-OAEP de datos/pauta/llave.json (la cifra
-   herramientas/cifrar_pauta.mjs, que usa la tarea diaria de la nube sin saber la contraseña).
-   La llave privada está en llave.json cifrada con la contraseña (PBKDF2-SHA256 → AES-GCM):
-   solo se abre aquí, en el navegador, con la contraseña. Sin ella el archivo público es ruido.
+   datos/pauta/AAAA-MM.cifrada.json es cada foto CIFRADA. El candado (abrir con la contraseña,
+   recordarla, descifrar) está en assets/candado.js y es el mismo de la presencia.
    Para un mes se muestran las campañas y promociones que estuvieron activas ese mes (con la
    cifra más nueva que haya de cada una) y el análisis de la foto de ese mes.
    Lo pide assets/app.js con window.RK_pauta. */
@@ -19,53 +16,9 @@
   const fmt = s => { const x = dd(s); return x.getDate()+" "+MES[x.getMonth()]; };
   const nombreMes = k => MESL[+k.slice(5)-1] + " " + k.slice(0,4);
   const fmtHora = s => { const u = new Date(s); return u.getDate()+" "+MES[u.getMonth()]+" "+String(u.getHours()).padStart(2,"0")+":"+String(u.getMinutes()).padStart(2,"0"); };
-  const b64 = s => Uint8Array.from(atob(s), c => c.charCodeAt(0));
-  const a64 = u => btoa(String.fromCharCode(...new Uint8Array(u)));
-  const RSA = {name:"RSA-OAEP", hash:"SHA-256"};
-
-  let indice = null, cifradas = {}, abiertas = null, llaveP = null, redibujar = null;
-  const cargarLlave = () => llaveP || (llaveP = fetch("datos/pauta/llave.json", {cache:"no-store"}).then(r => r.ok ? r.json() : null).catch(() => null));
-  const recuerdo = L => "rk-pauta-" + L.salt;
-  const cargarIndice = () => indice || (indice = fetch("datos/pauta/indice.json", {cache:"no-store"}).then(r => r.ok ? r.json() : {meses:[]}).then(x => x.meses || []).catch(() => []));
-  const cifrada = mm => cifradas[mm] || (cifradas[mm] = fetch(`datos/pauta/${mm}.cifrada.json`, {cache:"no-store"}).then(r => r.json()));
-
-  /* contraseña → clave AES (PBKDF2) → llave privada RSA → la clave de cada foto → la foto */
-  async function derivar(pass, L){
-    const base = await crypto.subtle.importKey("raw", new TextEncoder().encode(pass), "PBKDF2", false, ["deriveKey"]);
-    return crypto.subtle.deriveKey({name:"PBKDF2", hash:"SHA-256", salt:b64(L.salt), iterations:L.iter}, base, {name:"AES-GCM", length:256}, true, ["decrypt"]);
-  }
-  async function abrirTodas(aes){
-    const L = await cargarLlave();
-    const pkcs8 = await crypto.subtle.decrypt({name:"AES-GCM", iv:b64(L.iv)}, aes, b64(L.privada));
-    const privada = await crypto.subtle.importKey("pkcs8", pkcs8, RSA, false, ["decrypt"]);
-    const ms = await cargarIndice(), out = [];
-    for(const mm of ms){
-      const C = await cifrada(mm);
-      const k = await crypto.subtle.importKey("raw", await crypto.subtle.decrypt({name:"RSA-OAEP"}, privada, b64(C.clave)), "AES-GCM", false, ["decrypt"]);
-      out.push({mes: mm, D: JSON.parse(new TextDecoder().decode(await crypto.subtle.decrypt({name:"AES-GCM", iv:b64(C.iv)}, k, b64(C.data))))});
-    }
-    abiertas = out;
-  }
-
-  function candado(sec, mes, L, error){
-    sec.innerHTML = `<div class="pauta-head"><h2>Pauta en Meta · ${esc(nombreMes(mes))}</h2></div><form class="candado" autocomplete="on">
-      <p><b>La pauta tiene dinero, por eso va con contraseña.</b> Escríbela para verla (Fátima y Sergio la tienen).</p>
-      <label for="pauta-clave">Contraseña</label>
-      <div class="fila"><input id="pauta-clave" type="password" autocomplete="current-password" required><button type="submit">Ver la pauta</button></div>
-      <label class="rec"><input type="checkbox" id="pauta-rec"> Recordarla en este equipo</label>
-      <p class="err" role="alert">${error?esc(error):""}</p></form>`;
-    const f = sec.querySelector("form");
-    f.addEventListener("submit", async e => {
-      e.preventDefault();
-      const btn = f.querySelector("button"); btn.disabled = true; btn.textContent = "Abriendo…";
-      try{
-        const key = await derivar(f.querySelector("#pauta-clave").value, L);
-        await abrirTodas(key);
-        if(f.querySelector("#pauta-rec").checked) localStorage.setItem(recuerdo(L), a64(await crypto.subtle.exportKey("raw", key)));
-        if(redibujar) redibujar();
-      }catch(err){ candado(sec, mes, L, "Esa contraseña no abre la pauta. Revísala y vuelve a intentar."); }
-    });
-  }
+  const K = window.RK_candado;
+  let abiertas = null, redibujar = null;
+  K.alAbrir(() => { abiertas = null; });
 
   /* campañas y promociones que tocan el mes, con la cifra más nueva de cada una */
   function delMes(mes){
@@ -124,33 +77,25 @@
     sec.innerHTML = h + `<p class="pauta-note">La línea negra en cada barra marca cuánto se debería llevar gastado a hoy si el presupuesto se reparte parejo entre las fechas de la campaña. Datos de Meta Ads Manager.</p>` + cerrar();
     enlazarCerrar(sec);
   }
-  const cerrar = () => `<p class="pauta-note"><button type="button" class="cerrar">Cerrar la pauta en este equipo</button></p>`;
+  const cerrar = () => `<p class="pauta-note"><button type="button" class="cerrar">Cerrar con candado en este equipo</button></p>`;
   function enlazarCerrar(sec){
     const b = sec.querySelector(".cerrar");
-    if(b) b.addEventListener("click", async () => { const L = await cargarLlave(); if(L) localStorage.removeItem(recuerdo(L)); abiertas = null; if(redibujar) redibujar(); });
+    if(b) b.addEventListener("click", async () => { await K.cerrar(); if(redibujar) redibujar(); });
   }
 
   window.RK_pauta = {
-    async meses(){ return cargarIndice(); },
+    async meses(){ return K.indice("pauta"); },
     async dibujar(cont, mes){
       cont.innerHTML = `<section class="pauta" id="pauta" aria-label="Pauta en Meta"></section>`;
-      const sec = cont.firstChild;
+      const sec = cont.firstChild, titulo = `<div class="pauta-head"><h2>Pauta en Meta · ${esc(nombreMes(mes))}</h2></div>`;
       redibujar = () => this.dibujar(cont, mes);
-      const [ms, L] = [await cargarIndice(), await cargarLlave()];
-      const vacio = (b, s) => { sec.innerHTML = `<div class="pauta-head"><h2>Pauta en Meta · ${esc(nombreMes(mes))}</h2></div><div class="vacio-mes"><b>${b}</b><span>${s}</span></div>`; };
+      const [ms, L] = [await K.indice("pauta"), await K.llave()];
+      const vacio = (b, s) => { sec.innerHTML = titulo + `<div class="vacio-mes"><b>${b}</b><span>${s}</span></div>`; };
       if(!L) return vacio("La pauta todavía no está aquí: falta ponerle su contraseña.", "Se pone una sola vez desde el kit del calendario.");
       if(!ms.length) return vacio("Todavía no hay fotos de la pauta.", "La primera llega con la tarea diaria de las 7:00 am.");
-      if(!abiertas){
-        const g = localStorage.getItem(recuerdo(L));
-        if(g){
-          try{ await abrirTodas(await crypto.subtle.importKey("raw", b64(g), "AES-GCM", true, ["decrypt"])); }
-          catch(e){ localStorage.removeItem(recuerdo(L)); abiertas = null; }
-        }
-      }
-      if(!abiertas) return candado(sec, mes, L);
+      if(!K.abierto() && !(await K.recordada())) return K.formulario(sec, titulo, redibujar);
+      if(!abiertas) abiertas = await K.todas("pauta");
       dibujarMes(sec, mes);
     }
   };
-  /* para la prueba del kit: abre la pauta sin escribir en la pantalla */
-  window.abrirPautaPrueba = async pass => { await abrirTodas(await derivar(pass, await cargarLlave())); if(redibujar) await redibujar(); };
 })();

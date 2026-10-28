@@ -38,16 +38,16 @@
 .pauta .analisis h4{margin:0;font-size:12px;letter-spacing:.12em;text-transform:uppercase;color:var(--vino)}
 .pauta .analisis p{margin:0;max-width:75ch}
 .pauta .analisis ul{margin:0;padding-left:18px;display:grid;gap:4px;max-width:75ch}
-.pauta .cerrar{all:unset;cursor:pointer;text-decoration:underline;color:var(--muted);margin-left:6px}
-/* Candado */
-.pauta .candado{margin-top:16px;max-width:520px;display:grid;gap:10px;padding:18px;background:var(--bg);border:1px solid var(--line)}
-.pauta .candado p{margin:0}
-.pauta .candado label{font-size:12px;letter-spacing:.1em;text-transform:uppercase;font-weight:700;color:var(--muted)}
-.pauta .candado .fila{display:flex;gap:8px;flex-wrap:wrap}
-.pauta .candado input[type=password]{flex:1;min-width:200px;font:inherit;padding:9px 12px;border:1.5px solid var(--ink);background:var(--paper);color:var(--ink)}
-.pauta .candado button{font:inherit;font-weight:700;padding:9px 16px;border:1.5px solid var(--ink);background:var(--ink);color:var(--paper);cursor:pointer}
-.pauta .candado button:disabled{opacity:.6;cursor:wait}
-.pauta .candado .rec{display:flex;gap:8px;align-items:center;text-transform:none;letter-spacing:0;font-weight:500;font-size:13.5px;color:var(--ink)}
-.pauta .candado .err{color:var(--vino);font-weight:600;font-size:13.5px;min-height:1em}
+.pauta .cerrar,.presencia .cerrar{all:unset;cursor:pointer;text-decoration:underline;color:var(--muted);margin-left:6px}
+/* Candado (pauta y presencia) */
+.candado{margin-top:16px;max-width:520px;display:grid;gap:10px;padding:18px;background:var(--bg);border:1px solid var(--line)}
+.candado p{margin:0}
+.candado label{font-size:12px;letter-spacing:.1em;text-transform:uppercase;font-weight:700;color:var(--muted)}
+.candado .fila{display:flex;gap:8px;flex-wrap:wrap}
+.candado input[type=password]{flex:1;min-width:200px;font:inherit;padding:9px 12px;border:1.5px solid var(--ink);background:var(--paper);color:var(--ink)}
+.candado button{font:inherit;font-weight:700;padding:9px 16px;border:1.5px solid var(--ink);background:var(--ink);color:var(--paper);cursor:pointer}
+.candado button:disabled{opacity:.6;cursor:wait}
+.candado .rec{display:flex;gap:8px;align-items:center;text-transform:none;letter-spacing:0;font-weight:500;font-size:13.5px;color:var(--ink)}
+.candado .err{color:var(--vino);font-weight:600;font-size:13.5px;min-height:1em}
 @media (max-width:900px){.pauta .camp{grid-template-columns:1fr}}
 @media (max-width:760px){.pauta .kpis{grid-template-columns:repeat(2,minmax(0,1fr))}}
