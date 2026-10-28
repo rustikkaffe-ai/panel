@@ -1,9 +1,10 @@
 /* Panel Rustik · pauta en Meta, mes por mes y con contraseña.
    datos/pauta/indice.json lista las «fotos» guardadas (una por mes: la última de ese mes) y
-   datos/pauta/AAAA-MM.cifrada.json es cada foto CIFRADA (AES-GCM, clave sacada de la
-   contraseña con PBKDF2-SHA256; la cifra bin/actualizar_pauta.py). Sin la contraseña no se
-   puede leer: el archivo público es ruido. Todas las fotos usan la misma sal, así una sola
-   contraseña (o la clave recordada en el equipo) abre todos los meses.
+   datos/pauta/AAAA-MM.cifrada.json es cada foto CIFRADA: una clave AES-256-GCM nueva por foto,
+   envuelta con la llave pública RSA-OAEP de datos/pauta/llave.json (la cifra
+   herramientas/cifrar_pauta.mjs, que usa la tarea diaria de la nube sin saber la contraseña).
+   La llave privada está en llave.json cifrada con la contraseña (PBKDF2-SHA256 → AES-GCM):
+   solo se abre aquí, en el navegador, con la contraseña. Sin ella el archivo público es ruido.
    Para un mes se muestran las campañas y promociones que estuvieron activas ese mes (con la
    cifra más nueva que haya de cada una) y el análisis de la foto de ese mes.
    Lo pide assets/app.js con window.RK_pauta. */
@@ -20,26 +21,33 @@
   const fmtHora = s => { const u = new Date(s); return u.getDate()+" "+MES[u.getMonth()]+" "+String(u.getHours()).padStart(2,"0")+":"+String(u.getMinutes()).padStart(2,"0"); };
   const b64 = s => Uint8Array.from(atob(s), c => c.charCodeAt(0));
   const a64 = u => btoa(String.fromCharCode(...new Uint8Array(u)));
-  const RECUERDO = "rk-pauta-clave";
+  const RSA = {name:"RSA-OAEP", hash:"SHA-256"};
 
-  let indice = null, cifradas = {}, abiertas = null, llave = null, redibujar = null;
+  let indice = null, cifradas = {}, abiertas = null, llaveP = null, redibujar = null;
+  const cargarLlave = () => llaveP || (llaveP = fetch("datos/pauta/llave.json", {cache:"no-store"}).then(r => r.ok ? r.json() : null).catch(() => null));
+  const recuerdo = L => "rk-pauta-" + L.salt;
   const cargarIndice = () => indice || (indice = fetch("datos/pauta/indice.json", {cache:"no-store"}).then(r => r.ok ? r.json() : {meses:[]}).then(x => x.meses || []).catch(() => []));
   const cifrada = mm => cifradas[mm] || (cifradas[mm] = fetch(`datos/pauta/${mm}.cifrada.json`, {cache:"no-store"}).then(r => r.json()));
 
-  async function derivar(pass, C){
+  /* contraseña → clave AES (PBKDF2) → llave privada RSA → la clave de cada foto → la foto */
+  async function derivar(pass, L){
     const base = await crypto.subtle.importKey("raw", new TextEncoder().encode(pass), "PBKDF2", false, ["deriveKey"]);
-    return crypto.subtle.deriveKey({name:"PBKDF2", hash:"SHA-256", salt:b64(C.salt), iterations:C.iter}, base, {name:"AES-GCM", length:256}, true, ["decrypt"]);
+    return crypto.subtle.deriveKey({name:"PBKDF2", hash:"SHA-256", salt:b64(L.salt), iterations:L.iter}, base, {name:"AES-GCM", length:256}, true, ["decrypt"]);
   }
-  async function descifrar(key, C){
-    return JSON.parse(new TextDecoder().decode(await crypto.subtle.decrypt({name:"AES-GCM", iv:b64(C.iv)}, key, b64(C.data))));
-  }
-  async function abrirTodas(key){
+  async function abrirTodas(aes){
+    const L = await cargarLlave();
+    const pkcs8 = await crypto.subtle.decrypt({name:"AES-GCM", iv:b64(L.iv)}, aes, b64(L.privada));
+    const privada = await crypto.subtle.importKey("pkcs8", pkcs8, RSA, false, ["decrypt"]);
     const ms = await cargarIndice(), out = [];
-    for(const mm of ms) out.push({mes: mm, D: await descifrar(key, await cifrada(mm))});
-    abiertas = out; llave = key;
+    for(const mm of ms){
+      const C = await cifrada(mm);
+      const k = await crypto.subtle.importKey("raw", await crypto.subtle.decrypt({name:"RSA-OAEP"}, privada, b64(C.clave)), "AES-GCM", false, ["decrypt"]);
+      out.push({mes: mm, D: JSON.parse(new TextDecoder().decode(await crypto.subtle.decrypt({name:"AES-GCM", iv:b64(C.iv)}, k, b64(C.data))))});
+    }
+    abiertas = out;
   }
 
-  function candado(sec, mes, ms, error){
+  function candado(sec, mes, L, error){
     sec.innerHTML = `<div class="pauta-head"><h2>Pauta en Meta · ${esc(nombreMes(mes))}</h2></div><form class="candado" autocomplete="on">
       <p><b>La pauta tiene dinero, por eso va con contraseña.</b> Escríbela para verla (Fátima y Sergio la tienen).</p>
       <label for="pauta-clave">Contraseña</label>
@@ -51,11 +59,11 @@
       e.preventDefault();
       const btn = f.querySelector("button"); btn.disabled = true; btn.textContent = "Abriendo…";
       try{
-        const key = await derivar(f.querySelector("#pauta-clave").value, await cifrada(ms[ms.length-1]));
+        const key = await derivar(f.querySelector("#pauta-clave").value, L);
         await abrirTodas(key);
-        if(f.querySelector("#pauta-rec").checked) localStorage.setItem(RECUERDO, a64(await crypto.subtle.exportKey("raw", key)));
+        if(f.querySelector("#pauta-rec").checked) localStorage.setItem(recuerdo(L), a64(await crypto.subtle.exportKey("raw", key)));
         if(redibujar) redibujar();
-      }catch(err){ candado(sec, mes, ms, "Esa contraseña no abre la pauta. Revísala y vuelve a intentar."); }
+      }catch(err){ candado(sec, mes, L, "Esa contraseña no abre la pauta. Revísala y vuelve a intentar."); }
     });
   }
 
@@ -119,7 +127,7 @@
   const cerrar = () => `<p class="pauta-note"><button type="button" class="cerrar">Cerrar la pauta en este equipo</button></p>`;
   function enlazarCerrar(sec){
     const b = sec.querySelector(".cerrar");
-    if(b) b.addEventListener("click", () => { localStorage.removeItem(RECUERDO); abiertas = null; llave = null; if(redibujar) redibujar(); });
+    if(b) b.addEventListener("click", async () => { const L = await cargarLlave(); if(L) localStorage.removeItem(recuerdo(L)); abiertas = null; if(redibujar) redibujar(); });
   }
 
   window.RK_pauta = {
@@ -128,22 +136,21 @@
       cont.innerHTML = `<section class="pauta" id="pauta" aria-label="Pauta en Meta"></section>`;
       const sec = cont.firstChild;
       redibujar = () => this.dibujar(cont, mes);
-      const ms = await cargarIndice();
-      if(!ms.length){
-        sec.innerHTML = `<div class="pauta-head"><h2>Pauta en Meta · ${esc(nombreMes(mes))}</h2></div><div class="vacio-mes"><b>La pauta todavía no está aquí: falta ponerle su contraseña.</b><span>Mientras tanto se ve en <a href="https://claude.ai/artifact/3jVTCK7Z64dvVErGiF5coQ#pauta" target="_blank" rel="noopener">la página de Claude ↗</a>.</span></div>`;
-        return;
-      }
+      const [ms, L] = [await cargarIndice(), await cargarLlave()];
+      const vacio = (b, s) => { sec.innerHTML = `<div class="pauta-head"><h2>Pauta en Meta · ${esc(nombreMes(mes))}</h2></div><div class="vacio-mes"><b>${b}</b><span>${s}</span></div>`; };
+      if(!L) return vacio("La pauta todavía no está aquí: falta ponerle su contraseña.", "Se pone una sola vez desde el kit del calendario.");
+      if(!ms.length) return vacio("Todavía no hay fotos de la pauta.", "La primera llega con la tarea diaria de las 7:00 am.");
       if(!abiertas){
-        const g = localStorage.getItem(RECUERDO);
+        const g = localStorage.getItem(recuerdo(L));
         if(g){
           try{ await abrirTodas(await crypto.subtle.importKey("raw", b64(g), "AES-GCM", true, ["decrypt"])); }
-          catch(e){ localStorage.removeItem(RECUERDO); abiertas = null; }
+          catch(e){ localStorage.removeItem(recuerdo(L)); abiertas = null; }
         }
       }
-      if(!abiertas) return candado(sec, mes, ms);
+      if(!abiertas) return candado(sec, mes, L);
       dibujarMes(sec, mes);
     }
   };
   /* para la prueba del kit: abre la pauta sin escribir en la pantalla */
-  window.abrirPautaPrueba = async pass => { const ms = await cargarIndice(); await abrirTodas(await derivar(pass, await cifrada(ms[ms.length-1]))); if(redibujar) await redibujar(); };
+  window.abrirPautaPrueba = async pass => { await abrirTodas(await derivar(pass, await cargarLlave())); if(redibujar) await redibujar(); };
 })();
