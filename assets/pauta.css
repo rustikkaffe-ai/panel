@@ -1,0 +1,53 @@
+/* Pauta en Meta: mismo diseño que la sección de la página de Claude, todo dentro de .pauta */
+.pauta{margin-block:24px 30px;padding:20px;background:var(--paper);border:1.5px solid var(--ink);scroll-margin-top:90px}
+.pauta .pauta-head{display:flex;flex-wrap:wrap;justify-content:space-between;align-items:baseline;gap:8px 20px}
+.pauta .pauta-head h2{font-size:clamp(26px,3.6vw,36px)}
+.pauta .pauta-upd{font-size:12.5px;color:var(--muted)}
+.pauta .pauta-note{font-size:12px;color:var(--muted);margin-top:12px}
+.pauta .kpis{display:grid;grid-template-columns:repeat(4,minmax(0,1fr));gap:12px;margin-top:16px}
+.pauta .kpi{padding:12px 14px;background:var(--bg)}
+.pauta .kpi small{display:block;font-size:11.5px;letter-spacing:.1em;text-transform:uppercase;font-weight:700;color:var(--muted)}
+.pauta .kpi b{display:block;font-family:var(--display);font-weight:400;font-size:28px;line-height:1.1;margin-top:4px;font-variant-numeric:tabular-nums}
+.pauta .kpi span{font-size:12.5px;color:var(--muted)}
+.pauta .camps{display:grid;gap:12px;margin-top:16px}
+.pauta .camp{display:grid;grid-template-columns:1.3fr 1fr;gap:10px 24px;padding:14px;border:1px solid var(--line);background:var(--bg)}
+.pauta .camp h3{font-family:var(--body);font-weight:700;font-size:16px}
+.pauta .meta{font-size:12.5px;color:var(--muted);margin-top:2px}
+.pauta .pill{display:inline-block;font-size:11px;font-weight:700;letter-spacing:.06em;text-transform:uppercase;padding:2px 8px;border-radius:999px;margin-left:6px;vertical-align:2px}
+.pauta .pill.on{background:var(--verde-soft);color:var(--verde)}
+.pauta .pill.soon{background:var(--ochre-soft);color:var(--ochre)}
+.pauta .pill.off{background:var(--grey-cell);color:var(--muted)}
+.pauta .gbar{position:relative;height:10px;background:var(--grey-cell);margin-top:10px}
+.pauta .gbar i{position:absolute;left:0;top:0;bottom:0;background:var(--vino)}
+.pauta .gbar em{position:absolute;top:-4px;bottom:-4px;width:2px;background:var(--ink)}
+.pauta .barlbl{display:flex;justify-content:space-between;gap:10px;font-size:12.5px;color:var(--muted);margin-top:6px;font-variant-numeric:tabular-nums}
+.pauta .mets{display:grid;grid-template-columns:repeat(3,minmax(0,1fr));gap:8px 12px;align-content:start}
+.pauta .mets small{display:block;font-size:11px;color:var(--muted);text-transform:uppercase;letter-spacing:.08em;font-weight:700}
+.pauta .mets b{font-size:15px;font-variant-numeric:tabular-nums}
+.pauta .mets .sub{font-size:11.5px;color:var(--muted);display:block}
+.pauta .boosts{margin-top:18px;display:grid;gap:12px}
+.pauta .boosts h3{font-family:var(--body);font-weight:700;font-size:16px}
+.pauta .boosts .kpis{margin-top:0}
+.pauta .bwrap{overflow-x:auto}
+.pauta .btable{width:100%;border-collapse:collapse;font-size:13px;font-variant-numeric:tabular-nums}
+.pauta .btable th{text-align:left;font-size:11px;letter-spacing:.08em;text-transform:uppercase;color:var(--muted);font-weight:700;padding:6px 8px;border-bottom:1px solid var(--line)}
+.pauta .btable td{padding:7px 8px;border-bottom:1px solid var(--line);vertical-align:top}
+.pauta .btable .n{text-align:right}
+.pauta .btable a{color:var(--vino);font-weight:600}
+.pauta .analisis{margin-top:16px;display:grid;gap:8px}
+.pauta .analisis h4{margin:0;font-size:12px;letter-spacing:.12em;text-transform:uppercase;color:var(--vino)}
+.pauta .analisis p{margin:0;max-width:75ch}
+.pauta .analisis ul{margin:0;padding-left:18px;display:grid;gap:4px;max-width:75ch}
+.pauta .cerrar{all:unset;cursor:pointer;text-decoration:underline;color:var(--muted);margin-left:6px}
+/* Candado */
+.pauta .candado{margin-top:16px;max-width:520px;display:grid;gap:10px;padding:18px;background:var(--bg);border:1px solid var(--line)}
+.pauta .candado p{margin:0}
+.pauta .candado label{font-size:12px;letter-spacing:.1em;text-transform:uppercase;font-weight:700;color:var(--muted)}
+.pauta .candado .fila{display:flex;gap:8px;flex-wrap:wrap}
+.pauta .candado input[type=password]{flex:1;min-width:200px;font:inherit;padding:9px 12px;border:1.5px solid var(--ink);background:var(--paper);color:var(--ink)}
+.pauta .candado button{font:inherit;font-weight:700;padding:9px 16px;border:1.5px solid var(--ink);background:var(--ink);color:var(--paper);cursor:pointer}
+.pauta .candado button:disabled{opacity:.6;cursor:wait}
+.pauta .candado .rec{display:flex;gap:8px;align-items:center;text-transform:none;letter-spacing:0;font-weight:500;font-size:13.5px;color:var(--ink)}
+.pauta .candado .err{color:var(--vino);font-weight:600;font-size:13.5px;min-height:1em}
+@media (max-width:900px){.pauta .camp{grid-template-columns:1fr}}
+@media (max-width:760px){.pauta .kpis{grid-template-columns:repeat(2,minmax(0,1fr))}}

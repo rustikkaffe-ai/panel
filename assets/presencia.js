@@ -19,7 +19,7 @@
       <div class="nets" role="tablist" aria-label="Redes"></div>
       <div class="netbody" role="tabpanel"></div>
       <div class="analisis"></div>
-      <p class="pres-note">Datos de Meta (Facebook e Instagram), TikTok, Google Analytics (página web) y Google Business. Es una copia de la presencia que se actualiza a diario en la página de Claude; para traer lo último, dile a Claude «actualiza la presencia». Las reseñas de Google van sin el nombre de quien las dejó.</p>`;
+      <p class="pres-note">Datos de Meta (Facebook e Instagram), TikTok, Google Analytics (página web) y Google Business. Es una copia de la presencia que se actualiza a diario en la página de Claude; para traer lo último, dile a Claude «actualiza la pauta y la presencia». Las reseñas de Google van sin el nombre de quien las dejó.</p>`;
     const nets = sec.querySelector(".nets"), body = sec.querySelector(".netbody");
     nets.innerHTML = N.map((n,i)=> n.connected
       ? `<button class="net" role="tab" type="button" data-i="${i}"><span class="nn">${esc(n.name)}</span><b>${typeof n.main==="string"?esc(n.main):num(n.main!=null?n.main:n.followers)}</b><span>${esc(n.main_label||"seguidores")}${(n.delta!=null?n.delta:n.new_followers)!=null?` · <span class="up">+${num(n.delta!=null?n.delta:n.new_followers)}</span>`:""}</span></button>`

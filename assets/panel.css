@@ -30,3 +30,38 @@
 .aviso{background:var(--vino-soft)}
 a.dl{display:block}
 .vacio{font-size:13px;color:var(--muted)}
+
+/* Meses plegados: el más nuevo va abierto; los demás se abren con la flecha */
+.mes.plegado{margin-top:22px;padding-top:0;border-top:0}
+.mes-toggle{all:unset;box-sizing:border-box;cursor:pointer;display:flex;flex-wrap:wrap;align-items:center;gap:6px 14px;width:100%;padding:14px 18px;background:var(--paper);border:1.5px solid var(--ink)}
+.mes-toggle:hover{box-shadow:3px 3px 0 var(--ink)}
+.mes-toggle:focus-visible{outline:2px solid var(--vino);outline-offset:2px}
+.mes-toggle .flecha{display:inline-grid;place-items:center;width:32px;height:32px;border-radius:50%;background:var(--ink);color:var(--paper);font-size:15px;transition:transform .2s ease}
+.mes-toggle[aria-expanded="true"] .flecha{transform:rotate(90deg)}
+.mes-toggle b{font-family:var(--display);font-weight:400;font-size:24px;line-height:1.1}
+.mes-toggle .sub{color:var(--muted);font-size:14px}
+.mes-toggle small{margin-left:auto;font-size:12px;letter-spacing:.1em;text-transform:uppercase;font-weight:700;color:var(--muted)}
+.mes.plegado .mes-cuerpo{margin-top:18px}
+
+/* Tema rojo (noviembre 2026) */
+.tema-rojo{--rojo:#B3201C;--crema:#FFF4E6}
+.mes.tema-rojo{border-top-color:var(--rojo)}
+.tema-rojo .mes-tag,.tema-rojo .mes-tag.actual{background:var(--rojo);color:var(--crema)}
+.tema-rojo .hero{background:var(--rojo);color:var(--crema);padding:28px 30px;border-bottom:0;margin-top:6px}
+.tema-rojo .hero .eyebrow{color:#FFD9A8}
+.tema-rojo .hero h1{color:var(--crema)}
+.tema-rojo .hero h1 em{color:#FFD23F}
+.tema-rojo .hero p{color:#FFE6D2}
+.tema-rojo .hero p b{color:var(--crema)}
+.tema-rojo .moment{border-left-color:var(--rojo)}
+.tema-rojo .moment span{color:var(--rojo)}
+.tema-rojo .opts .eyebrow,.tema-rojo .bloque .eyebrow{color:var(--rojo)}
+.indice a.tema-rojo{background:var(--paper);border-color:#B3201C;color:#B3201C}
+.indice a.actual.tema-rojo{background:#B3201C;border-color:#B3201C;color:#FFF4E6}
+@media (prefers-color-scheme: dark){
+  :root:not([data-theme="light"]) .tema-rojo .moment span,:root:not([data-theme="light"]) .tema-rojo .opts .eyebrow,:root:not([data-theme="light"]) .tema-rojo .bloque .eyebrow{color:#F0625A}
+  :root:not([data-theme="light"]) .indice a.tema-rojo:not(.actual){color:#F0625A;border-color:#F0625A}
+}
+.mes .hero.con-ilus{grid-template-columns:1.1fr 1fr;align-items:center}
+.hero-ilus img{display:block;width:100%;height:auto}
+@media (max-width:760px){.mes .hero.con-ilus{grid-template-columns:1fr}.tema-rojo .hero{padding:20px}}
