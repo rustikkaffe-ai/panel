@@ -128,12 +128,49 @@
   {
    "id": "n05",
    "fecha": "2026-11-04",
-   "hora": "11:00 AM",
+   "hora": "11:30 AM",
    "tipo": "post",
    "icono": "burger",
    "titulo": "Carrusel: arma tu Dúo",
-   "detalle": "Segundo formato del Dúo: las combinaciones. Una lámina por burger (Clásica, Melcocha, Holy Alioli, RK-POP) y la última con la bandeja armada.",
-   "copy": "¿Clásica con Melcocha o Holy Alioli con RK-POP? 🤔\nEn el Dúo de burgers eliges las dos que quieras: Clásica, Melcocha, Holy Alioli o RK-POP. Con 2 porciones de papas tuneadas y 2 Coca-Cola, por $14.99.\nPara compartir en una sola bandeja, cualquier día de la semana.\n📍 Barrio El Centro, Apopa · frente a Coplasa\n⏰ Domingo a jueves de 8 am a 8 pm · viernes y sábado hasta las 9 pm\n¿Cuál es tu combinación? Cuéntanos 👇\n#RustikApopa #RustikBurgersKaffee #ApopaElSalvador #SmashBurger #HamburguesasArtesanales #NoviembreEnRustik #FoodieSV"
+   "detalle": "Segundo formato del Dúo: carrusel de **dos láminas**. 1) La bandeja completa con las cuatro burgers que se pueden elegir (Clásica, Melcocha, Holy Alioli, RK-POP), papas tuneadas y 2 sodas. 2) Video corto con el precio: $14.99 por bandeja.\n\nSe publica el **miércoles 4 a las 11:30 AM** (cambio de Fátima del 3 de noviembre; antes estaba a las 11:00 AM).",
+   "copy": "¿Clásica con Melcocha o Holy Alioli con RK-POP? 🤔\nEn el Dúo de burgers eliges las dos que quieras: Clásica, Melcocha, Holy Alioli o RK-POP. Con 2 porciones de papas tuneadas y 2 Coca-Cola, por $14.99.\nPara compartir en una sola bandeja, cualquier día de la semana.\n📍 Barrio El Centro, Apopa · frente a Coplasa\n⏰ Domingo a jueves de 8 am a 8 pm · viernes y sábado hasta las 9 pm\n¿Cuál es tu combinación? Cuéntanos 👇\n#RustikApopa #RustikBurgersKaffee #ApopaElSalvador #SmashBurger #HamburguesasArtesanales #NoviembreEnRustik #FoodieSV",
+   "material": {
+    "intro": "Material final, en el orden en que va. Cada archivo se descarga en su calidad original.",
+    "grupos": [
+     {
+      "titulo": "Carrusel (en este orden)",
+      "tipo": "grid",
+      "items": [
+       {
+        "n": 1,
+        "etiqueta": "Portada: Dúo de burgers",
+        "archivo": "2026-11-n05-1-Duo-de-burgers.jpg",
+        "miniatura": "img/2026-11/n05/2026-11-n05-1-Duo-de-burgers.jpg",
+        "peso": "5.0 MB",
+        "medidas": "Imagen · 9072 × 12096",
+        "hd": "https://github.com/rustikkaffe-ai/panel/releases/download/material-2026-11/2026-11-n05-1-Duo-de-burgers.jpg"
+       },
+       {
+        "n": 2,
+        "etiqueta": "Precio: $14.99 por bandeja",
+        "archivo": "2026-11-n05-2-Duo-de-burgers-precio.mp4",
+        "miniatura": "img/2026-11/n05/2026-11-n05-2-Duo-de-burgers-precio.jpg",
+        "peso": "4.7 MB",
+        "medidas": "Video · 2494 × 3324",
+        "duracion": "3 s",
+        "video": true,
+        "hd": "https://github.com/rustikkaffe-ai/panel/releases/download/material-2026-11/2026-11-n05-2-Duo-de-burgers-precio.mp4"
+       }
+      ]
+     }
+    ]
+   },
+   "notas": [
+    "Antes de publicar: en la lámina 1 dice «HOLY ALIOLÍ», con tilde en la Í; en el menú es «Holy Alioli». Si da tiempo, corregirlo en el arte.",
+    "Las dos láminas son verticales 3:4. Al subirlas, revisar en la vista previa de Instagram que no se corte la línea de arriba (CLÁSICA · MELCOCHA…) ni el logo de abajo.",
+    "La lámina 2 es un video de 2,6 s con su propio audio: decidir si se deja o se le pone una canción desde la app.",
+    "El copy no menciona domicilio: el precio del Dúo por delivery sigue pendiente."
+   ]
   },
   {
    "id": "n06",
