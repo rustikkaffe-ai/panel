@@ -144,11 +144,11 @@
        {
         "n": 1,
         "etiqueta": "Portada: Dúo de burgers",
-        "archivo": "2026-11-n05-1-Duo-de-burgers.jpg",
+        "archivo": "2026-11-n05-1-Duo-de-burgers.png",
         "miniatura": "img/2026-11/n05/2026-11-n05-1-Duo-de-burgers.jpg",
-        "peso": "5.3 MB",
+        "peso": "121.9 MB",
         "medidas": "Imagen · 9450 × 12600",
-        "hd": "https://github.com/rustikkaffe-ai/panel/releases/download/material-2026-11/2026-11-n05-1-Duo-de-burgers.jpg"
+        "hd": "https://github.com/rustikkaffe-ai/panel/releases/download/material-2026-11/2026-11-n05-1-Duo-de-burgers.png"
        },
        {
         "n": 2,
@@ -166,9 +166,10 @@
     ]
    },
    "notas": [
-    "Las dos láminas son verticales 3:4. Al subirlas, revisar en la vista previa de Instagram que no se corte la línea de arriba (CLÁSICA · MELCOCHA…) ni el logo de abajo.",
     "La lámina 2 es un video de 2,6 s con su propio audio: decidir si se deja o se le pone una canción desde la app.",
-    "El copy no menciona domicilio: el precio del Dúo por delivery sigue pendiente."
+    "El copy no menciona domicilio: el precio del Dúo por delivery sigue pendiente.",
+    "Las dos láminas son verticales 3:4. Al subirlas, revisar en la vista previa de Instagram que no se corte la línea de arriba (CLÁSICA · MELCOCHA…) ni el logo de abajo.",
+    "La portada es un PNG de 122 MB (9450 × 12600 px). Si Instagram o Meta no la aceptan por el peso, exportarla en JPG de alta calidad."
    ]
   },
   {
@@ -235,7 +236,7 @@
    "icono": "burger",
    "titulo": "Post: ¿Burger del Día o Dúo de burgers?",
    "detalle": "Tercer formato del Dúo: la comparación. Deja claro que no compiten: la Burger del Día es individual, de lunes a viernes; el Dúo es para compartir, todos los días.",
-   "copy": "¿Burger del Día o Dúo de burgers? Depende de con quién vienes 😉\nSi vienes solo, de lunes a viernes: la Burger del Día desde $6.50.\nSi vienes acompañado, cualquier día: el Dúo de burgers por $14.99, con 2 burgers a elegir, 2 porciones de papas tuneadas y 2 Coca-Cola.\n📍 Barrio El Centro, Apopa · frente a Coplasa\n⏰ Domingo a jueves de 8 am a 8 pm · viernes y sábado hasta las 9 pm\n¿Hoy vienes solo o acompañado? 👇\n#RustikApopa #RustikBurgersKaffee #BurgerDelDía #SmashBurger #NoviembreEnRustik #ApopaElSalvador"
+   "copy": "¿Burger del Día o Dúo de burgers? Depende de con quién vienes 😉\nSi vienes solo, de lunes a viernes: la Burger del Día desde $6.50.\nSi vienes acompañado, cualquier día: el Dúo de burgers por $14.99, con 2 burgers a elegir, 2 porciones de papas tuneadas y 2 sodas.\n📍 Barrio El Centro, Apopa · frente a Coplasa\n⏰ Domingo a jueves de 8 am a 8 pm · viernes y sábado hasta las 9 pm\n¿Hoy vienes solo o acompañado? 👇\n#RustikApopa #RustikBurgersKaffee #BurgerDelDía #SmashBurger #NoviembreEnRustik #ApopaElSalvador"
   },
   {
    "id": "n12",
@@ -289,7 +290,7 @@
    "icono": "burger",
    "titulo": "Post: plan de fin de semana con el Dúo",
    "detalle": "Cuarto formato del Dúo: foto de la bandeja en una mesa con dos personas. Recuerda que hay también sábado y domingo (la Burger del Día no).",
-   "copy": "Plan de sábado: una bandeja, dos burgers y nadie pelea por las papas 🍟\nDúo de burgers por $14.99: elige 2 entre Clásica, Melcocha, Holy Alioli o RK-POP, con 2 porciones de papas tuneadas y 2 Coca-Cola. También sábado y domingo.\n📍 Barrio El Centro, Apopa · frente a Coplasa\n⏰ Domingo a jueves de 8 am a 8 pm · viernes y sábado hasta las 9 pm\n¿A quién traes este fin de semana? 👇\n#RustikApopa #RustikBurgersKaffee #ApopaElSalvador #SmashBurger #HamburguesasArtesanales #NoviembreEnRustik #FoodieSV"
+   "copy": "Plan de sábado: una bandeja, dos burgers y nadie pelea por las papas 🍟\nDúo de burgers por $14.99: elige 2 entre Clásica, Melcocha, Holy Alioli o RK-POP, con 2 porciones de papas tuneadas y 2 sodas. También sábado y domingo.\n📍 Barrio El Centro, Apopa · frente a Coplasa\n⏰ Domingo a jueves de 8 am a 8 pm · viernes y sábado hasta las 9 pm\n¿A quién traes este fin de semana? 👇\n#RustikApopa #RustikBurgersKaffee #ApopaElSalvador #SmashBurger #HamburguesasArtesanales #NoviembreEnRustik #FoodieSV"
   },
   {
    "id": "n17",
