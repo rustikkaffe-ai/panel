@@ -77,11 +77,10 @@
    "abre": "duo",
    "titulo": "Lanzamiento: Dúo de burgers (carrusel)",
    "detalle": "Presentación del producto del mes. Se lanza el **viernes 30** (mejor alcance en Instagram) y está disponible **desde el domingo 1 de noviembre**.\n\nCarrusel: 1) la bandeja completa desde arriba · 2) las 4 burgers que se pueden elegir · 3) las papas tuneadas · 4) precio y «todos los días».",
-   "copy": "Dos burgers, una bandeja y alguien con quien compartirla 🍔🍔\nLlega el Dúo de burgers: 2 burgers sencillas a elegir (Clásica, Melcocha, Holy Alioli o RK-POP), 2 porciones de papas ya tuneadas y 2 Coca-Cola, todo en una sola bandeja por $14.99.\nDesde este domingo 1 de noviembre, todos los días, de lunes a domingo.\n📍 Barrio El Centro, Apopa · frente a Coplasa\n⏰ Domingo a jueves de 8 am a 8 pm · viernes y sábado hasta las 9 pm\n¿Con quién lo compartes? Etiquétalo 👇\n#RustikApopa #RustikBurgersKaffee #ApopaElSalvador #SmashBurger #HamburguesasArtesanales #NoviembreEnRustik #FoodieSV",
+   "copy": "Dos burgers, una bandeja y alguien con quien compartirla 🍔🍔\nLlega el Dúo de burgers: 2 burgers sencillas a elegir (Clásica, Melcocha, Holy Alioli o RK-POP), 2 porciones de papas ya tuneadas y 2 sodas, todo en una sola bandeja por $14.99.\nDesde este domingo 1 de noviembre, todos los días, de lunes a domingo.\n📍 Barrio El Centro, Apopa · frente a Coplasa\n⏰ Domingo a jueves de 8 am a 8 pm · viernes y sábado hasta las 9 pm\n¿Con quién lo compartes? Etiquétalo 👇\n#RustikApopa #RustikBurgersKaffee #ApopaElSalvador #SmashBurger #HamburguesasArtesanales #NoviembreEnRustik #FoodieSV",
    "notas": [
     "Antes de publicar: el Dúo tiene que estar cargado en Oppero con su nombre y precio (hoy aparece la Smash Box a $17.99).",
     "Ese mismo viernes salen las donas, la Berlina y la Caja 3x2, sin anuncio (decisión de Fátima).",
-    "Antes de publicar las historias: en las artes dice «+2 SODAS», pero el producto y los copys dicen «2 Coca-Cola». Que el arte y el copy digan lo mismo.",
     "Antes de publicar las historias: en la línea «CLÁSICA* MELCOCHA *HOLY ALIOLI * RK-POP» los asteriscos tienen espacios distintos; conviene dejarlos parejos (por ejemplo «CLÁSICA · MELCOCHA · HOLY ALIOLI · RK-POP»).",
     "Reel: el video del aderezo sobre las papas (con su copy, en el material). Dime qué día sale y lo pongo en el calendario."
    ],
@@ -162,7 +161,7 @@
         "video": true,
         "hd": "https://github.com/rustikkaffe-ai/panel/releases/download/material-2026-11/2026-11-n01-1-Reel-aderezo-sobre-las-papas.mp4",
         "cuando": "Copy del reel",
-        "texto": "Compartir sale más barato 🍔🍔🍟\nDúo de burgers: escoge 2 burgers entre Clásica, Melcocha, Holy Alioli o RK-POP, con papas tuneadas y 2 Coca-Cola, todo en una bandeja por $14.99.\nLo pensamos para venir con alguien, todos los días.\n📍 Barrio El Centro, Apopa · frente a Coplasa\n⏰ Domingo a jueves de 8 am a 8 pm · viernes y sábado hasta las 9 pm\n¿A quién traes a compartir? Etiquétalo 👇\n#RustikApopa #RustikBurgersKaffee #ApopaElSalvador #SmashBurger #HamburguesasArtesanales #NoviembreEnRustik #FoodieSV"
+        "texto": "Compartir sale más barato 🍔🍔🍟\nDúo de burgers: escoge 2 burgers entre Clásica, Melcocha, Holy Alioli o RK-POP, con papas tuneadas y 2 sodas, todo en una bandeja por $14.99.\nLo pensamos para venir con alguien, todos los días.\n📍 Barrio El Centro, Apopa · frente a Coplasa\n⏰ Domingo a jueves de 8 am a 8 pm · viernes y sábado hasta las 9 pm\n¿A quién traes a compartir? Etiquétalo 👇\n#RustikApopa #RustikBurgersKaffee #ApopaElSalvador #SmashBurger #HamburguesasArtesanales #NoviembreEnRustik #FoodieSV"
        }
       ]
      }
@@ -452,7 +451,7 @@
    "meta": "Lanzamiento vie 30 oct · disponible desde el dom 1 nov · decidido",
    "icono": "burger",
    "color": "vino",
-   "decision": "El producto del mes es el **Dúo de burgers** ($14.99): una sola bandeja para compartir, con 2 burgers sencillas a elegir entre Clásica, Melcocha, Holy Alioli o RK-POP, 2 porciones de papas ya tuneadas (el tuneado va incluido) y 2 Coca-Cola. Disponible **todos los días, de lunes a domingo**.",
+   "decision": "El producto del mes es el **Dúo de burgers** ($14.99): una sola bandeja para compartir, con 2 burgers sencillas a elegir entre Clásica, Melcocha, Holy Alioli o RK-POP, 2 porciones de papas ya tuneadas (el tuneado va incluido) y 2 sodas. Disponible **todos los días, de lunes a domingo**.",
    "secciones": [
     {
      "titulo": "Fechas",
@@ -466,7 +465,7 @@
      "titulo": "No compite con la Burger del Día",
      "puntos": [
       "Burger del Día: individual, de lunes a viernes, con soda.",
-      "Dúo de burgers: para compartir, todos los días, con 2 Coca-Cola y papas tuneadas."
+      "Dúo de burgers: para compartir, todos los días, con 2 sodas y papas tuneadas."
      ]
     },
     {
@@ -478,7 +477,7 @@
     },
     {
      "titulo": "Copy sugerido",
-     "copy": "Dos burgers, una bandeja y alguien con quien compartirla 🍔🍔\nLlega el Dúo de burgers: 2 burgers sencillas a elegir (Clásica, Melcocha, Holy Alioli o RK-POP), 2 porciones de papas ya tuneadas y 2 Coca-Cola, todo en una sola bandeja por $14.99.",
+     "copy": "Dos burgers, una bandeja y alguien con quien compartirla 🍔🍔\nLlega el Dúo de burgers: 2 burgers sencillas a elegir (Clásica, Melcocha, Holy Alioli o RK-POP), 2 porciones de papas ya tuneadas y 2 sodas, todo en una sola bandeja por $14.99.",
      "copy_cuando": "Viernes 30 de octubre · 11:00 AM"
     }
    ],
@@ -489,7 +488,7 @@
     "Sergio confirma el cambio de la Smash Box al Dúo de burgers.",
     "Cargar el Dúo en Oppero con su nombre y precio.",
     "Precio del Dúo por delivery.",
-    "Stock de Coca-Cola.",
+    "Stock de sodas.",
     "Arte y fotos del Dúo."
    ]
   },
@@ -619,7 +618,7 @@
    "quien": "Sergio"
   },
   {
-   "que": "Stock de Coca-Cola para el Dúo",
+   "que": "Stock de sodas para el Dúo",
    "quien": "Sergio"
   },
   {
