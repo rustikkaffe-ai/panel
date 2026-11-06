@@ -1,0 +1,247 @@
+{
+ "nota": "Fichas de los anuncios pagados (sin dinero: los anuncios ya son públicos en Facebook e Instagram). Las cifras de cada anuncio van CIFRADAS en datos/pauta/AAAA-MM.cifrada.json. Las imágenes viven en img/pauta/.",
+ "anuncios": {
+  "52593268304691": {
+   "nombre": "DuoBurgers_pedirya",
+   "producto": "Dúo de burgers",
+   "campana": "TRAFICO_DuoBurgers_ZonaDelivery_2026-11",
+   "creado": "2026-11-05",
+   "formato": "Imagen fija: post 4:5 en los feeds y historia 9:16 en historias y reels",
+   "boton": "Realizar pedido",
+   "boton_nota": "Es el botón «Pedir ahora» de Meta.",
+   "destino": {
+    "label": "Menú en línea para pedir (Oppero)",
+    "url": "https://www.oppero.io/menu/rustik-kaffee?utm_source=meta&utm_medium=paid_social&utm_campaign=duoburgers_2026-11&utm_content=pedir_ya"
+   },
+   "textos": [
+    "Dos burgers, una bandeja y alguien con quien compartirla 🍔🍔 Dúo de burgers: 2 burgers a elegir (Clásica, Melcocha, Holy Alioli o RK-POP) + 2 papas tuneadas + 2 sodas por $14.99. Todos los días en Rustik, Apopa.",
+    "¿Plan para dos? El Dúo de burgers trae 2 burgers, 2 papas tuneadas y 2 sodas por $14.99. Pídelo ya y te lo llevamos con nuestro propio delivery.",
+    "$14.99 para dos: burger, papas tuneadas y soda para cada uno. Todos los días desde las 11 am, en el local o a domicilio en Apopa y Nejapa."
+   ],
+   "titulos": [
+    "Dúo de burgers · $14.99",
+    "Pídelo ya a domicilio"
+   ],
+   "artes": {
+    "post": "img/pauta/artes/9c9a541fde90e244b2dcf69d9939d673.jpg",
+    "historia": "img/pauta/artes/e15e9a695ec258fc752cefa6ada40e9f.jpg"
+   },
+   "vistas": [
+    {
+     "lugar": "Facebook · muro",
+     "img": "img/pauta/vistas/52593268304691/fb-feed.jpg"
+    },
+    {
+     "lugar": "Instagram · feed",
+     "img": "img/pauta/vistas/52593268304691/ig-feed.jpg"
+    },
+    {
+     "lugar": "Instagram · historia",
+     "img": "img/pauta/vistas/52593268304691/ig-historia.jpg"
+    }
+   ]
+  },
+  "52593272310091": {
+   "nombre": "DuoBurgers_masofertas",
+   "producto": "Dúo de burgers",
+   "campana": "TRAFICO_DuoBurgers_ZonaDelivery_2026-11",
+   "creado": "2026-11-05",
+   "formato": "Imagen fija: post 4:5 en los feeds y historia 9:16 en historias y reels",
+   "boton": "Más información",
+   "boton_nota": "",
+   "destino": {
+    "label": "Web de Rustik · sección Promos",
+    "url": "https://rustikkaffee.com/?utm_source=meta&utm_medium=paid_social&utm_campaign=duoburgers_2026-11&utm_content=mas_ofertas#promos"
+   },
+   "textos": [
+    "Dos burgers, una bandeja y alguien con quien compartirla 🍔🍔 Dúo de burgers: 2 burgers a elegir (Clásica, Melcocha, Holy Alioli o RK-POP) + 2 papas tuneadas + 2 sodas por $14.99. Todos los días en Rustik, Apopa.",
+    "Dúo de burgers por $14.99… y hay más: Burger del Día desde $6.50, Desayunos 2x desde $9.99 y Smash Box. Mira todas las promos de Rustik.",
+    "$14.99 para dos: burger, papas tuneadas y soda para cada uno. Y si quieres ver más, todas nuestras ofertas están en la web."
+   ],
+   "titulos": [
+    "Dúo de burgers · $14.99",
+    "Mira todas las promos de Rustik"
+   ],
+   "artes": {
+    "post": "img/pauta/artes/9c9a541fde90e244b2dcf69d9939d673.jpg",
+    "historia": "img/pauta/artes/e15e9a695ec258fc752cefa6ada40e9f.jpg"
+   },
+   "vistas": [
+    {
+     "lugar": "Facebook · muro",
+     "img": "img/pauta/vistas/52593272310091/fb-feed.jpg"
+    },
+    {
+     "lugar": "Instagram · feed",
+     "img": "img/pauta/vistas/52593272310091/ig-feed.jpg"
+    },
+    {
+     "lugar": "Instagram · historia",
+     "img": "img/pauta/vistas/52593272310091/ig-historia.jpg"
+    }
+   ]
+  },
+  "52590388909491": {
+   "nombre": "BurgerDelDia_verpromo",
+   "producto": "Burger del Día",
+   "campana": "TRAFICO_BurgerDelDia_ZonaDelivery_2026-11",
+   "creado": "2026-10-26",
+   "formato": "Imagen fija: post 4:5 en los feeds y historia 9:16 en historias y reels",
+   "boton": "Ver menú",
+   "boton_nota": "",
+   "destino": {
+    "label": "Web de Rustik · sección Promos",
+    "url": "https://rustikkaffee.com/?utm_source=meta&utm_medium=paid_social&utm_campaign=burgerdeldia_2026-11&utm_content=ver_promo#promos"
+   },
+   "textos": [
+    "¿Qué burger toca hoy? 🍔 Lunes Clásica, martes Melcocha, miércoles RK-POP, jueves Holy Alioli y viernes Oklahoma. Con papas y soda: lunes a jueves $6.50 y viernes $7.50. De lunes a viernes desde las 11 am en Rustik, Apopa.",
+    "Tu almuerzo entre semana ya tiene plan: una burger distinta cada día, con papas y soda desde $6.50. Toca \"Ver menú\" y descubre cuál toca hoy.",
+    "Burger + papas + soda desde $6.50, de lunes a viernes desde las 11 am. Ven a Rustik o pídela a domicilio. 📍 Barrio El Centro, Apopa."
+   ],
+   "titulos": [
+    "¿Qué burger toca hoy?",
+    "Desde $6.50 con papas y soda"
+   ],
+   "artes": {
+    "post": "img/pauta/artes/96af6f52738363bab7ea0817a52e2561.jpg",
+    "historia": "img/pauta/artes/6c08b34fcb54a59de5461016c4dc4382.jpg"
+   },
+   "vistas": [
+    {
+     "lugar": "Facebook · muro",
+     "img": "img/pauta/vistas/52590388909491/fb-feed.jpg"
+    },
+    {
+     "lugar": "Instagram · feed",
+     "img": "img/pauta/vistas/52590388909491/ig-feed.jpg"
+    },
+    {
+     "lugar": "Instagram · historia",
+     "img": "img/pauta/vistas/52590388909491/ig-historia.jpg"
+    }
+   ]
+  },
+  "52590392836491": {
+   "nombre": "BurgerDelDia_domicilio",
+   "producto": "Burger del Día",
+   "campana": "TRAFICO_BurgerDelDia_ZonaDelivery_2026-11",
+   "creado": "2026-10-26",
+   "formato": "Imagen fija: post 4:5 en los feeds y historia 9:16 en historias y reels",
+   "boton": "Realizar pedido",
+   "boton_nota": "Es el botón «Pedir ahora» de Meta.",
+   "destino": {
+    "label": "Menú en línea para pedir (Oppero)",
+    "url": "https://www.oppero.io/menu/rustik-kaffee?utm_source=meta&utm_medium=paid_social&utm_campaign=burgerdeldia_2026-11&utm_content=pedir_domicilio"
+   },
+   "textos": [
+    "¿Sin tiempo para salir a almorzar? 🛵 Te llevamos la Burger del Día con papas y soda desde $6.50, con nuestro propio delivery en Apopa, Nejapa y alrededores. En pedidos desde $15, el envío es gratis.",
+    "Almuerzo de la oficina resuelto: junta los pedidos de Burger del Día y desde $15 el envío va por nuestra cuenta. Lunes a jueves $6.50 · viernes $7.50, con papas y soda.",
+    "Pide directo desde nuestro menú en línea: Burger del Día desde $6.50 con papas y soda, de lunes a viernes desde las 11 am. Envío gratis desde $15 en Apopa y Nejapa."
+   ],
+   "titulos": [
+    "Pídela a domicilio",
+    "Envío gratis desde $15"
+   ],
+   "artes": {
+    "post": "img/pauta/artes/96af6f52738363bab7ea0817a52e2561.jpg",
+    "historia": "img/pauta/artes/6c08b34fcb54a59de5461016c4dc4382.jpg"
+   },
+   "vistas": [
+    {
+     "lugar": "Facebook · muro",
+     "img": "img/pauta/vistas/52590392836491/fb-feed.jpg"
+    },
+    {
+     "lugar": "Instagram · feed",
+     "img": "img/pauta/vistas/52590392836491/ig-feed.jpg"
+    },
+    {
+     "lugar": "Instagram · historia",
+     "img": "img/pauta/vistas/52590392836491/ig-historia.jpg"
+    }
+   ]
+  },
+  "52589984131491": {
+   "nombre": "Desayunos_2x999_nov",
+   "producto": "Desayunos 2x",
+   "campana": "ALCANCE_Desayunos_6km_2026-11",
+   "creado": "2026-10-24",
+   "formato": "Imagen fija: post 4:5 en los feeds y historia 9:16 en historias y reels",
+   "boton": "Más información",
+   "boton_nota": "",
+   "destino": {
+    "label": "Web de Rustik · sección Promos",
+    "url": "https://rustikkaffee.com/?utm_source=meta&utm_medium=paid_social&utm_campaign=desayunos_2026-11#promos"
+   },
+   "textos": [
+    "2 desayunos desde $9.99 ☕🍳\nDe lunes a viernes, de 8 a 11 am. Cada uno incluye jugo de naranja o café de la casa con refill.\n📍 Barrio El Centro, Apopa · frente a Coplasa\nVálido solo para comer en el restaurante. Se incluye 10% de servicio.",
+    "¿Desayuno para dos antes del trabajo? 🥞\nEl Típico o el Nutella Waffle: 2 por $9.99, de lunes a viernes de 8 a 11 am.\nVálido solo para comer en el restaurante. Se incluye 10% de servicio.",
+    "Empieza la semana bien desayunado ☀️\n2 desayunos desde $9.99 en Rustik, de lunes a viernes de 8 a 11 am.\n📍 Frente a Coplasa, Apopa · Válido solo en el restaurante. Se incluye 10% de servicio."
+   ],
+   "titulos": [
+    "2 desayunos desde $9.99",
+    "Lunes a viernes · 8 a 11 am"
+   ],
+   "artes": {
+    "post": "img/pauta/artes/152f99d3c0a243f9972aafd438692365.jpg",
+    "historia": "img/pauta/artes/a12ba94a1141d7f43bc041725fdf7a2f.jpg"
+   },
+   "vistas": [
+    {
+     "lugar": "Facebook · muro",
+     "img": "img/pauta/vistas/52589984131491/fb-feed.jpg"
+    },
+    {
+     "lugar": "Instagram · feed",
+     "img": "img/pauta/vistas/52589984131491/ig-feed.jpg"
+    },
+    {
+     "lugar": "Instagram · historia",
+     "img": "img/pauta/vistas/52589984131491/ig-historia.jpg"
+    }
+   ]
+  },
+  "52584017347491": {
+   "nombre": "AyoteLatte_portada4x5_v5",
+   "producto": "Ayote en Miel Latte",
+   "campana": "ALCANCE_AyoteLatte_8km_2026-10",
+   "creado": "2026-09-28",
+   "formato": "Imagen fija: post 4:5 en los feeds; historia 9:16 (video frío) en historias y reels",
+   "boton": "Más información",
+   "boton_nota": "",
+   "destino": {
+    "label": "Google Maps · cómo llegar a Rustik",
+    "url": null
+   },
+   "textos": [
+    "Menos pumpkin spice, más ayote. 🧡☕\nAyote en Miel Latte: caliente $4.00 · frío $4.50.\nEl sabor de las moliendas, en tu café. Solo por temporada.\n📍 Rustik, Barrio El Centro, Apopa.",
+    "Más de 500 personas ya lo compartieron en Instagram 🧡… (el texto completo de esta opción está en Ads Manager)",
+    "Sabe a octubre, a casa de la abuela y a 2 de noviembre 🍂\nAyote, dulce de atado y especias, convertidos en latte con nuestro café de especialidad.\nCaliente $4.00 · frío $4.50\n📍 Barrio El Centro, Apopa · frente a Coplasa",
+    "¿Caliente o frío? 🤔\nNuestro Ayote en Miel Latte viene de las dos formas: $4.00 caliente y $4.50 frío.\nPasa hoy: abrimos todos los días desde las 8 am.\n📍 Frente a Coplasa, Apopa"
+   ],
+   "titulos": [
+    "Ayote en Miel Latte · desde $4.00",
+    "El latte de octubre en Apopa",
+    "Solo por temporada · desde $4.00"
+   ],
+   "artes": {
+    "post": "img/pauta/artes/1df07e37148716f32fb4a922e9b8ff3b.jpg",
+    "historia": "img/pauta/artes/21ac4844fad358bd0bb48a983b9fbe5c.jpg"
+   },
+   "vistas": [
+    {
+     "lugar": "Facebook · muro",
+     "img": "img/pauta/vistas/52584017347491/fb-feed.jpg"
+    },
+    {
+     "lugar": "Instagram · feed",
+     "img": "img/pauta/vistas/52584017347491/ig-feed.jpg"
+    },
+    {
+     "lugar": "Instagram · historia",
+     "img": "img/pauta/vistas/52584017347491/ig-historia.jpg"
+    }
+   ]
+  }
+ }
+}
