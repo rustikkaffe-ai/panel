@@ -15,7 +15,7 @@
   const fechaCorta = s => { if(!s) return ""; const [y,m,d] = s.slice(0,10).split("-").map(Number); return d + " " + MES[m-1]; };
   const ahora = () => { const d = new Date(), p = n => String(n).padStart(2,"0"); return `${d.getFullYear()}-${p(d.getMonth()+1)}-${p(d.getDate())}T${p(d.getHours())}:${p(d.getMinutes())}`; };
   const QUIEN = ["Sergio", "Fátima", "Sergio y Fátima", "Ventas", "Visual"];
-  const ESTADOS = {pendiente: "Por decidir", decidido: "Decidido", descartado: "Descartado"};
+  const ESTADOS = {pendiente: "Por decidir", decidido: "Decidido", hecho: "Hecho", descartado: "Descartado"};
   const RUTA = "datos/pendientes/lista.cifrada.json";
   const b64utf8 = s => { const b = new TextEncoder().encode(s); let o = ""; for(let i = 0; i < b.length; i += 8192) o += String.fromCharCode(...b.subarray(i, i + 8192)); return btoa(o); };
 
@@ -76,7 +76,7 @@
     return `<article class="pend" data-id="${esc(x.id)}"><div class="pend-top"><b>${esc(x.que)}</b><div class="chips">${chips}</div></div>
       ${x.decision ? `<p class="pend-dec">${esc(x.decision).replace(/\n/g, "<br>")}</p>` : ""}
       <p class="pend-meta">${x.actualizado ? `Último cambio: ${esc(fechaCorta(x.actualizado))}${x.por ? " · " + esc(x.por) : ""}` : ""}</p>
-      ${puede ? `<div class="pend-btns">${x.estado === "pendiente" ? `<button type="button" data-acc="decidir">Ya se decidió</button>` : ""}<button type="button" data-acc="editar">Editar</button><button type="button" data-acc="borrar" class="peligro">Borrar</button></div>` : ""}</article>`;
+      ${puede ? `<div class="pend-btns">${x.estado === "pendiente" || x.estado === "decidido" ? `<button type="button" data-acc="hecho" class="ok">✓ Hecho</button>` : ""}${x.estado === "hecho" ? `<button type="button" data-acc="deshacer">Deshacer</button>` : ""}${x.estado === "pendiente" ? `<button type="button" data-acc="decidir">Ya se decidió</button>` : ""}<button type="button" data-acc="editar">Editar</button><button type="button" data-acc="borrar" class="peligro">Borrar</button></div>` : ""}</article>`;
   }
   function formulario(x, mes){
     x = x || {estado: "pendiente", mes};
@@ -113,6 +113,7 @@
       ${grupo("Por decidir", delMes.filter(x => x.estado === "pendiente"))}
       ${grupo("Todavía abiertos de meses anteriores", arrastrados, "Siguen por decidir. Al editarlos puedes pasarlos a este mes.")}
       ${grupo("Decididos", delMes.filter(x => x.estado === "decidido"))}
+      ${grupo("Hechos", delMes.filter(x => x.estado === "hecho"))}
       ${grupo("Descartados", delMes.filter(x => x.estado === "descartado"))}
       ${!delMes.length && !arrastrados.length ? `<div class="vacio-mes"><b>No hay pendientes en ${esc(nombreMes(mes))}.</b>${puede ? "<span>Agrega el primero con «Nuevo pendiente».</span>" : ""}</div>` : ""}`;
     aviso = "";
@@ -144,6 +145,16 @@
       card.querySelectorAll("[data-acc]").forEach(b => b.addEventListener("click", async () => {
         if(b.dataset.acc === "editar") return abrirForm(card, x);
         if(b.dataset.acc === "decidir") return abrirForm(card, Object.assign({}, x, {estado: "decidido", mes: x.mes < mes ? mes : x.mes}));
+        if(b.dataset.acc === "hecho" || b.dataset.acc === "deshacer"){
+          const hecho_ = b.dataset.acc === "hecho", por = quienSoy();
+          card.querySelectorAll("button").forEach(z => z.disabled = true); b.textContent = "Guardando…";
+          try{
+            await guardar(items => { const y = items.find(z => z.id === x.id); if(y) Object.assign(y, {estado: hecho_ ? "hecho" : (y.decision ? "decidido" : "pendiente"), mes: hecho_ && y.mes < mes ? mes : y.mes, actualizado: ahora(), por}); },
+              `Pendientes: ${hecho_ ? "hecho" : "deshecho"} «${x.que.slice(0, 60)}» (${por})`);
+            hecho(hecho_ ? "✓ Marcado como hecho." : "✓ Volvió a la lista.");
+          }catch(err){ fallo(err); }
+          return;
+        }
         if(b.dataset.acc === "borrar"){
           if(!confirm(`¿Borrar «${x.que}»? Si solo ya no va, mejor márcalo como «Descartado» para que quede el registro.`)) return;
           const por = quienSoy(); b.disabled = true; b.textContent = "Borrando…";
