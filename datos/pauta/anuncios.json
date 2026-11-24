@@ -242,6 +242,40 @@
      "img": "img/pauta/vistas/52584017347491/ig-historia.jpg"
     }
    ]
+  },
+  "52598084162291": {
+   "nombre": "BlackRustik_negro",
+   "producto": "Black Friday nocturno (Black Rustik)",
+   "campana": "RECUERDO_BlackRustik_8km_2026-11",
+   "creado": "2026-11-23",
+   "formato": "Imagen fija",
+   "boton": null,
+   "boton_nota": "Falta completar desde el kit",
+   "destino": null,
+   "textos": [],
+   "titulos": [],
+   "artes": {
+    "post": null,
+    "historia": null
+   },
+   "vistas": []
+  },
+  "52598081424691": {
+   "nombre": "BlackRustik_bolsa",
+   "producto": "Black Friday nocturno (Black Rustik)",
+   "campana": "RECUERDO_BlackRustik_8km_2026-11",
+   "creado": "2026-11-23",
+   "formato": "Imagen fija",
+   "boton": null,
+   "boton_nota": "Falta completar desde el kit",
+   "destino": null,
+   "textos": [],
+   "titulos": [],
+   "artes": {
+    "post": null,
+    "historia": null
+   },
+   "vistas": []
   }
  }
 }
