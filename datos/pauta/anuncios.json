@@ -276,6 +276,23 @@
     "historia": null
    },
    "vistas": []
+  },
+  "52598343285491": {
+   "nombre": "BlackRustik_video",
+   "producto": "Black Friday nocturno (Black Rustik)",
+   "campana": "RECUERDO_BlackRustik_8km_2026-11",
+   "creado": "2026-11-24",
+   "formato": "Video",
+   "boton": null,
+   "boton_nota": "Falta completar desde el kit",
+   "destino": null,
+   "textos": [],
+   "titulos": [],
+   "artes": {
+    "post": null,
+    "historia": null
+   },
+   "vistas": []
   }
  }
 }
